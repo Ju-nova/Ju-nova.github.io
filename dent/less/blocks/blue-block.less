@@ -15,11 +15,11 @@ height: 206px;
 
 background-image:url(../img/tooth.png);
 opacity: 0.5;
- @media (max-width:1024px){
+ @media (max-width:768px){
 
 }
 }
-@media (max-width:1024px){
+@media (max-width:768px){
 	flex-direction:column;
 	padding:  43px 0;
 }
@@ -29,7 +29,7 @@ opacity: 0.5;
 	margin-right: 65px;
 	margin-left:54px;
 
-	@media (max-width:1024px){
+	@media (max-width:768px){
 	
 		margin: 60px 0 120px 10px;
 }
@@ -40,9 +40,9 @@ opacity: 0.5;
 	  z-index: 4;
 	  flex-shrink: 0;
 	  margin-right:20px;
-	  	@media (max-width:1024px){
+	  	@media (max-width:768px){
 	
-		margin: 60px 0 120px 30px;
+		margin: 60px 0 80px 30px;
 }
 
 }
@@ -54,25 +54,41 @@ opacity: 0.5;
 	box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
 	border-radius: 10px;
 	background-color: #ffffff;
-	@media (max-width:1024px){
-		margin-right:0px;
+		@media (max-width:1024px){
+	padding:19px 30px 27px 30px;
+	align-items:center;
+margin-right:40px;
+}
+@media (max-width:768px){
+			margin-right:0px;
+	
 }
 	@media (max-width:600px){
+			
 	flex-direction:column;
 	align-items:center;
+	padding:19px 30px 27px 30px;
 }
 }
 .blue__right-block img{
 	margin-right:50px;
-		@media (max-width:600px){
-margin-right:0px;
+		@media (max-width:1024px){
 
+width:140px;
+height: 140px;
+}
+		@media (max-width:768px){
+margin-right:20px;
 }
 }
 .blue__right-block p{
 	color: #242424;
 	font-size: 17px;
 	line-height: 24px;
+			@media (max-width:600px){
+font-size: 14px;
+	line-height: 18px;
+}
 }
 .blue__left-block{
 /* Style for "Боитесь?" */
@@ -87,6 +103,9 @@ font-weight: 500;
 .blue__link-wrapper{
 	display:flex;
 	align-items:flex-end;
+	@media(max-width:600px ){
+	flex-wrap:wrap;
+	}
 }
 .blue__link-number{
 	margin-right:20px;
@@ -102,7 +121,9 @@ font-weight: 500;
 		left:-15px;
 		bottom:-10px;
 	}
-
+@media(max-width:600px ){
+margin-bottom:20px;
+	}
 }
 .blue__link-number a{
 
@@ -121,4 +142,8 @@ text-decoration:none;
 }
 .blue__button a{
 		 padding: 15px 25px 15px;
+		 @media (max-width: 768px){
+      font-size: 16px;  
+      padding: 10px 15px 10px;
+    }
 	}
