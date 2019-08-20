@@ -1,0 +1,127 @@
+.news{
+	background-color: #f2f8fa;
+	border:1px solid transparent;
+	overflow: hidden;
+}
+.news__title{
+ margin-top:47px;
+}
+// .news__wrapper .slick-initialized{
+// 	// padding:51px 0 35px;
+// 	 overflow: hidden;
+	
+
+// }
+
+.news__item{
+	max-width: 294px;
+	height:381px;
+	background-color: #ffffff;
+	border-radius: 10px;
+margin:0 auto;
+	&:hover{
+		box-shadow: 0 0 27px rgba(239, 132, 160, 0.38);
+	}
+}
+.news__item img{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	display: block;
+}
+.news__item-title a{
+text-decoration:none;
+color: #000000;
+font-size: 16px;
+font-weight: 400;
+&:hover{
+	text-decoration:underline;
+	color: #20adc7;
+}
+}
+.news__item-title{
+	margin:37px 29px 16px 30px;
+}
+.news__item-data{
+	margin:0 29px 16px 30px;
+	color: #878787;
+	font-size: 14px;
+}
+.news__slider .slick-list{
+	margin:0 20px ;
+	overflow:hidden;
+	padding:51px 0 35px;
+}
+.news__slider .slick-slide{
+	// width: 290px;
+	 // margin: 0 10px;
+}
+.news__slider .slick-prev{
+	background-color: #ffffff;
+	width: 52px;
+	height: 52px;
+	border-radius:30px;
+	left:-70px;
+	z-index:7;
+@media (max-width: 1025px){
+    left:0px;
+}
+}
+.news__slider .slick-next{
+	background-color: #ffffff;
+	width: 52px;
+	height: 52px;
+	border-radius:30px;
+	right:-70px;
+	@media (max-width: 1025px){
+    right:0px;
+}
+}
+.news__slider .slick-prev:hover,
+.news__slider .slick-next:hover{
+box-shadow: 0 0 43px rgba(0, 0, 0, 0.13);
+}
+.news__slider .slick-prev:before,
+.news__slider .slick-next:before{
+content:'';
+
+}
+.news__slider .slick-prev:before{
+	content:'';
+	color:black;
+	display: block;
+	width:8px;
+	height: 8px;
+	transform: rotate(45deg);
+	border-left:2px solid black;
+	border-bottom:2px solid black;
+	position:relative;
+	left:23px;
+}
+.news__slider .slick-next:before{
+	content:'';
+	color:black;
+	display: block;
+	width:8px;
+	height: 8px;
+	transform: rotate(45deg);
+	border-right: 2px solid black;
+	border-top:2px solid black;
+	position:relative;
+	right:-20px;
+}
+.news__button{
+	text-align: center;
+	margin-bottom:30px;
+}
+.news.news__lechenie{
+	background-color:#41c6d1;
+}
+.news__lechenie .news__title{
+	color:#ffff;
+}
+.news__lechenie .button{
+	background-color:transparent;
+	background-image: none;
+	box-shadow:none;
+	border:1px solid ;
+}

@@ -1,0 +1,184 @@
+.statistic{
+padding:55px 0 65px;
+@media(max-width: 768px){
+   padding:35px 0 45px; 
+  }
+}
+.statistic__title{
+	margin-bottom: 50px;
+  @media(max-width: 768px){
+   margin-bottom: 40px; 
+  }
+}
+.statistic__wrapper{
+	 padding:0 0 60px 47px;
+	display: flex;
+flex-wrap:wrap;
+justify-content: space-around;
+  @media(max-width: 1024px){
+   padding:0 ;
+   justify-content: flex-start;
+  }
+	@media(max-width: 768px){
+   padding:0 ;
+  }
+   @media(max-width: 426px){
+
+   justify-content:space-around;
+  }
+}
+.statistic__number{
+	color: #271c1c;
+	font-size: 36px;
+	font-weight: 400;
+	margin: 0 0 17px;
+  @media(max-width: 768px){
+   font-size: 30px; 
+  }
+}
+.statistic__text{
+	color: #8d8d8d;
+	font-size: 18px;
+	font-weight: 400;
+ @media(max-width: 768px){
+   font-size: 14px; 
+  }
+}
+.statistic__block{
+	position: relative;
+    @media(max-width: 1024px){
+  margin-left:100px;
+  }
+    @media(max-width: 768px){
+  margin-left:80px;
+  }
+  @media(max-width: 426px){
+   width: 45%; 
+  text-align: center;
+  margin-left:0;
+  }
+	&:before{
+		content: '';
+		display:block;
+		position:absolute;
+		background-repeat:no-repeat;
+	}
+}
+// .statistic__block:first-child{
+// 	 margin:0 177px 0 100px;
+// }
+// .statistic__block:nth-child(2){
+// 	margin-right: 204px;
+// }
+// .statistic__block:nth-child(3){
+// 	margin-right: 173px;
+// }
+.statistic__block:first-child:before{
+  width:67px;
+  height: 65px;
+  background-image:url(../img/icon_tooth.png);
+  top:0;
+  left: -77px;
+ @media(max-width: 768px){
+   background-size:37px 35px;
+   width:37px;
+  height: 35px; 
+  left: -40px;
+  top:0px;
+  }
+    @media(max-width: 426px){
+   
+  left: 50%;
+  margin-left:-14px;
+  top:-40px;
+  }
+}
+.statistic__block:first-child{
+  // @media(max-width: 768px){
+  //  margin-left: 20px;
+  // }
+}
+.statistic__block:first-child,
+.statistic__block:nth-child(4){
+  @media(max-width: 426px){
+  margin-bottom:60px;
+  margin-top:60px;
+  margin-left: 0px;
+}
+}
+.statistic__block:nth-child(2){
+ @media(max-width: 426px){
+   
+  order:2;
+  } 
+}
+.statistic__block:nth-child(3){
+ @media(max-width: 426px){
+   
+  order:1;
+}
+}
+.statistic__block:nth-child(2):before{
+  width:68px;
+  height: 50px;
+  background-image:url(../img/icon_client.png);
+  top:10px;
+  left: -77px;
+   @media(max-width: 768px){
+   background-size:48px 30px;
+   width:48px;
+  height: 30px; 
+  left: -70px;
+  top:0px;
+  } 
+   @media(max-width: 426px){
+   
+  left: 50%;
+  margin-left:-23px;
+  top:-50px;
+  }
+
+}
+.statistic__block:nth-child(3):before{
+  width:62px;
+  height: 67px;
+  background-image:url(../img/icon_tooth2.png);
+  top:0px;
+  left: -77px;
+  @media(max-width: 768px){
+   background-size:42px 47px;
+   width:42px;
+  height: 47px; 
+  left: -55px;
+  top:0px;
+  }
+   @media(max-width: 426px){
+   
+  left: 50%;
+  margin-left:-20px;
+  top:-60px;
+  }
+}
+
+.statistic__block:nth-child(4):before{
+  width:67px;
+  height: 59px;
+  background-image:url(../img/icon_tooth3.png);
+  top:0px;
+  left: -77px;
+  @media(max-width: 768px){
+   background-size:47px 39px;
+   width:47px;
+  height: 39px; 
+  left: -55px;
+  top:5px;
+  }
+  @media(max-width: 426px){
+   background-size:37px 35px;
+   width:37px;
+  height: 35px;
+  left: 50%;
+  margin-left:-20px;
+  top:-40px;
+  }
+}

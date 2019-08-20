@@ -1,0 +1,125 @@
+.link-btn
+{
+    font-family: 'Myriad Pro Regular', 'Arial', sans-serif;
+    font-size: 14px;
+
+    display: block;
+
+    padding-bottom: 5px;
+
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: @white;
+    border-bottom: 2px solid;
+    @media @tablet
+    {
+        font-size: 16px;
+
+        color: #212021;
+    }
+    &:hover
+    {
+        opacity: .7;
+    }
+    &:active
+    {
+        opacity: 1;
+        color: #8cb472;
+    }
+}
+
+.link-btn--promo
+{
+     margin-right:auto;
+    // width: 125px;
+    // margin-right:105px;
+    @media @tablet
+    {
+// margin-right:163px;
+       
+    }
+     @media @desktop
+    {
+// margin-right:235px;
+       
+    }
+}
+.link-btn-wrapper{
+    display:flex;
+}
+.link-btn--pdf
+{
+    position: relative;
+
+    margin-right:auto;
+    @media @tablet
+    {
+
+    }
+    &::after
+    {
+        position: absolute;
+        top: 0;
+        left: 155px;
+
+        display: block;
+
+        width: 24px;
+        height: 27px;
+
+        content: '';
+
+        background-image: url(../img/svg/pdf.svg);
+        background-size: 24px 27px;
+        @media @tablet
+        {
+            top: 0;
+            left: 175px;
+
+            width: 32px;
+            height: 36px;
+
+            background-size: 32px 36px;
+        }
+        @media @desktop
+        {
+            top: 0;
+            left: 175px;
+
+            width: 24px;
+            height: 27px;
+
+            background-size: 24px 27px;
+        }
+    }
+}
+.link-btn--work
+{
+   margin: 0 auto; 
+ margin-top:10px;
+    color: #212021;
+
+    @media @tablet
+    {
+     margin: 0 ;  
+    margin-right:auto; 
+  margin-top:10px;
+    }
+
+  
+    }
+}
+.btn-wrapper{
+    display:flex;
+    justify-content:center;
+    @media @tablet{
+justify-content:flex-start;
+    }
+  @media @desktop{
+flex-direction: column;
+
+  } 
+
+}

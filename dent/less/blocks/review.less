@@ -1,0 +1,177 @@
+.review
+{  
+    background-color: #f2f8fa;
+    overflow: hidden
+}
+
+.review__item
+{
+position:relative;
+	display:flex;
+    width: 780px;
+    height: auto;
+    // margin: 0 auto;
+    margin:0 30px;
+    box-sizing:border-box;
+    padding: 56px 50px 55px 44px;
+    
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+    @media (max-width: 426px){
+     width: 380px;
+    height: auto;	
+    padding: 10px;
+    }
+}
+.review__av{
+	margin-right:40px;
+	// width: 172px;
+	// height: 172px;
+	flex-shrink: 0;
+	@media (max-width: 426px){
+ //     width: 100px;
+	// height: 100px;
+	margin-right:20px;
+
+    }
+}
+.review__av img{
+	width: 172px;
+	height: 172px;
+	@media (max-width: 426px){
+     width: 100px;
+	height: 100px;
+    }
+}
+.review__title{
+	padding-top:89px;
+	position:relative;
+	&:before{
+		content:'';
+		position:absolute;
+		display: block;
+		width: 57px;
+		height: 41px;
+		background-image:url(../img/dots.png);
+		background-repeat:no-repeat;
+		top:30px;
+		left:50%;
+		margin-left:-30px;
+
+	}
+}
+.review__data{
+	color: #878787;
+	font-size: 14px;
+	line-height: 30px;
+@media (max-width: 426px){
+	font-size: 10px;
+	line-height: 20px;
+}
+}
+.review__name{
+	color: #3b77ae;
+	font-size: 18px;
+	line-height: 37px;
+	@media (max-width: 426px){
+	font-size: 14px;
+	line-height: 20px;
+}
+}
+.review__text{
+	font-size: 17px;
+	color: #242424;
+	@media (max-width: 426px){
+	font-size: 12px;
+	line-height: 20px;
+}
+
+}
+
+.review  .slick-track{
+	padding:40px 50px;
+	
+
+}
+#review .review__wrapper{
+	overflow: hidden;
+	padding:40px 0;
+	max-width: 1920px;
+}
+#review .slick-slide{
+	opacity:0.5;
+}
+#review .slick-center{
+opacity: 1;
+}
+.review__button{
+	text-align: center;
+	padding-bottom:60px;
+	@media (max-width: 426px){
+	padding-bottom:30px;
+}
+}
+
+#review .slick-prev{
+	background-color: #f2f8fa;
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius:50px;
+	left:330px;
+z-index:1;
+
+}
+#review .slick-next{
+	background-color: #f2f8fa;
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius:50px;
+	right:330px;
+z-index:1;
+}
+
+
+#review .slick-prev:before,
+#review .slick-next:before{
+content:'';
+
+}
+#review .slick-prev:after
+{
+
+background-color: #ffffff;
+	display: block;
+	width: 52px;
+	height: 52px;
+	border-radius:50px;
+	left:330px;
+z-index:5;
+}
+
+.review .slick-prev:before{
+	content:'';
+	color:black;
+	display: block;
+	width:8px;
+	height: 8px;
+	transform: rotate(45deg);
+	border-left:2px solid black;
+	border-bottom:2px solid black;
+	position:relative;
+	left:23px;
+}
+#review .slick-next:before{
+	content:'';
+	color:black;
+	display: block;
+	width:8px;
+	height: 8px;
+	transform: rotate(45deg);
+	border-right: 2px solid black;
+	border-top:2px solid black;
+	position:relative;
+	right:-20px;
+}

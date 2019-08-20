@@ -1,0 +1,225 @@
+.client
+{
+    min-width: 1500px;
+
+    background-color: rgba(0, 0, 0, .9);
+    background-image: url(../img/bg-man-color.png);
+    background-repeat: no-repeat;
+    background-position: center top -100px;
+}
+.client__wrapper
+{
+    box-sizing: border-box;
+    min-width: 1500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 121px;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.client__title
+{
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+.client__title-left
+{
+    position: relative;
+
+    margin: 0 44px 27px 0;
+
+    font-family: @font-3;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+
+    color: #e5e5e5;
+    &:after
+    {
+        position: absolute;
+        top: -6px;
+        right: -27px;
+
+        display: block;
+        width: 2px;
+        height: 35px;
+
+        border-radius: 2px;
+        background-color: #18a3dd;
+
+        content: '';
+    }
+}
+
+.client__title-right
+{
+    margin: 0 0 27px 0;
+
+    font-family: @font-3;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+
+    color: #e5e5e5;
+}
+
+
+.client__title-down
+{    
+    width: 100%;
+    margin: 0 0 75px 0;
+
+    font-family: @font-2;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .4px;
+
+    color: #767a7d;
+}
+
+.client__review{
+    width: 765px;
+    margin:0 auto;
+    // margin-bottom:121px;
+}
+.client__review-text
+{
+    margin-bottom: 31px;
+
+    font-family: @font-2;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    letter-spacing: .4px;
+
+    opacity: .7;
+    color: #a9a9a9;
+}
+
+.client__review-user-wrapper
+{
+    display: flex;
+    padding-bottom: 47px;;
+
+    align-items: top;
+}
+
+.client__review-user
+{
+    position: relative;
+    &::after
+    {
+        position: absolute;
+        bottom: 0;
+
+        display: block;
+        width: 36px;
+        height: 5px;
+        border-radius:3px;
+
+        background-color: #18a3dd;
+
+        content: '';
+    }
+}
+
+.client__review-avatar
+{
+    width: 65px;
+    height: 73px;
+    margin-right: 31px;
+    margin-left: 284px;
+}
+
+.client__review-name
+{
+    margin-bottom: 15px;
+
+    font-family: @font-3;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+
+    color: #a9a9a9;
+}
+
+.client__review-city
+{
+    font-family: @font-3;
+    font-size: 14px;
+    text-align: left;
+
+    color: #a9a9a9;
+}
+
+
+
+// для слайдера
+    
+
+.client__slider
+{
+    position: relative;
+}
+.client__slider-content
+{
+    position: relative;
+
+    width: 765px;
+    min-height: 176px;
+    margin: 0 auto;
+}
+.client__slide
+{
+    width: 100%;
+    height: 100%;
+}
+
+.client__slider-controls
+{
+    position: absolute;
+    right: 50%;
+    bottom: -60px;
+
+    text-align: center;
+}
+.client__slider-controls .client__control-slide
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 13px;
+    height: 13px;
+    margin: 2px;
+
+    text-indent: -9999px;
+
+    background: url(../img/btn.png) center bottom no-repeat;
+}
+
+.client__slider-controls .client__control-slide:hover
+{
+    background-position: center center;
+
+    cursor: pointer;
+}
+.client__slider-controls .client__control-slide.active
+{
+    background-image: url(../img/btn-a.png);
+    background-position: center top;
+}
+

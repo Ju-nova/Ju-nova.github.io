@@ -1,0 +1,76 @@
+.reasons{
+	background-color: #f2f8fa;
+}
+.reasons__wrapper{
+	padding:57px 148px 47px 148px;
+	@media (max-width: 1024px){
+	padding:57px 50px 47px 50px;	
+	}
+	@media (max-width: 1024px){
+		padding:57px 0px 47px 0px;	
+	}
+}
+
+.reasons__text{
+	font-size: 18px;
+	color: #242424;
+	text-align: center;
+	padding-left:20px;
+	line-height: 24px;
+	margin-bottom:47px;
+}
+.reasons__block-wrapper{
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 768px){
+		flex-direction:column;
+			align-items: center;
+	}
+}
+.reasons__left,
+.reasons__right{
+	width:470px;
+	background-color: #ffffff;
+	box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-sizing:border-box;
+	padding:49px 48px 31px 100px;
+	@media (max-width: 1024px){
+	padding:29px 28px 11px 80px;	
+	}
+		@media (max-width: 426px){
+	width:100%;	
+	}
+}
+.reasons__left {
+	@media (max-width: 768px){
+		margin-bottom:20px;
+	}
+}
+.reasons__left ul,
+.reasons__right ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.reasons__left ul li,
+.reasons__right ul li{
+
+color: #242424;
+
+font-size: 16px;
+font-weight: 400;
+margin-bottom:17px;
+position:relative
+}
+.reasons__left ul li:before,
+.reasons__right ul li:before{
+content:'';
+position:absolute;
+display:block;
+width: 23px;
+height: 23px;
+background-image:url(../img/rounded-delete-button-with-minus.png);
+left:-50px;
+}

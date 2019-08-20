@@ -1,0 +1,87 @@
+.map{
+	position:relative;
+}
+.map__address-wrapper{
+	position:absolute;
+	top:60px;
+	right:60px;
+	background-color: #ffffff;
+	padding:10px;
+	box-shadow: 0 0 43px rgba(0, 0, 0, 0.13);
+	border-radius: 10px;
+	@media (max-width:768px){
+		display:none;
+	}
+}
+.map__address{
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+
+}
+.map__logo{
+	text-align:center;
+	margin-top:23px; 
+}
+.map__text{
+ padding:42px 34px 58px 99px;	
+ font-size: 16px;
+ font-weight: 500;
+ color: #000000;
+ 
+}
+.map__text p{
+	margin:0;
+	margin-bottom:42px;
+	position:relative;
+	&:before{
+		content:'';
+		display: block;
+		position:absolute;
+		background-repeat: no-repeat;
+		top:-5px;
+		left:-60px;
+	}
+}
+.map__text p a{
+text-decoration: none;
+ font-size: 16px;
+ font-weight: 500;
+ color: #000000;
+ &:hover{
+ 	text-decoration:underline;
+ 	color: #43c7d2;
+ }
+}
+.map__text .map__tel a{
+font-size: 20px;
+
+}
+.map__text .map__work{
+	margin-bottom:0;
+}
+.map__text .map__street:before{
+
+	width:45px;
+	height: 49px;
+	background-image:url(../img/icon_location_footer.png);
+}
+
+.map__text .map__tel:before{
+   
+   left:-65px;
+	width:54px;
+	height: 48px;
+	background-image:url(../img/icon_tel.png);
+}
+.map__text .map__mail:before{
+
+	width:44px;
+	height: 47px;
+	background-image:url(../img/icon_mail.png);
+}
+.map__text .map__work:before{
+
+	width:44px;
+	height: 47px;
+	background-image:url(../img/icon_time2.png);
+}

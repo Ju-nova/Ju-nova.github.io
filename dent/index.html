@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+	<title>Mr. Dent</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/main.min.css">
+  </head>
+<body class="body">
+	<header class="header ">
+		<div class="header__first  header--closed header--no-js  content-wrapper">
+			<div class="header__first-logo">
+                <a href="#">
+				   <img class="logo1 " src="img/logo_desktop.png" width="110" height="95" alt="Логотип">
+				   <img class="logo2 none" src="img/logo_desktop.png" width="77" height="67" alt="Логотип">
+				   
+				</a>  
+				 <button class="header__toggle" id="toggle-button" type="button" aria-label="Меню"></button>  
+			</div>
+			<div class="header__tablet">
+				<div class="header__first-middle">
+					<div class="header__first-work">
+						<div class="header__first-address">
+							г. Воронеж, ул.Название, д.1, оф.2
+						</div>
+						<div class="header__first-hours">
+							Часы работы: с 8.00 до 20.00 (Пн.-Сб.)
+						</div>
+					</div>
+				
+					<nav class="main-nav">
+						<ul class="main-nav__list">
+							<li><a href="#">О клинике</a></li>
+				
+							<li  class="item__services"><a href="services.html">Услуги</a>
+								
+							       <div class="submenu services__submenu">
+							       	<div class="submenu__wrapper">
+								       	<ul class="submenu__list">
+									       	<li class="submenu__list-item">Консультация</li>
+									       	<li class="submenu__list-item submenu__list-item--current"><a data-toggle="tab" href="#gigiena">Профессиональная гигиена полости рта</a>
+									        </li>
+									       	<li class="submenu__list-item"><a data-toggle="tab" href="#therapy">Терапевтическая стоматология</a></li>
+									       	<li class="submenu__list-item">Имплантация</li>
+									       	<li class="submenu__list-item">Ортопедическая стоматология</li>
+									       	<li class="submenu__list-item">Хирургическая стоматология</li>
+									       	<li class="submenu__list-item">Ортодонтия</li>
+									       	<li class="submenu__list-item">Лечение дёсен</li>
+									       	<li class="submenu__list-item">Диагностика</li>
+									       	<li class="submenu__list-item">Отбеливание</li>
+									     </ul>
+				
+				
+									     <div class="submenu-2">
+									       <ul id="gigiena" class="submenu-2__list   active">
+											       	<li class="submenu-2__list-item" ><a data-toggle="block" href="#uzi">Ультразвуковая чистка</a>
+											       		
+											       	</li >
+											       	<li class="submenu-2__list-item airflow"><a data-toggle="block" class="airflow" href="#airflow">Ультразвуковая чистка + AirFlow</a>
+											   
+											       		</li>
+									            </ul>
+									             <ul id="therapy" class="submenu-2__list">
+											       	<li class="submenu-2__list-item"><a href="lechenie_zubov.html">Лечение кариеса</a></li>
+											       	<li class="submenu-2__list-item"><a href="#">Реставрация зубов</a></li>
+											       	<li class="submenu-2__list-item"><a href="#">Лечение пульпита</a></li>
+											       	<li class="submenu-2__list-item"><a href="#">Лечение периодонтита</a></li>
+				
+									            </ul>
+									     </div>
+				
+				
+									   </div>  
+				
+									    <div class="submenu-3">
+									     	
+									    	       <div id="uzi" class="submenu__block">
+											       			<img width="340" height="192" src="img/image1.png" alt="">
+											       			<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusantium qui fugiat consequatur laboriosam voluptas autem sint, asperiores possimus nostrum delectus soluta molestiae accusamus eveniet velit, dignissimos omnis in maxime!
+											       			</p>
+											       	</div>
+											      	
+									    	    	<div id="airflow" class="submenu__block active">
+											       			<img width="340" height="192" src="img/image1.png" alt="">
+											       			<p>
+										Гигиеническая чистка зубов Air Flow представляет собой процедуру, при которой аппарат распыляет на зубы смесь из воды, воздуха и кристаллов соды под давлением. 
+				                                    <br>
+				                                    <br>
+										Степень такого давления регулирует врач-стоматолог. При помощи данного прибора различные типы отложений удаляются не только с поверхности зуба, но и из межзубных промежутков.
+				
+											       			</p>
+											       	</div>
+									    </div> 
+									   
+								    </div>
+							</li>
+				
+							<li class="doctors"><a href="#">Врачи</a></li>
+							<li><a href="#">Цены</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					
+				</div>
+				<div class="header__first-tel">
+						
+							<div class="header__first-number">
+								<a class="telephone" href="tel:89202253399">8 920 225 3399</a>
+							</div>
+					
+						
+							<div class="header__first-order">
+								<a href="#">Заказать звонок</a>
+							</div>
+						
+				</div>
+			</div>
+		</div>
+	</header>
+    <main>
+    		<h1 class="visually-hidden"> Центр стоматологии «Mr.Dent»</h1>
+          
+         <div class="main-block">
+        	<div class="main-block__wrapper content-wrapper">
+        		<div class="sl-mb  main-block__slider">
+        			
+        		           <div>
+        		           	<div class="main-block__slide main-block__slide1">
+        		           		
+        		   <p>Бесплатная консультация <br>и план лечения</p>
+        		                   <div class="main-block__button"><a href="#" class="button button--blue">Записаться >></a></div>
+        		
+        		           	</div>
+        		           </div>
+        		           <div>
+        		           	<div class="main-block__slide main-block__slide2">
+        		           		
+        		   <p>Далеко-далеко	 <br>за высокими горами</p>
+        		                   <div class="main-block__button"><a href="#" class="button button--blue">Звонок >></a></div>
+        		
+        		           	</div>
+        		           </div>
+        		           <div>
+        		           	<div class="main-block__slide main-block__slide3">
+        		           		
+        		   <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</p>
+        		                   <div class="main-block__button"><a href="#" class="button button--blue">Консультация >></a>
+        		                   </div>
+        		
+        		           	</div>
+        		           </div>
+        		</div>
+        		<div class="sl-count__main"><span class="sl-count__num__main">1</span> / <span class="sl-count__total__main"></span></div>
+        	</div>
+        </div>  
+
+
+        <section class="statistic">
+         	<h2 class="statistic__title content-wrapper">Клиника в цифрах</h2>
+        	  <div class="statistic__wrapper content-wrapper">
+        		<div class="statistic__block">
+        			<p class="statistic__number">5</p>
+        			<p class="statistic__text">Лет успешной <br> работы</p>
+        		</div>
+        		<div class="statistic__block">
+        			<p class="statistic__number">2,302</p>
+        			<p class="statistic__text">Довольных <br> клиентов</p>
+        		</div>
+        		<div class="statistic__block">
+        			<p class="statistic__number">5,613</p>
+        			<p class="statistic__text">Установленных <br>  имплантов</p>
+        		</div>
+        		<div class="statistic__block">
+        			<p class="statistic__number">12</p>
+        			<p class="statistic__text">Международных <br>  сертификатов</p>
+        		</div> 
+        	</div> 
+         </section> 
+       
+          <section class="aboutblock">
+         	<h2 class="visually-hidden"> О клинике Mr.Dent</h2> 
+             <div class="aboutblock__wrapper content-wrapper">
+             	<div class="aboutblock__left">
+             		<div style="width: 100%; overflow: hidden;">
+             			<iframe width="100%" height="355" style="border-radius: 5px" src="https://www.youtube.com/embed/OXuIqaeg0SI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             		</div>
+             		<div class="video__mask"></div>
+             	</div>
+             	<div class="aboutblock__right">
+             		<h2 class="aboutblock__title"> О клинике Mr.Dent</h2>
+             		<p class="aboutblock__text">
+             			Все сотрудники «Клиники»- профессионалы и единомышленники. 
+             		</p>
+             		<p class="aboutblock__text">
+                    Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. 
+             		</p>
+             		<p class="aboutblock__text">
+                    Это помогает легко определить план лечения, который устроит и доктора и клиента. На первом месте в стоматологии — внимательное отношение к пациентам, забота о них и честность.
+             		</p>
+             		
+             			<a class="button aboutblock__button" href="#">Подробнее >></a>
+             		
+             	</div>
+             </div>
+         </section> 
+
+         <section class="services">
+         	<h2  class="services__title"> Услуги компании</h2> 
+         	<div class="service__wrapper content-wrapper">
+         		<div class="service__left">
+	         		<a href="#">Консультация</a>
+	         		<a href="">Профессиональная гигиена полости рта</a>
+	         		<a href="">Терапевтическая стоматология</a>
+	         		<a href="">Имплантация</a>
+	         		<a href="">Ортопедическая стоматология</a>
+         		</div>
+         		<div class="service__right">
+	         		<a href="#">Хирургическая стоматология</a>
+	         		<a href="">Ортодонтия</a>
+	         		<a href="">Лечение дёсен</a>
+	         		<a href="">Диагностика</a>
+	         		<a href="">Отбеливание</a>
+         		</div>
+         		<div class="services__button">
+         		<a href="#" class="button ">Бесплатная<br> консультация  >></a>
+         	</div>
+         	</div>
+         </section> 
+
+	 	<section id="review" class="review">
+			<h2 class="review__title">Отзывы клиентов</h2>
+			<div class="review__wrapper review__slider content-wrapper">
+
+				<div>
+					<div class="review__item">
+						<div class="review__av">
+							<img width="172" height="172" src="img/client__avatar1.png" alt="">
+						</div>
+						<div class="review__text">
+							<div class="review__data">01.03.2019</div>
+							<div class="review__name">Елена Борисовна Весна</div>
+							<div class="review__text">Все сотрудники «Клиники»- профессионалы и единомышленники. Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. </div>
+						</div>
+
+					</div>
+				</div>
+
+				<div>
+					<div class="review__item">
+						<div class="review__av">
+							<img width="172" height="172" src="img/client__avatar1.png" alt="">
+						</div>
+						<div class="review__text">
+							<div class="review__data">01.03.2019</div>
+							<div class="review__name">Елена Борисовна Весна</div>
+							<div class="review__text">Все сотрудники «Клиники»- профессионалы и единомышленники. Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. </div>
+						</div>
+
+					</div>
+				</div>
+
+				<div>
+					<div class="review__item">
+						<div class="review__av">
+							<img width="172" height="172" src="img/client__avatar1.png" alt="">
+						</div>
+						<div class="review__text">
+							<div class="review__data">01.03.2019</div>
+							<div class="review__name">Елена Борисовна Весна</div>
+							<div class="review__text">Все сотрудники «Клиники»- профессионалы и единомышленники. Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. </div>
+						</div>
+
+					</div>
+				</div>
+
+				<div>
+					<div class="review__item">
+						<div class="review__av">
+							<img width="172" height="172" src="img/client__avatar1.png" alt="">
+						</div>
+						<div class="review__text">
+							<div class="review__data">01.03.2019</div>
+							<div class="review__name">Елена Борисовна Весна</div>
+							<div class="review__text">Все сотрудники «Клиники»- профессионалы и единомышленники. Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. </div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="review__button">
+				<a href="#" class="button">Все отзывы >></a>
+			</div>
+		</section>
+       
+        <section id="personal" class="personal">
+        	<h2 class="personal__title">Наши специалисты</h2>
+        	<div class="sl-fb personal__wrapper personal__slider content-wrapper">
+        		
+        		<div>
+        			<div class="personal__item">
+        				<div class="personal__av">
+        					<img width="77" height="77" src="img/ava_vrach.png" alt="">
+        				</div>
+        				<div class="personal__text-wrapper">
+        					<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
+        					<div class="personal__slide-block">
+        						<div class="personal__button">
+        							<a href="#" class="button button--blue">Записаться >></a>
+        						</div>
+        						<div class="personal__link">
+        							<a href="#">Информация о враче <span>>></span></a>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        			<div>
+        				<div class="personal__item">
+        					<div class="personal__av">
+        						<img width="77" height="77" src="img/ava_vrach.png" alt="">
+        					</div>
+        					<div class="personal__text-wrapper">
+        						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
+        						<div class="personal__slide-block">
+        							<div class="personal__button">
+        								<a href="#" class="button button--blue">Записаться >></a>
+        							</div>
+        							<div class="personal__link">
+        								<a href="#">Информация о враче</a>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div>
+        				<div class="personal__item">
+        					<div class="personal__av">
+        						<img width="77" height="77" src="img/ava_vrach.png" alt="">
+        					</div>
+        					<div class="personal__text-wrapper">
+        						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
+        						<div class="personal__slide-block">
+        							<div class="personal__button">
+        								<a href="#" class="button button--blue">Записаться >></a>
+        							</div>
+        							<div class="personal__link">
+        								<a href="#">Информация о враче<span>>></span></a>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div>
+        				<div class="personal__item">
+        					<div class="personal__av">
+        						<img width="77" height="77" src="img/ava_vrach.png" alt="">
+        					</div>
+        					<div class="personal__text-wrapper">
+        						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
+        						<div class="personal__slide-block">
+        							<div class="personal__button">
+        								<a href="#" class="button button--blue">Записаться >></a>
+        							</div>
+        							<div class="personal__link">
+        								<a href="#">Информация о враче<span>>></span></a>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div>
+        				<div class="personal__item">
+        					<div class="personal__av">
+        						<img width="77" height="77" src="img/ava_vrach.png" alt="">
+        					</div>
+        					<div class="personal__text-wrapper">
+        						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
+        						<div class="personal__slide-block">
+        							<div class="personal__button">
+        								<a href="#" class="button button--blue">Записаться >></a>
+        							</div>
+        							<div class="personal__link">
+        								<a href="#">Информация о враче<span>>></span></a>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div>
+        				<div class="personal__item">
+        					<div class="personal__av">
+        						<img width="77" height="77" src="img/ava_vrach.png" alt="">
+        					</div>
+        					<div class="personal__text-wrapper">
+        						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
+        						
+        						<div class="personal__slide-block">
+        							<div class="personal__button">
+        								<a href="#" class="button button--blue">Записаться >></a>
+        							</div>
+        							<div class="personal__link">
+        								<a href="#">Информация о враче<span>>></span></a>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+
+
+        		</div>
+        	<div class="sl-count"><span class="sl-count__num">1</span> / <span class="sl-count__total"></span></div>
+
+        </section>
+
+         <section class="news">
+         	<h2 class="news__title">Новости</h2>
+         	<div  class="news__wrapper news__slider content-wrapper">
+         		
+         	<div>
+         	                		<div class="news__item">
+         	                		<a href="#">
+         	                			<img width="294" height="187" src="img/news_img1.png" alt="">
+         	                			<div class="news__item-title">
+         	                			<a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
+         	                			<div class="news__item-data">10.02.2019</div>
+         	                		</a>
+         	                	</div>
+         	                </div>   
+
+         	    <div>    
+         	    	<div class="news__item">
+         	         
+         	         <img width="294" height="187" src="img/news_img2.png" alt="">
+         	          
+         	          <div class="news__item-title"><a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
+         	          
+         	          <div class="news__item-data">10.02.2019</div>
+         	       
+         	       	</div>
+         	     
+         	      </div>      		
+         	      <div>
+         	      	<div class="news__item">
+         	      	         			<img width="294" height="187" src="img/news_img3.png" alt="">
+         	      	         			<div class="news__item-title"><a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
+         	      	         			<div class="news__item-data">10.02.2019</div>
+         	      	         		</div>
+         	      </div>
+         		<div>
+         			<div class="news__item">
+         				<img width="294" height="187" src="img/news_img4.png" alt="">
+         				<div class="news__item-title"><a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
+         				<div class="news__item-data">10.02.2019</div>
+         			</div>
+         		</div>
+         		<div>
+         			<div class="news__item">
+         				<img width="294" height="187" src="img/news_img1.png" alt="">
+         				<div class="news__item-title"><a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
+         				<div class="news__item-data">10.02.2019</div>
+         			</div>
+         		</div>
+         		
+         	</div>
+         	<div class="news__button">
+         		<a href="#" class="button ">Все новости</a>
+         	</div>
+         </section>
+     <section class="promotion">
+     	<h2 class="visually-hidden">Текст для продвижения</h2>
+     	<div class="content-wrapper promotion__wrapper">
+     		<h2 class="promotion__title">Текст для продвижения</h2>
+     		<p class="promotion__text">Представляем вам полный спектр стоматологических услуг, который оказывает для вас Центр стоматологии «Mr.Dent». Узнайте подробную информацию об интересующих стоматологических услугах</p>
+     	</div>
+     </section>
+      
+     <section class="map">
+     	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.911188065897!2d39.178056215743645!3d51.679768679663745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b25b4d7e2ae7d%3A0x8df90c1e37ffb6e8!2z0JDQutCw0LTQtdC80LjRjyDRhtCy0LXRgtC-0LI!5e0!3m2!1sru!2sru!4v1565695607768!5m2!1sru!2sru" width="100%" height="611" frameborder="0" style="border:0" allowfullscreen></iframe>
+     	 <!--   <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A975fe888403aae623af6971b1ffd1d6ae826b60f7033feefe9c07ce8c3f239ef&amp;source=constructor" width="100%" height="611" frameborder="0"></iframe> -->
+     	 <div class="map__wrapper content-wrapper">
+     	 	<div class="map__address-wrapper">
+     	 		<div class="map__address">
+     	 			<div class="map__logo">
+     	 				<img width="110" height="95" src="img/logo_desktop.png" alt="Логотип">
+     	 			</div>
+     	 			<div class="map__text">
+     	 				<p class="map__street">г. Воронеж, <br>ул.Название, д.1, оф.2</p>
+     	 				<p class="map__tel"><a href="tel:89202253399">8 920 225 3399</a></p>
+     	 				<p class="map__mail"><a href="mailto:sambulovstom@gmail.com">sambulovstom@gmail.com</a></p>     	 
+     	 				      	 			<p class="map__work">Часы работы: <br> с 8.00 до 20.00 (Пн.-Сб.)</p>
+     	 			</div>
+     	 		</div>
+     	 	</div>
+     	 </div>
+     </section>
+
+     <section id="appointment" class="form">
+     	<div class=" content-wrapper">
+     		<div class="form-wrapper">
+     			  <form action="#" method="get">
+     			  	<fieldset class="form__fieldset">
+     			  		<strong class="form__title">Записаться на прием</strong>
+     			  		<ul class="form__list" role="none">
+     			  			<li class="form__name">
+							      <label for="name">ФИО</label>
+							      <input type="text" name="name" id="name">
+							    </li>
+							    <li class="form__number">
+							      <label for="number">Телефон для связи</label>
+							      <input type="tel" name="number" id="number">
+							    </li>
+							    <li class="form__mail">
+							      <label for="email">E-mail</label>
+							      <input type="email" name="email" id="email">
+							    </li>
+							     <li class="form__message">
+							      <label for="message">Сообщение</label>
+							     
+							      <textarea name="message" id="message" cols="30" rows="3"></textarea>
+							    </li>
+							         <li class="form__checkbox">
+							      
+							      <input type="checkbox" name="confidential" id="confidential" checked>
+							      <label for="confidential">Согласен с условиями <a href="#">конфиденциальности</a></label>
+							    </li>
+							    
+							    	
+							    
+     			  		</ul>
+     			  		<div class="form__submit-wrapper">
+     			  			<input type="submit" value="Записаться >>">
+     			  		</div>
+     			  	</fieldset>
+     			  </form>
+     		</div>
+     	</div>
+     </section>   	
+    </main> 
+ 
+  <footer class="footer">
+        	<div class="footer__up">
+        		<div class="content-wrapper ">
+		        		
+		        			<ul class="footer__menu">
+		        				<li><a href="#">О клинике</a></li>
+		        				<li><a href="#"> Услуги</a></li>
+		        				<li><a href="#">Врачи</a></li>
+		        				<li><a href="#">Цены</a></li>
+		        				<li><a href="#">Отзыв</a></li>
+		        				<li><a href="#">Контакты</a></li>
+		        			</ul>
+		        		   <div class="footer__services">
+			        			<div class="footer__block">
+			        				<span class="footer__block-title">Консультация</span>
+                                    <ul class="footer__block-list">
+                                    	<li><a href="#">Бесплатная консультация</a></li>
+                                    </ul>
+                                     <span class="footer__block-title">Профессиональная гигиена полости рта</span> 
+                                      <ul class="footer__block-list">
+                                    	<li><a href="#">Ультразвуковая чистка</a></li>
+                                    	<li><a href="#">Ультразвуковая чистка + AirFlow</a></li>
+                                    </ul> 
+			        			</div>
+			        			<div class="footer__block">
+			        				<span class="footer__block-title">Имплантация</span>
+                                    <ul class="footer__block-list">
+                                    	<li><a href="#">Классическая имплантация</a></li>
+                                    	<li><a href="#">Одномоментная имплантация</a></li>
+                                    	<li><a href="#">All-on-4</a></li>
+                                    	<li><a href="#">Костная пластика</a></li>
+                                    	<li><a href="#">Синус-лифтинг</a></li>
+                                    </ul>
+                                     <span class="footer__block-title">Терапевтическая стоматология</span> 
+                                      <ul class="footer__block-list">
+                                    	<li><a href="#">Лечение кариеса</a></li>
+                                    	<li><a href="#">Реставрация зуба</a></li>
+                                    	<li><a href="#">Лечение пульпита</a></li>
+                                    	<li><a href="#">Лечение периодонтита</a></li>
+                                    </ul> 
+			        			</div>
+			        			<div class="footer__block">
+			        				<span class="footer__block-title">Ортопедическая стоматология</span> 
+                                      <ul class="footer__block-list">
+                                    	<li><a href="#">Металлокерамические коронки</a></li>
+                                    	<li><a href="#">Циркониевые коронки</a></li>
+                                    	<li><a href="#">Керамические коронки E.Max</a></li>
+                                    	<li><a href="#">Полный съёмный протез</a></li>
+                                    	<li><a href="#">Бюгельный протез</a></li>
+                                    	<li><a href="#">Протез без нёба</a></li>
+                                    	<li><a href="#">All-on-4</a></li>
+                                    	<li><a href="#">Керамические виниры</a></li>
+                                    	<li><a href="#">Установка виниров</a></li>
+                                    </ul> 
+			        			</div>
+			        			<div class="footer__block"><span class="footer__block-title">Хирургическая стоматология</span>
+                                    <ul class="footer__block-list">
+                                    	<li><a href="#">Удаление однокорневого зуба</a></li>
+                                    	<li><a href="#">Удаление многокорневого зуба</a></li>
+                                    	<li><a href="#">Сложное удаление зуба</a></li>
+                                    	<li><a href="#">Резекция верхушки корня</a></li>
+                                    	
+                                    </ul>
+                                     <span class="footer__block-title">Ортодонтия</span> 
+                                      <ul class="footer__block-list">
+                                    	<li><a href="#">Металлические брекеты</a></li>
+                                    	<li><a href="#">Керамические брекеты</a></li>
+                                    	<li><a href="#">Сапфировые брекеты</a></li>
+                                    	<li><a href="#">Самолигирующие брекеты</a></li>
+                                    	<li><a href="#">Лингвальные брекеты</a></li>
+                                    	<li><a href="#">Брекеты Incognito</a></li>
+                                    	<li><a href="#">Элайнеры</a></li>
+                                    </ul> 
+                                </div>
+			        			
+			        			<div class="footer__block">
+			        				  <span class="footer__block-title">Лечение дёсен</span> 
+                                      <ul class="footer__block-list">
+                                    	<li><a href="#">Стоматит</a></li>
+                                    	<li><a href="#">Пародонтоз</a></li>
+                                    	<li><a href="#">Гингивит</a></li>
+                                    	<li><a href="#">Пародонтит</a></li>
+                                    </ul>
+                                      <span class="footer__block-title">Диагностика</span> 
+                                      <ul class="footer__block-list">
+                                    	<li><a href="#">Рентген зубов</a></li>
+                                    	
+                                    </ul>
+                                      <span class="footer__block-title">Отбеливание</span> 
+                                      <ul class="footer__block-list">
+                                    	<li><a href="#">Отбеливание Zoom 4</a></li>
+                                 
+                                    </ul>
+			        			</div>
+			        	   </div>
+			    </div>
+    	
+			    </div>    	
+             <div class="footer__down">
+             	<div class="footer__social content-wrapper">
+             		<div class="footer__social-wrapper footer__left">
+                       <div class=" footer__item footer__address">г. Воронеж, <br>ул.Название, д.1, оф.2</div>
+                       <div class="footer__item footer__number"><a href="tel:89202253399">8 920 225 3399</a></div>
+                       <div class="footer__item  footer__mail"><a href="mailto:sambulovstom@gmail.com">sambulovstom@gmail.com</a></div>
+             		</div>
+             		<div class="footer__social-wrapper footer__right"> 
+             			<a href="#"><img width="33" height="33" src="img/icon_vk.png" alt="Vkontakte"></a>
+             			<a href="#"><img width="33" height="33" src="img/icon_fb.png" alt="Facebook"></a>
+             			<a href="#"><img width="33" height="33" src="img/icon_twitter.png" alt="Twitter"></a>
+             		</div>	
+             	</div>
+
+
+             </div>   
+        	</div>
+        </footer>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="js/slick.js"></script> 
+		<script src="js/main.js"></script> 
+			
+</body>
+</html>
