@@ -1408,6 +1408,7 @@ h2 {
   border-left: 2px solid black;
   border-bottom: 2px solid black;
   position: relative;
+  left: 15px;
 }
 @media (max-width: 768px) {
   .main-block__wrapper .slick-prev:before {
@@ -1445,7 +1446,7 @@ h2 {
     padding: 240px 0 0 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 426px) {
   .main-block__slide {
     height: 400px;
     padding: 200px 0 0 0;
@@ -1460,12 +1461,6 @@ h2 {
 @media (max-width: 768px) {
   .main-block__slide1 {
     background-size: 600px auto;
-    background-position: right 0 bottom 0 ;
-  }
-}
-@media (max-width: 768px) {
-  .main-block__slide1 {
-    background-size: 400px auto;
     background-position: right 0 bottom 0 ;
   }
 }
@@ -3227,7 +3222,7 @@ h2 {
   margin-bottom: 20px;
 }
 .price-block__column1 {
-  padding: 43px 100px 43px 35px;
+  padding: 43px 70px 43px 35px;
   /* Style for "Лечение ка" */
   color: #2caeb9;
   border-top-left-radius: 10px;
@@ -3238,7 +3233,7 @@ h2 {
   line-height: 24px;
   border-left: 7px solid ;
 }
-.price-block__column3 {
+.price-block__column2 {
   color: #242424;
   font-size: 14px;
   font-weight: 400;
@@ -3267,6 +3262,23 @@ h2 {
 }
 .price-block__title1 {
   padding: 0 0 0 35px;
+}
+.price-block__button a {
+  border-radius: 25px;
+  border: 1px solid #45c8d3;
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #000000;
+}
+.price-block__button a span {
+  color: #45c8d3;
+}
+.price-block__button {
+  text-align: right;
+  padding-top: 14px;
+  padding-bottom: 35px;
 }
 .footer__up {
   padding: 40px 0;
