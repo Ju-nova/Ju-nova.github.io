@@ -88,7 +88,6 @@ $('.column2__slider').slick({
   arrows:true,
   autoplay:false,
   speed:500,
-  dots:true,
   autoplaySpeed:5000
  
 

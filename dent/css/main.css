@@ -4024,10 +4024,10 @@ h2 {
   border-radius: 50%;
   background-color: #fff;
 }
-.slick-dots li button:before {
+.column2__left .slick-dots li button:before {
   content: none;
 }
-.slick-dots .slick-active button:before {
+.column2__left .slick-dots .slick-active button:before {
   width: 15px;
   height: 15px;
   border: 1px solid #fff;
