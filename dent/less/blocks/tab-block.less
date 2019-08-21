@@ -1,0 +1,287 @@
+.tab-block__wrapper
+{
+    padding: 0 148px 30px;
+    @media (max-width: 1024px)
+    {
+        padding: 0 48px 30px;
+    }
+    @media (max-width: 768px)
+    {
+        padding: 0 18px 30px;
+    }
+    @media (max-width: 426px)
+    {
+        padding: 0 0 15px;
+    }
+}
+.tab-block__title
+{
+    padding: 31px 0 20px;
+}
+.tab-block__descr
+{
+    margin: 0 0 53px;
+
+    font-size: 17px;
+    text-align: center;
+
+    color: #242424;
+}
+.tab-block__list
+{
+    display: flex;
+    margin: 0;
+    padding: 0 109px;
+
+    list-style: none;
+
+    justify-content: space-between;
+    @media (max-width: 768px)
+    {
+        padding: 0 18px;
+    }
+    @media (max-width: 426px)
+    {
+        padding: 0;
+    }
+}
+.tab-block__tab-img img
+{
+    @media (max-width: 768px)
+    {
+        width: 204px;
+        height: 140px;
+    }
+    @media (max-width: 426px)
+    {
+        width: 184px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+}
+.tab-block__list li
+{
+    padding: 5px 10px 6px 10px;
+    @media (max-width: 426px)
+    {
+        padding: 5px;
+
+        text-align: center;
+    }
+}
+.tab-block--active
+{
+    border: 1px solid #45c7d2;
+    border-radius: 17px;
+    background-color: #fff;
+    box-shadow: 0 0 24px rgba(53, 175, 192, .5);
+}
+.tab-block__list .tab-block--active a
+{
+    color: #45c7d2;
+}
+.tab-block__list li a
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+
+    color: #878787;
+    &:hover
+    {
+        color: #45c7d2;
+    }
+    @media (max-width: 426px)
+    {
+        font-size: 12px;
+    }
+}
+.tab-block__content
+{
+    padding: 40px 0 0 ;
+}
+.tab-block__tab
+{
+    margin-bottom: 69px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    /* Style for "Кариес в с" */
+
+    color: #242424;
+    @media (max-width: 768px)
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.tab-block__content > .tab-block__tab
+{
+    display: none;
+}
+.tab-block__content > .tab-block--current
+{
+    display: block;
+}
+.tab-block__tab .data-block__text
+{
+    margin-bottom: 38px;
+
+    font-size: 18px;
+}
+.tab-block__tab-img
+{
+    display: flex;
+
+    justify-content: space-around;
+    @media (max-width: 426px)
+    {
+        flex-wrap: wrap;
+    }
+}
+
+.tab-block__alarm
+{
+    margin-bottom: 85px;
+    padding: 38px 72px 170px 72px;
+
+    border: 8px solid #f2b8b8;
+    border-radius: 10px;
+    @media(max-width: 426px)
+    {
+        padding: 38px 12px 170px 12px;
+    }
+}
+.tab-block__alarm-title
+{
+    margin-bottom: 24px;
+
+    font-size: 32px;
+    text-align: center;
+
+    color: #000;
+    @media(max-width: 768px)
+    {
+        font-size: 28px;
+    }
+    @media(max-width: 426px)
+    {
+        font-size: 20px;
+    }
+}
+.tab-block__alarm-text
+{
+    font-size: 18px;
+    text-align: center;
+
+    color: #242424;
+    @media(max-width: 768px)
+    {
+        font-size: 16px;
+    }
+}
+
+
+.tab-block__form
+{
+    margin-top: -250px;
+    padding: 0 129px;
+    @media(max-width: 768px)
+    {
+        padding: 0 50px;
+    }
+    @media(max-width: 426px)
+    {
+        padding: 0 29px;
+    }
+}
+.tab-block__form-container
+{
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 43px rgba(0, 0, 0, .13);
+}
+.tab-block__form-fieldset .form-title
+{
+    text-align: center;
+}
+
+.tab-block__form-list
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: flex-end;
+    @media (max-width: 768px)
+    {
+        justify-content: space-between;
+    }
+    @media (max-width: 426px)
+    {
+        flex-direction: column;
+
+        align-items: center;
+    }
+}
+// .tab-block__form-wrapper{
+// 	display: flex;
+
+// }
+#tab-form .tab-block__form-list .form__name
+{
+    width: 154px;
+    margin-right: 17px;
+    @media (max-width: 1024px)
+    {
+        width: 120px;
+    }
+    @media (max-width: 768px)
+    {
+        width: 140px;
+    }
+    @media (max-width: 426px)
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+    @media (max-width: 320px)
+    {
+        min-width: 154px;
+        margin-right: 0;
+    }
+}
+#tab-form .tab-block__form-list .form__number
+{
+    width: 235px;
+    margin-right: 17px;
+    @media (max-width: 1024px)
+    {
+        width: 200px;
+    }
+    @media (max-width: 768px)
+    {
+        width: 170px;
+    }
+    @media (max-width: 426px)
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.tab-block__form .tab-block__form-list .form__submit-wrapper
+{
+    width: auto;
+}
+
+.tab-block__form .tab-block__form-list .form__submit-wrapper input[type=submit]
+{
+    padding: 0 20px;
+    @media (max-width: 768px)
+    {
+        font-size: 16px;
+    }
+}

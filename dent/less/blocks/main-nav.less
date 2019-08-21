@@ -1,53 +1,66 @@
-.main-nav__list{
-	display: flex;
-	flex-direction: row;
+.main-nav__list
+{
+    display: flex;
+    flex-direction: row;
+
     flex-wrap: wrap;
-	// position:relative;
-	@media  (max-width: 768px){
-	flex-direction: column;	
-	align-items:center;
-	}
+    // position:relative;
+    @media  (max-width: 768px)
+    {
+        flex-direction: column;
+
+        align-items: center;
+    }
 }
 
-.main-nav__list{
-	list-style: none;
-	padding:0;
-	margin: 0;
+.main-nav__list
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
- .header__scrolled .main-nav__list>li>a{
- 	padding:23px 25px 23px 25px;
+.header__scrolled .main-nav__list > li > a
+{
+    padding: 23px 25px 23px 25px;
 
- 	
-@media  (max-width: 768px){
-	padding:10px 0px 10px 0px;	
-	}
-	
- }
-.main-nav__list>li>a{
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #000000;
-	font-size: 16px;
-	font-weight: 400;
-	display:inline-block;
-	padding:19px 25px 30px 25px;
-	@media  (max-width: 1024px){
-	padding:10px 14px 10px 14px;	
-	}
-	@media  (max-width: 768px){
-	padding:10px 0px 10px 0px;	
-	}
+
+    @media  (max-width: 768px)
+    {
+        padding: 10px 0 10px 0;
+    }
 }
-.main-nav__list>li:hover>a{
-	// box-shadow: 0 0px 6px rgba(0, 58, 88, 0.1);
-	box-shadow: 
-4px -4px 6px -1px rgba(0, 58, 88, 0.1),
- -4px -4px 6px -1px rgba(0, 58, 88, 0.1);
-	background-color: #fdfefe;
-	@media  (max-width: 1024px){
-box-shadow: none;
-	background-color: transparent;
-	color:#42c7d2;
-}	
+.main-nav__list > li > a
+{
+    display: inline-block;
+    padding: 19px 25px 30px 25px;
+
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #000;
+    @media  (max-width: 1024px)
+    {
+        padding: 10px 14px 10px 14px;
+    }
+    @media  (max-width: 768px)
+    {
+        padding: 10px 0 10px 0;
+    }
+}
+.main-nav__list > li:hover > a
+{
+    background-color: #fdfefe;
+    // box-shadow: 0 0px 6px rgba(0, 58, 88, 0.1);
+    box-shadow: 4px -4px 6px -1px rgba(0, 58, 88, .1),
+    -4px -4px 6px -1px rgba(0, 58, 88, .1);
+    @media  (max-width: 1024px)
+    {
+        color: #42c7d2;
+        background-color: transparent;
+        box-shadow: none;
+    }
 }

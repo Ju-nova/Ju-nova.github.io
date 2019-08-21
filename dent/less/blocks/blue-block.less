@@ -1,151 +1,199 @@
-.blue-block{
-	background-color: #46c8d3;
-	}
-.blue-block__wrapper{
-	display: flex;
-	padding:43px 0 ;
-	align-items:center;
-	position:relative;
-	&:before{
-content:'';
-position:absolute;
-// display:block;
-width:144px;
-height: 206px;
+.blue-block
+{
+    background-color: #46c8d3;
+}
+.blue-block__wrapper
+{
+    position: relative;
 
-background-image:url(../img/tooth.png);
-opacity: 0.5;
- @media (max-width:768px){
+    display: flex;
+    padding: 43px 0 ;
 
-}
-}
-@media (max-width:768px){
-	flex-direction:column;
-	padding:  43px 0;
-}
-}
+    align-items: center;
+    &:before
+    {
+        position: absolute;
+        // display:block;
 
-.blue-block2 .psevdo-wrap{
-	margin-right: 65px;
-	margin-left:54px;
+        width: 144px;
+        height: 206px;
 
-	@media (max-width:768px){
-	
-		margin: 60px 0 120px 10px;
-}
-}
-.psevdo-wrap{
-	margin-left:54px;
+        opacity: .5;
+        background-image: url(../img/tooth.png);
 
-	  z-index: 4;
-	  flex-shrink: 0;
-	  margin-right:20px;
-	  	@media (max-width:768px){
-	
-		margin: 60px 0 80px 30px;
-}
-
-}
-.blue__right-block{
-	display:flex;
-	align-items:flex-end;
-	margin-right:80px;
-	padding:29px 60px 47px 47px;
-	box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
-	border-radius: 10px;
-	background-color: #ffffff;
-		@media (max-width:1024px){
-	padding:19px 30px 27px 30px;
-	align-items:center;
-margin-right:40px;
-}
-@media (max-width:768px){
-			margin-right:0px;
-	
-}
-	@media (max-width:600px){
-			
-	flex-direction:column;
-	align-items:center;
-	padding:19px 30px 27px 30px;
-}
-}
-.blue__right-block img{
-	margin-right:50px;
-		@media (max-width:1024px){
-
-width:140px;
-height: 140px;
-}
-		@media (max-width:768px){
-margin-right:20px;
-}
-}
-.blue__right-block p{
-	color: #242424;
-	font-size: 17px;
-	line-height: 24px;
-			@media (max-width:600px){
-font-size: 14px;
-	line-height: 18px;
-}
-}
-.blue__left-block{
-/* Style for "Боитесь?" */
-background-color:#46c8d3;
-
-color: #ffffff;
-font-size: 32px;
-font-weight: 500;
-@media(max-width:600px ){
-	font-size: 28px;
-	}
-
-}
-.blue__link-wrapper{
-	display:flex;
-	align-items:flex-end;
-	@media(max-width:600px ){
-	flex-wrap:wrap;
-	}
-}
-.blue__link-number{
-	margin-right:15px;
-	padding-left:48px;
-	position:relative;
-	&:before{
-		content:'';
-		position:absolute;
-		display:block;
-		width:54px;
-		height:48px;
-		background-image:url(../img/icon_tel.png);
-		left:-15px;
-		bottom:-10px;
-	}
-@media(max-width:600px ){
-margin-bottom:20px;
-	}
-}
-.blue__link-number a{
-
-color: #000000;
-
-font-size: 20px;
-font-weight: 400;
-text-decoration:none;
-&:hover{
-	color:#46c8d3;
-	}
-}
-.blue__link-number p{
-		font-size: 14px;
-		margin-top:0;
-}
-.blue__button a{
-		 padding: 15px 25px 15px;
-		 @media (max-width: 768px){
-      font-size: 16px;  
-      padding: 10px 15px 10px;
+        content: '';
+        @media (max-width:768px)
+        {
+        }
     }
-	}
+    @media (max-width:768px)
+    {
+        flex-direction: column;
+        padding: 43px 0;
+    }
+}
+
+
+.blue-block2 .psevdo-wrap
+{
+    margin-right: 65px;
+    margin-left: 54px;
+
+    @media (max-width:768px)
+    {
+        margin: 60px 0 120px 10px;
+    }
+}
+
+.psevdo-wrap
+{
+    z-index: 4;
+
+    margin-right: 20px;
+    margin-left: 54px;
+
+    flex-shrink: 0;
+    @media (max-width:768px)
+    {
+        margin: 60px 0 80px 30px;
+    }
+}
+
+.blue__right-block
+{
+    display: flex;
+    margin-right: 80px;
+    padding: 29px 60px 47px 47px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+
+    align-items: flex-end;
+    @media (max-width:1024px)
+    {
+        margin-right: 40px;
+        padding: 19px 30px 27px 30px;
+
+        align-items: center;
+    }
+    @media (max-width:768px)
+    {
+        margin-right: 0;
+    }
+    @media (max-width:600px)
+    {
+        flex-direction: column;
+        padding: 19px 30px 27px 30px;
+
+        align-items: center;
+    }
+}
+
+.blue__right-block img
+{
+    margin-right: 50px;
+    @media (max-width:1024px)
+    {
+        width: 140px;
+        height: 140px;
+    }
+    @media (max-width:768px)
+    {
+        margin-right: 20px;
+    }
+}
+
+.blue__right-block p
+{
+    font-size: 17px;
+    line-height: 24px;
+
+    color: #242424;
+    @media (max-width:600px)
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.blue__left-block
+{
+    font-size: 32px;
+    font-weight: 500;
+
+    color: #fff;
+    /* Style for "Боитесь?" */
+    background-color: #46c8d3;
+    @media(max-width:600px )
+    {
+        font-size: 28px;
+    }
+}
+
+.blue__link-wrapper
+{
+    display: flex;
+
+    align-items: flex-end;
+    @media(max-width:600px )
+    {
+        flex-wrap: wrap;
+    }
+}
+
+.blue__link-number
+{
+    position: relative;
+
+    margin-right: 15px;
+    padding-left: 48px;
+    &:before
+    {
+        position: absolute;
+        bottom: -10px;
+        left: -15px;
+
+        display: block;
+        width: 54px;
+        height: 48px;
+
+        background-image: url(../img/icon_tel.png);
+
+        content: '';
+    }
+    @media(max-width:600px )
+    {
+        margin-bottom: 20px;
+    }
+}
+
+.blue__link-number a
+{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+
+    color: #000;
+    &:hover
+    {
+        color: #46c8d3;
+    }
+}
+
+.blue__link-number p
+{
+    margin-top: 0;
+
+    font-size: 14px;
+}
+.blue__button a
+{
+    padding: 15px 25px 15px;
+    @media (max-width: 768px)
+    {
+        padding: 10px 15px 10px;
+
+        font-size: 16px;
+    }
+}

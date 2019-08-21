@@ -1,102 +1,135 @@
-.consult{
-	background-image:url('../img/form-image2.png');
-	background-repeat:no-repeat;
-	background-position:center;
-	@media (max-width: 768px){
-		background-position:top 0 left 30%;
-		background-size:cover
-	}
+.consult
+{
+    background-image: url('../img/form-image2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (max-width: 768px)
+    {
+        background-position: top 0 left 30%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
 
+        background-size: cover;
+    }
 }
-.consult__wrapper{
-	border:1px solid transparent;
-	display: flex;
-	justify-content: space-between;
-	@media (max-width: 768px){
- flex-direction:column;
- justify-content: center;
+.consult__wrapper
+{
+    display: flex;
+
+    border: 1px solid transparent;
+
+    justify-content: space-between;
+    @media (max-width: 768px)
+    {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+}
+.consult__form
+{
+    box-sizing: border-box;
+    margin: 35px 20px 35px auto ;
+    margin-left: auto;
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 43px rgba(0, 0, 0, .13);
+    @media (max-width: 768px)
+    {
+        margin-right: auto;
+        margin-left: 0;
+    }
+    @media (max-width: 426px)
+    {
+        margin: auto;
+    }
+}
+.consult__fieldset
+{
+    padding: 25px 34px;
+    @media (max-width: 768px)
+    {
+        padding: 10px 15px;
+    }
+}
+.consult__left
+{
+    padding: 71px 0;
+    @media (max-width: 1025px)
+    {
+        text-align: right;
+    }
+    @media (max-width: 768px)
+    {
+        padding: 10px 0;
+
+        text-align: center;
+    }
+}
+.consult__right
+{
+    @media (max-width: 1025px)
+    {
+        order: -1;
+    }
+    @media (max-width: 768px)
+    {
+        order: 1;
+    }
+    @media (max-width: 426px)
+    {
+        padding-bottom: 10px;
+    }
+}
+.consult__text1
+{
+    margin-bottom: 25px;
+
+    font-size: 20px;
+    @media (max-width: 768px)
+    {
+        margin-bottom: 15px;
+
+        font-size: 16px;
+    }
 }
 
+.consult__text2
+{
+    font-size: 30px;
+    @media (max-width: 768px)
+    {
+        font-size: 20px;
+    }
+}
+.consult__text3
+{
+    font-size: 30px;
 
-}
-.consult__form{
-
-
-	background-color: #ffffff;
-	margin-left:auto;
-	margin:35px 20px 35px auto ;
-	box-sizing:border-box;
-	padding:10px;
-	box-shadow: 0 0 43px rgba(0, 0, 0, 0.13);
-	border-radius: 10px;
-@media (max-width: 768px){
- margin-right:auto;
-margin-left:0;
-}
-@media (max-width: 426px){
- margin:auto;
-
-}
-}
-.consult__fieldset{
-	padding:25px 34px;
-	@media (max-width: 768px){
- padding:10px 15px;
-}
-}
-.consult__left{
-	padding:71px 0;
-@media (max-width: 1025px){
- text-align: right;
-}	
-@media (max-width: 768px){
- text-align: center;
- padding:10px 0;
-}
-}
-.consult__right{
-	@media (max-width: 1025px){
-	
-	order:-1;
-}
-	@media (max-width: 768px){
-	
-	order:1;
-}
-}
-.consult__text1{
-	font-size: 20px;
-	margin-bottom:25px;
-		@media (max-width: 768px){
-	margin-bottom: 15px;
-	font-size: 16px;
-}
+    color: #30929a;
+    @media (max-width: 768px)
+    {
+        font-size: 20px;
+    }
 }
 
-.consult__text2{
-	font-size: 30px;
-		@media (max-width: 768px){
-	
-	font-size: 20px;
-}	
-}
-.consult__text3{
-	font-size: 30px;
-	color: #30929a;
-			@media (max-width: 768px){
-	
-	font-size: 20px;
-}		
-}
+.consult__breadcrubms
+{
+    margin-bottom: 89px;
+    @media(max-width: 1025px)
+    {
+        margin-bottom: 200px;
 
-.consult__breadcrubms{
-	margin-bottom:89px;
-	@media(max-width: 1025px){
-		margin-bottom: 200px;
-		justify-content: flex-end;
-	}
-		@media(max-width: 768px){
-		margin-bottom:20px;
-		justify-content: flex-start;
-	}
+        justify-content: flex-end;
+    }
+    @media(max-width: 768px)
+    {
+        margin-bottom: 20px;
+
+        justify-content: flex-start;
+    }
 }
