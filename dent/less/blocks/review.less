@@ -1,8 +1,14 @@
 .review
 {
-    overflow: hidden;;
+    overflow: hidden;
 
     background-color: #f2f8fa;
+    &--white{
+     background-color: #fff;   
+    }
+    @media (max-width:426px){
+        display:none;
+    } 
 }
 
 .review__item
@@ -20,11 +26,19 @@
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+     @media (max-width: 768px)
+    {
+        width: 680px;
+        padding: 39px 76px 46px 67px;
+      
+        
+    }
     @media (max-width: 426px)
     {
         width: 380px;
         height: auto;
         padding: 10px;
+
     }
 }
 .review__av
@@ -112,12 +126,16 @@
 .review  .slick-track
 {
     padding: 40px 50px;
+    @media (max-width: 768px)
+    {
+         padding: 40px 50px 31px;
+    }
 }
 #review .review__wrapper
 {
     overflow: hidden;
     max-width: 1920px;
-    padding: 40px 0;
+    padding: 0;
 }
 #review .slick-slide
 {
@@ -129,64 +147,120 @@
 }
 .review__button
 {
-    padding-bottom: 60px;
+    padding-bottom: 54px;
 
     text-align: center;
+      @media (max-width: 768px)
+    {
+        padding-bottom: 30px;
+    }
     @media (max-width: 426px)
     {
         padding-bottom: 30px;
     }
 }
 
-#review .slick-prev
+.review .slick-slide .prev
 {
+    opacity: 0;
     z-index: 1;
-    left: 330px;
-
-    display: block;
-    width: 80px;
-    height: 80px;
-
+   top:50%;
+    position: absolute;
+    margin-top:-38px;
+    width: 77px;
+    height: 77px;
+    box-sizing:border-box;
+    border:13px solid #f2f8fa;
     border-radius: 50px;
-    background-color: #f2f8fa;
+    background-color: #ffffff;
+    left:-38px;
+    @media (max-width: 1024px){
+    // left:8%;   
+    }
 }
-#review .slick-next
+#review .slick-slide.slick-current .prev,
+#review .slick-slide.slick-current .next{
+opacity:1;
+cursor: pointer;
+}
+.review .slick-slide .next
 {
+    opacity: 0;
     z-index: 1;
-    right: 330px;
-
-    display: block;
-    width: 80px;
-    height: 80px;
-
+   top:50%;
+    position: absolute;
+    margin-top:-38px;
+    width: 77px;
+    height: 77px;
+    box-sizing:border-box;
+    border:13px solid #f2f8fa;
     border-radius: 50px;
-    background-color: #f2f8fa;
+    background-color: #ffffff;
+    right:-38px;
 }
-
-
-#review .slick-prev:before,
-#review .slick-next:before
+.review.review--white .slick-slide .next
+{
+    opacity: 0;
+    z-index: 1;
+   top:50%;
+    position: absolute;
+    margin-top:-38px;
+    width: 77px;
+    height: 77px;
+    box-sizing:border-box;
+    border:13px solid #ffff;
+    border-radius: 50px;
+    background-color: #ffffff;
+    right:-38px;
+     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+}
+.review.review--white .slick-slide .prev
+{
+    opacity: 0;
+    z-index: 1;
+   top:50%;
+    position: absolute;
+    margin-top:-38px;
+    width: 77px;
+    height: 77px;
+    box-sizing:border-box;
+    border:13px solid #fff;
+    border-radius: 50px;
+    background-color: #ffffff;
+    left:-38px;
+     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+    @media (max-width: 1024px){
+    // left:8%;   
+    }
+}
+#review .prev:before,
+#review .next:before,
+#review .prev:after,
+#review .next:after
 {
     content: '';
 }
-#review .slick-prev:after
-{
-    z-index: 5;
-    left: 330px;
+// #review .slick-prev:after
+// {
+//     z-index: 5;
+   
 
-    display: block;
-    width: 52px;
-    height: 52px;
+//     display: block;
+//     width: 52px;
+//     height: 52px;
+    
+//     border-radius: 50px;
+//     background-color: #fff;
+//     box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
+// }
 
-    border-radius: 50px;
-    background-color: #fff;
-}
-
-.review .slick-prev:before
+.review .prev:before
 {
     position: relative;
-    left: 23px;
-
+    left: 50%;
+    margin-left:-4px;
+    margin-top:-4px;
+    top:50%;
     display: block;
     width: 8px;
     height: 8px;
@@ -198,10 +272,13 @@
     content: '';
     transform: rotate(45deg);
 }
-#review .slick-next:before
+#review .next:before
 {
     position: relative;
-    right: -20px;
+     left: 50%;
+    margin-left:-4px;
+    margin-top:-4px;
+    top:50%;
 
     display: block;
     width: 8px;

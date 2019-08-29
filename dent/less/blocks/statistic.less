@@ -3,7 +3,7 @@
     padding: 55px 0 65px;
     @media(max-width: 768px)
     {
-        padding: 35px 0 45px;
+        padding: 50px 0 45px;
     }
 }
 .statistic__title
@@ -30,10 +30,11 @@
     @media(max-width: 768px)
     {
         padding: 0 ;
+
     }
     @media(max-width: 426px)
     {
-        justify-content: space-around;
+       justify-content: flex-start;
     }
 }
 .statistic__number
@@ -59,6 +60,10 @@
     {
         font-size: 14px;
     }
+     @media(max-width: 768px)
+    {
+        font-size: 12px;
+    }
 }
 .statistic__block
 {
@@ -76,7 +81,9 @@
         width: 45%;
         margin-left: 0;
 
-        text-align: center;
+        text-align: left;
+        padding-left:70px;
+        box-sizing:border-box;
     }
     &:before
     {
@@ -124,10 +131,10 @@
     }
     @media(max-width: 426px)
     {
-        top: -40px;
-        left: 50%;
+        top: 0;
+        left: 20px;
 
-        margin-left: -14px;
+        margin-left: 0;
     }
 }
 .statistic__block:first-child
@@ -141,8 +148,8 @@
 {
     @media(max-width: 426px)
     {
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin-top: 0px;
+        margin-bottom: 38px;
         margin-left: 0;
     }
 }
@@ -150,7 +157,7 @@
 {
     @media(max-width: 426px)
     {
-        order: 2;
+        order: 1;
     }
 }
 .statistic__block:nth-child(3)
@@ -186,10 +193,10 @@
     }
     @media(max-width: 426px)
     {
-        top: -50px;
-        left: 50%;
+        top: 0;
+        left: 10px;
 
-        margin-left: -23px;
+        margin-left: 0;
     }
 }
 .statistic__block:nth-child(3):before
@@ -218,10 +225,10 @@
     }
     @media(max-width: 426px)
     {
-        top: -60px;
-        left: 50%;
+        top: 0;
+        left: 20px;
 
-        margin-left: -20px;
+        margin-left: 0;
     }
 }
 
@@ -251,12 +258,14 @@
     }
     @media(max-width: 426px)
     {
-        top: -40px;
-        left: 50%;
+        top: 0;
+        left: 20px;
+
+        margin-left: 0;
 
         width: 37px;
         height: 35px;
-        margin-left: -20px;
+        
 
         -webkit-background-size: 37px 35px;
            -moz-background-size: 37px 35px;

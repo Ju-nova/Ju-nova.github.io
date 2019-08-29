@@ -1,40 +1,42 @@
 .button
 {
     display: inline-block;
-    padding: 15px 25px 18px;
-
+    padding: 15px 45px 18px 27px;
+    position:relative;
     font-size: 20px;
     text-decoration: none;
-
-    color: #fff;
-    border-radius: 30px;
-    background-color: #f195ad;
-    background-image: url(../img/pink-shadow.png);
-    background-repeat: no-repeat;
-    box-shadow: 0 5px 17px 0 rgba(241,149,173,.35);
 
     cursor: pointer;
     @media (max-width: 768px)
     {
-        padding: 10px 20px 13px;
+        //padding: 10px 20px 13px;
 
-        font-size: 16px;
+        font-size: 20px;
     }
     @media (max-width: 426px)
     {
-        padding: 10px 20px 13px;
+        //padding: 10px 20px 13px;
 
-        font-size: 12px;
+        //font-size: 12px;
     }
-    &:hover
+   
+}
+.button--pink{
+     color: #fff;
+    border-radius: 32px;
+   background-color: #f195ad;
+    background-image: url(../img/pink-shadow.png);
+    background-repeat: no-repeat;
+    box-shadow: 0 5px 17px 0 rgba(241,149,173,.35);
+     &:hover
     {
-        box-shadow: 0 0 43px rgba(0,0,0,.3);
-    }
+        box-shadow: 0 0 43px rgba(241,149,173,.4);
+    } 
 }
 .button--blue
 {
     display: inline-block;
-    padding: 10px 25px 10px;
+    //padding: 19px 25px ;
 
     font-size: 16px;
     line-height: 19px;
@@ -44,14 +46,27 @@
     border-radius: 32px;
     background-color: #44c7d2;
     background-image: url(../img/blue-shadow.png);
-    box-shadow: 0 5px 17px 0  rgba(68, 199, 210, .35);
+  
     box-shadow: 0 5px 17px 0 rgba(68,199,210,.35);
 
     cursor: pointer;
     @media (max-width: 768px)
     {
-        padding: 10px 15px 10px;
+        
 
-        font-size: 16px;
+        font-size: 20px;
     }
+    &:hover
+    {
+        box-shadow: 0 0 43px rgba(68,199,210,.4);
+    }
+}
+.button span{
+    display:inline-block;
+   right:15px;
+   position:absolute;
+   top:16px;
+   @media(max-width: 768px){
+    right:20px;
+   }
 }

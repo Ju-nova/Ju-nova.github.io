@@ -13,13 +13,52 @@
 <body class="body">
 	<header class="header ">
 		<div class="header__first  header--closed header--no-js  content-wrapper">
+			 <div class="header__modal-overlay">
+				 	<div class="header__modal">
+				 	
+				 		<div class="header__modal__back-wrapper">
+				 			<button  class="header__modal-toggle" aria-label="Назад"></button><div class="header__modal__back">В главное меню</div></div>
+				 		<div class="header__modal-menu">
+				 			<ul>
+				 					<li><a href="#">Консультация</a></li>
+				 					<li><a href="#">Профессиональная гигиена полости рта  </a></li>
+				 					<li><a href="#">Терапевтическая стоматология</a></li>
+				 					<li><a href="#">Имплантация</a></li>
+				 					<li><a href="#">Ортопедическая стоматология</a></li>
+				 					<li><a href="#">Хирургическая стоматология</a></li>
+				 					<li><a href="#">Ортодонтия</a></li>
+				 					<li><a href="#">Лечение дёсен</a></li>
+				 					<li><a href="#">Диагностика</a></li>
+				 					<li><a href="#">Отбеливание</a></li>
+				 				</ul>
+				 		</div>
+				 	</div>
+				 </div>
 			<div class="header__first-logo">
                 <a href="#">
-				   <img class="logo1 " src="img/logo_desktop.png" width="110" height="95" alt="Логотип">
-				   <img class="logo2 none" src="img/logo_desktop.png" width="77" height="67" alt="Логотип">
+				   <img class="logo1 " src="img/logo.svg" width="110" height="95" alt="Логотип">
+				   <img class="logo2 none" src="img/logo.svg" width="77" height="67" alt="Логотип">
 				   
-				</a>  
-				 <button class="header__toggle" id="toggle-button" type="button" aria-label="Меню"></button>  
+				</a> 
+				
+					<div class="header__second header__first-address">
+							г. Воронеж,<br> ул.Название, д.1, оф.2
+						</div>
+						<div class="header__second header__first-tel">
+						
+							<div class="header__first-number">
+								<a class="telephone" href="tel:89202253399">8 920 225 3399</a>
+							</div>
+					
+						
+							<div class="header__first-order">
+								<a href="#">Заказать звонок</a>
+							</div>
+						
+				
+				</div>
+				 <button class="header__toggle" id="toggle-button" type="button" aria-label="Меню"> </button>  
+				
 			</div>
 			<div class="header__tablet">
 				<div class="header__first-middle">
@@ -34,9 +73,9 @@
 				
 					<nav class="main-nav">
 						<ul class="main-nav__list">
-							<li><a href="#">О клинике</a></li>
+							<li class="main-nav__list-item"><a href="#">О клинике</a></li>
 				
-							<li  class="item__services"><a href="services.html">Услуги</a>
+							<li  class="item__services hover-shadow"><a href="services.html">Услуги</a>
 								
 							       <div class="submenu services__submenu">
 							       	<div class="submenu__wrapper">
@@ -46,7 +85,7 @@
 									        </li>
 									       	<li class="submenu__list-item"><a data-toggle="tab" href="#therapy">Терапевтическая стоматология</a></li>
 									       	<li  class="submenu__list-item"><a data-toggle="tab" href="#implant" >Имплантация</a></li>
-									       	<li class="submenu__list-item"><size>Ортопедическая стоматология</size>#ortoped">Ортопедическая стоматология</a></li>
+									       	<li class="submenu__list-item"><a href="#ortoped">Ортопедическая стоматология</a></li>
 									       	<li class="submenu__list-item">Хирургическая стоматология</li>
 									       	<li class="submenu__list-item">Ортодонтия</li>
 									       	<li class="submenu__list-item">Лечение дёсен</li>
@@ -107,10 +146,10 @@
 								    </div>
 							</li>
 				
-							<li class="doctors"><a href="#">Врачи</a></li>
-							<li><a href="#">Цены</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li class="doctors main-nav__list-item"><a href="vrachi.html">Врачи</a></li>
+                            <li class="main-nav__list-item"><a href="#">Цены</a></li>
+                            <li class="main-nav__list-item"><a href="#">Отзывы</a></li>
+                            <li class="main-nav__list-item"><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
 					
@@ -133,7 +172,7 @@
     <main>
     		<h1 class="visually-hidden"> Центр стоматологии «Mr.Dent»</h1>
           
-         <div class="main-block">
+         <section class="main-block">
         	<div class="main-block__wrapper content-wrapper">
         		<div class="sl-mb  main-block__slider">
         			
@@ -141,7 +180,7 @@
         		           	<div class="main-block__slide main-block__slide1">
         		           		
         		   <p>Бесплатная консультация <br>и план лечения</p>
-        		                   <div class="main-block__button"><a href="#" class="button button--blue">Записаться >></a></div>
+        		                   <div class="main-block__button"><a href="#" class="button button--blue">Записаться <span>>></span></a></div>
         		
         		           	</div>
         		           </div>
@@ -149,7 +188,7 @@
         		           	<div class="main-block__slide main-block__slide2">
         		           		
         		   <p>Далеко-далеко	 <br>за высокими горами</p>
-        		                   <div class="main-block__button"><a href="#" class="button button--blue">Звонок >></a></div>
+        		                   <div class="main-block__button"><a href="#" class="button button--blue">Звонок <span>>></span></a></div>
         		
         		           	</div>
         		           </div>
@@ -157,7 +196,7 @@
         		           	<div class="main-block__slide main-block__slide3">
         		           		
         		   <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</p>
-        		                   <div class="main-block__button"><a href="#" class="button button--blue">Консультация >></a>
+        		                   <div class="main-block__button"><a href="#" class="button button--blue">Консультация <span>>></span></a>
         		                   </div>
         		
         		           	</div>
@@ -165,7 +204,7 @@
         		</div>
         		<div class="sl-count__main"><span class="sl-count__num__main">1</span> / <span class="sl-count__total__main"></span></div>
         	</div>
-        </div>  
+        </section>  
 
 
         <section class="statistic">
@@ -188,19 +227,21 @@
         			<p class="statistic__text">Международных <br>  сертификатов</p>
         		</div> 
         	</div> 
+       
+
          </section> 
        
           <section class="aboutblock">
-         	<h2 class="visually-hidden"> О клинике Mr.Dent</h2> 
+         	<h2 class="aboutblock__title aboutblock__title--tablet"> О клинике Mr.Dent</h2> 
              <div class="aboutblock__wrapper content-wrapper">
              	<div class="aboutblock__left">
-             		<div style="width: 100%; overflow: hidden;">
-             			<iframe width="100%" height="355" style="border-radius: 5px" src="https://www.youtube.com/embed/OXuIqaeg0SI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             		</div>
-             		<div class="video__mask"></div>
+             		
+             		<a class="simplebox" href="#modal01">
+             			<div class="video__mask"></div>
+             		</a>
              	</div>
              	<div class="aboutblock__right">
-             		<h2 class="aboutblock__title"> О клинике Mr.Dent</h2>
+             		<h2 class="aboutblock__title  aboutblock__title--desktop"> О клинике Mr.Dent</h2>
              		<p class="aboutblock__text">
              			Все сотрудники «Клиники»- профессионалы и единомышленники. 
              		</p>
@@ -211,31 +252,58 @@
                     Это помогает легко определить план лечения, который устроит и доктора и клиента. На первом месте в стоматологии — внимательное отношение к пациентам, забота о них и честность.
              		</p>
              		
-             			<a class="button aboutblock__button" href="#">Подробнее >></a>
+             			<a class="button button--pink aboutblock__button" href="#">Подробнее <span>>></span></a>
              		
              	</div>
              </div>
+              <div id="modal01" class="modal">
+        	<iframe id="if" width="800" height="600" style="border-radius: 5px" src="https://www.youtube.com/embed/OXuIqaeg0SI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          </section> 
 
          <section class="services">
          	<h2  class="services__title"> Услуги компании</h2> 
-         	<div class="service__wrapper content-wrapper">
-         		<div class="service__left">
-	         		<a href="#">Консультация</a>
-	         		<a href="">Профессиональная гигиена полости рта</a>
-	         		<a href="">Терапевтическая стоматология</a>
-	         		<a href="">Имплантация</a>
-	         		<a href="">Ортопедическая стоматология</a>
-         		</div>
-         		<div class="service__right">
-	         		<a href="#">Хирургическая стоматология</a>
-	         		<a href="">Ортодонтия</a>
-	         		<a href="">Лечение дёсен</a>
-	         		<a href="">Диагностика</a>
-	         		<a href="">Отбеливание</a>
-         		</div>
+         	<div class=" content-wrapper services__height">
+         		
+	         		<div class="services__wrapper ">
+	         			<div class="services__item  services__1">
+	         				<a  href="#">Консультация</a>
+	         			</div>
+	         			<div class="services__item  services__2">
+	         			<a href="#">Хирургическая стоматология</a>
+	         		    </div>
+	         		    <div class="services__item  services__3">
+	         			<a  href="#">Профессиональная<br> гигиена полости рта</a>
+	         		    </div>
+	         		    <div class="services__item  services__4">
+	         			<a  href="#">Ортодонтия</a>
+	         		    </div>
+	         		    <div class="services__item  services__5">
+
+	         			<a  href="#">Терапевтическая<br> стоматология</a>
+	         			 </div>        		
+	         			 <div class="services__item  services__6">        		
+	         			<a  href="#">Лечение дёсен</a>
+	         		   </div>
+                       <div class="services__item  services__7">
+	         			<a  href="#">Имплантация</a>
+	         		    </div>
+	         		    <div class="services__item  services__8">
+	         			<a  href="#">Диагностика</a>
+	         		    </div>
+	         		    <div class="services__item  services__9">
+	         			<a  href="#">Ортопедическая<br> стоматология</a>
+	         		    </div>
+	         		    <div class="services__item  services__10">
+	         			<a  href="#">Отбеливание</a>
+	         		    </div>
+	         		</div>
+         		
          		<div class="services__button">
-         		<a href="#" class="button ">Бесплатная<br> консультация  >></a>
+         			<p class="services__button-text">Беспокоит боль или хотите узнать
+о состоянии ваших зубов!</p>
+         		<div class="services__button-wrapper">
+         			<a href="#" class="button button--blue">Бесплатная<br> консультация  </a>
+         		</div>
          	</div>
          	</div>
          </section> 
@@ -246,6 +314,7 @@
 
 				<div>
 					<div class="review__item">
+						 <div class="prev"></div>
 						<div class="review__av">
 							<img width="172" height="172" src="img/client__avatar1.png" alt="">
 						</div>
@@ -254,13 +323,15 @@
 							<div class="review__name">Елена Борисовна Весна</div>
 							<div class="review__text">Все сотрудники «Клиники»- профессионалы и единомышленники. Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. </div>
 						</div>
-
+                         <div class="next"></div>
 					</div>
 				</div>
 
 				<div>
 					<div class="review__item">
+						<div class="prev"></div>
 						<div class="review__av">
+							
 							<img width="172" height="172" src="img/client__avatar1.png" alt="">
 						</div>
 						<div class="review__text">
@@ -268,49 +339,57 @@
 							<div class="review__name">Елена Борисовна Весна</div>
 							<div class="review__text">Все сотрудники «Клиники»- профессионалы и единомышленники. Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. </div>
 						</div>
+                        <div class="next"></div>
+					</div>
 
+				</div>
+
+				<div>
+					<div class="review__item">
+						<div class="prev"></div>
+						<div class="review__av">
+							
+							<img width="172" height="172" src="img/client__avatar1.png" alt="">
+						</div>
+						<div class="review__text">
+							<div class="review__data">01.03.2019</div>
+							<div class="review__name">Елена Борисовна Весна</div>
+							<div class="review__text">Все сотрудники «Клиники»- профессионалы и единомышленники. Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. </div>
+						</div>
+                       <div class="next"></div>
 					</div>
 				</div>
 
 				<div>
 					<div class="review__item">
+						<div class="prev"></div>
 						<div class="review__av">
+							
 							<img width="172" height="172" src="img/client__avatar1.png" alt="">
 						</div>
 						<div class="review__text">
 							<div class="review__data">01.03.2019</div>
 							<div class="review__name">Елена Борисовна Весна</div>
 							<div class="review__text">Все сотрудники «Клиники»- профессионалы и единомышленники. Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. </div>
+							
 						</div>
-
-					</div>
-				</div>
-
-				<div>
-					<div class="review__item">
-						<div class="review__av">
-							<img width="172" height="172" src="img/client__avatar1.png" alt="">
-						</div>
-						<div class="review__text">
-							<div class="review__data">01.03.2019</div>
-							<div class="review__name">Елена Борисовна Весна</div>
-							<div class="review__text">Все сотрудники «Клиники»- профессионалы и единомышленники. Благоприятная и доброжелательная обстановка в процессе лечения, желание услышать и понять проблему пациента – стоят во главе угла. </div>
-						</div>
-
+                          <div class="next"></div>
 					</div>
 				</div>
 			</div>
 			<div class="review__button">
-				<a href="#" class="button">Все отзывы >></a>
+				<a href="#" class="button button--pink">Все отзывы <span>>></span></a>
 			</div>
 		</section>
        
         <section id="personal" class="personal">
+        
         	<h2 class="personal__title">Наши специалисты</h2>
-        	<div class="sl-fb personal__wrapper personal__slider content-wrapper">
+        	<div class="sl-fb personal__wrapper personal__slider ">
         		
         		<div>
         			<div class="personal__item">
+
         				<div class="personal__av">
         					<img width="77" height="77" src="img/ava_vrach.png" alt="">
         				</div>
@@ -318,7 +397,7 @@
         					<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         					<div class="personal__slide-block">
         						<div class="personal__button">
-        							<a href="#" class="button button--blue">Записаться >></a>
+        							<a href="#" class="button button--blue">Записаться <span>>></span></a>
         						</div>
         						<div class="personal__link">
         							<a href="#">Информация о враче <span>>></span></a>
@@ -336,7 +415,7 @@
         						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче</a>
@@ -354,7 +433,7 @@
         						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче<span>>></span></a>
@@ -372,7 +451,7 @@
         						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче<span>>></span></a>
@@ -390,7 +469,7 @@
         						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче<span>>></span></a>
@@ -409,7 +488,7 @@
         						
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче<span>>></span></a>
@@ -419,7 +498,7 @@
         				</div>
         			</div>
 
-
+                   
         		</div>
         	<div class="sl-count"><span class="sl-count__num">1</span> / <span class="sl-count__total"></span></div>
 
@@ -432,7 +511,9 @@
          	<div>
          	                		<div class="news__item">
          	                		<a href="#">
-         	                			<img width="294" height="187" src="img/news_img1.png" alt="">
+         	                			<div class="news__item-img">
+         	         	<img src="img/news_img1.png" alt="">
+         	         </div>
          	                			<div class="news__item-title">
          	                			<a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
          	                			<div class="news__item-data">10.02.2019</div>
@@ -443,7 +524,9 @@
          	    <div>    
          	    	<div class="news__item">
          	         
-         	         <img width="294" height="187" src="img/news_img2.png" alt="">
+         	         <div class="news__item-img">
+         	         	<img src="img/news_img2.png" alt="">
+         	         </div>
          	          
          	          <div class="news__item-title"><a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
          	          
@@ -454,21 +537,27 @@
          	      </div>      		
          	      <div>
          	      	<div class="news__item">
-         	      	         			<img width="294" height="187" src="img/news_img3.png" alt="">
+         	      	         			<div class="news__item-img">
+         	         	<img src="img/news_img3.png" alt="">
+         	         </div>
          	      	         			<div class="news__item-title"><a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
          	      	         			<div class="news__item-data">10.02.2019</div>
          	      	         		</div>
          	      </div>
          		<div>
          			<div class="news__item">
-         				<img width="294" height="187" src="img/news_img4.png" alt="">
+         				<div class="news__item-img">
+         	         	<img src="img/news_img4.png" alt="">
+         	         </div>
          				<div class="news__item-title"><a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
          				<div class="news__item-data">10.02.2019</div>
          			</div>
          		</div>
          		<div>
          			<div class="news__item">
-         				<img width="294" height="187" src="img/news_img1.png" alt="">
+         				<div class="news__item-img">
+         	         	<img src="img/news_img1.png" alt="">
+         	         </div>
          				<div class="news__item-title"><a href="#">Употребление чая повышает риск эрозии зубной эмали</a></div>
          				<div class="news__item-data">10.02.2019</div>
          			</div>
@@ -476,7 +565,7 @@
          		
          	</div>
          	<div class="news__button">
-         		<a href="#" class="button ">Все новости</a>
+         		<a href="#" class="button button--pink">Все новости <span>>></span></a>
          	</div>
          </section>
      <section class="promotion">
@@ -488,13 +577,14 @@
      </section>
       
      <section class="map">
-     	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.911188065897!2d39.178056215743645!3d51.679768679663745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b25b4d7e2ae7d%3A0x8df90c1e37ffb6e8!2z0JDQutCw0LTQtdC80LjRjyDRhtCy0LXRgtC-0LI!5e0!3m2!1sru!2sru!4v1565695607768!5m2!1sru!2sru" width="100%" height="611" frameborder="0" style="border:0" allowfullscreen></iframe>
-     	 <!--   <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A975fe888403aae623af6971b1ffd1d6ae826b60f7033feefe9c07ce8c3f239ef&amp;source=constructor" width="100%" height="611" frameborder="0"></iframe> -->
-     	 <div class="map__wrapper content-wrapper">
+     	<div class="map__wrapper ">
+  
+     	   <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3Acba5c5b98d71d61f9a1f93de3f46fdfd168eefd035f476d9b3540980e95e312d&amp;source=constructor" width="100%" height="611" frameborder="0"></iframe>
+     	 
      	 	<div class="map__address-wrapper">
      	 		<div class="map__address">
      	 			<div class="map__logo">
-     	 				<img width="110" height="95" src="img/logo_desktop.png" alt="Логотип">
+     	 				<img  src="img/logo.svg" alt="Логотип">
      	 			</div>
      	 			<div class="map__text">
      	 				<p class="map__street">г. Воронеж, <br>ул.Название, д.1, оф.2</p>
@@ -531,17 +621,20 @@
 							     
 							      <textarea name="message" id="message" cols="30" rows="3"></textarea>
 							    </li>
-							         <li class="form__checkbox">
-							      
-							      <input type="checkbox" name="confidential" id="confidential" checked>
-							      <label for="confidential">Согласен с условиями <a href="#">конфиденциальности</a></label>
-							    </li>
+							         
 							    
 							    	
 							    
      			  		</ul>
-     			  		<div class="form__submit-wrapper">
-     			  			<input type="submit" value="Записаться >>">
+     			  		<div class="form__wrap">
+     			  			<div class="form__checkbox">
+     			  										      
+     			              <input type="checkbox" name="confidential" id="confidential" checked>
+     			  		       <label for="confidential">Согласен с условиями <a href="#">конфиденциальности</a></label>
+     			  			</div>
+     			  			<div class="form__submit-wrapper">
+     			  				<input type="submit" value="Записаться >>">
+     			  			</div>
      			  		</div>
      			  	</div>
      			  </form>
@@ -666,9 +759,13 @@
              </div>   
         	</div>
         </footer>
+
+       
+        </div>
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>
 		<script src="js/slick.js"></script> 
+		<script src="js/jquery.simplebox.min.js"></script> 
 		<script src="js/main.js"></script> 
 			
 </body>

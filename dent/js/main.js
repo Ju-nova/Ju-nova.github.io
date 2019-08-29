@@ -38,13 +38,42 @@ var tabBlock = $('a[data-toggle="t1"]');
     $(karies).toggleClass('tab-block--current');
   });
 
+
+
+$('.header__modal-toggle').on('click',(function() {
+ $('.header__first').removeClass('header--opened');
+ $('.header__first').addClass('header--closed')  
+}));
+//модалка-видео
+
+   $('.simplebox').simplebox({
+        overlay: {
+            color: 'rgba(0, 0, 0, 0.8)',
+            opacity: 0.7
+        },
+        onOpen: function(obj){console.log('onOpen', obj);},
+        afterOpen: function(obj){console.log('afterOpen', obj);},
+        onClose: function(obj){console.log('onClose', obj);},
+        afterClose: function(obj){console.log('afterClose', obj);}
+    });
+//при закрытии модалки останавливать и видео
+     var iFrame= $('#if');
+     $('.simplebox-overlay').on('click', function() {
+    $('.modal').hide();
+    $('#if').remove();
+     $('.modal').append(iFrame);
+  });
+ 
+
  $('.review__wrapper').slick({
   centerMode: true,
   // centerPadding: '60px',
   slidesToShow: 1,
   variableWidth:true,
-  arrows:false,
-  autoplay:true
+  nextArrow: '.next',
+  prevArrow: '.prev',
+  arrows:true,
+  autoplay:false
   
   
 });  
@@ -55,22 +84,23 @@ $('.column2__slider').slick({
   autoplay:false,
   speed:500,
   dots:true,
-  autoplaySpeed:5000,
+  autoplaySpeed:5000
   
   
 });
   $('.personal__slider').slick({
 
    centerMode: true,
-   centerPadding: '60px',
-  slidesToShow: 3,
+   centerPadding: '0',
+  slidesToShow: 2,
   variableWidth:true,
   arrows:true,
  // autoplay:true,
   speed:500,
-   lazyLoad: 'profressive',
+   lazyLoad: 'progressive',
   autoplaySpeed:5000,
   cssEase: 'linear',
+  
 
 
 
@@ -136,7 +166,7 @@ $(window).on("scroll", function () {
   // centerMode: true,
 // centerPadding: '30px'
 
-autoplay:true,
+autoplay:false,
 
  responsive: [
     {
@@ -144,25 +174,31 @@ autoplay:true,
       settings: {
         slidesToShow:3,
         slidesToScroll: 1,
-        arrows:true
+        arrows:true,
+        centerPadding: '60px'
 
       }
     },
     {
       breakpoint: 769,
       settings: {
-        slidesToShow:2,
+        centerMode: true,
+        variableWidth:true,
+        slidesToShow:1,
         slidesToScroll: 1,
         arrows:true
+        
 
       }
     },
      {
       breakpoint: 450,
       settings: {
+        centerMode: false,
+        variableWidth:false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows:true
+        arrows:false
       }
     }
     // You can unslick at a given breakpoint now by adding:
