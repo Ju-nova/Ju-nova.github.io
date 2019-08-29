@@ -423,7 +423,7 @@ input[type='radio'].visually-hidden {
   }
 }
 .header__scrolled .header__first {
-  padding: 5px 0 0;
+  padding: 0;
 }
 .header__first-work {
   display: -webkit-box;
@@ -1441,7 +1441,7 @@ h2 {
   content: '';
 }
 .uslugi__razdel:hover .uslugi__razdel-list li:before {
-  background-image: url('../../img/v-white.png');
+  background-image: url('../img/v-white.png');
 }
 .uslugi__razdel-list li a {
   position: relative;
@@ -2480,7 +2480,7 @@ h2 {
     padding: 27px 44px 20px;
     margin-bottom: 0;
     background-color: #f2f8fa;
-    background-image: url(../../img/background__services.png);
+    background-image: url(../img/background__services.png);
     background-repeat: no-repeat;
     margin-bottom: 50px;
   }
@@ -2488,7 +2488,7 @@ h2 {
 @media (max-width: 426px) {
   .services__button {
     padding: 27px 0px 20px ;
-    background-image: url(../../img/background__services2.png);
+    background-image: url(../img/background__services2.png);
   }
 }
 .services__button-text {
