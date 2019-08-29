@@ -2380,6 +2380,21 @@ h2 {
       -ms-transform: scale(1);
           transform: scale(1);
 }
+#if {
+  width: 800px;
+  height: 600px;
+}
+@media (max-width: 768px) {
+  #if {
+    width: 500px;
+    height: auto;
+  }
+}
+@media (max-width: 426px) {
+  #if {
+    width: 320px;
+  }
+}
 .services {
   border: 1px solid transparent;
 }
