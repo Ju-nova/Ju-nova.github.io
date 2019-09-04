@@ -815,7 +815,7 @@ input[type='radio'].visually-hidden {
 @media (max-width: 426px) {
   .menu-main .header__modal__back {
     font-size: 20px;
-    margin: 0 50px;
+    margin: 20px 50px;
     line-height: 25px;
   }
 }
@@ -930,6 +930,13 @@ input[type='radio'].visually-hidden {
     line-height: 40px;
   }
 }
+@media (max-width: 375px) {
+  .menu-main ul li a {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 0;
+  }
+}
 .header__modal-toggle2 {
   position: relative;
   width: 34px;
@@ -944,7 +951,8 @@ input[type='radio'].visually-hidden {
 }
 @media (max-width: 426px) {
   .header__modal-toggle2 {
-    margin-top: 18px;
+    margin-top: 0;
+    margin-right: 00px;
   }
 }
 .header__modal-toggle2::before,
@@ -968,6 +976,7 @@ input[type='radio'].visually-hidden {
     width: 24px;
     height: 3px;
     top: 0;
+    right: -10px;
   }
 }
 .header__modal-toggle2::before {
