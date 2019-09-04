@@ -14,12 +14,29 @@
         padding: 10px;
 
     }
+      @media (max-width: 376px)
+    {
+        width: 320px;
+        height: auto;
+        padding: 10px;
+
+    }
+        @media (max-width: 320px)
+    {
+        width:290px;
+        height: auto;
+        padding: 10px;
+
+    }
 }
 
 .photo__slide-img img{
         border-radius: 10px;
 }
 .photo-slider__wrapper{
+     overflow: hidden;
+    max-width: 1920px;
+    padding: 0;
     padding:20px 0 50px;
 }
 .photo__slide{
@@ -56,6 +73,12 @@
     height:42px; 
     right:60px;  
      }
+       @media (max-width: 320px){
+     margin-top:-24px;
+    width: 42px;
+    height:42px; 
+    right:76px;  
+     }
 }
 .photo__slider .slick-slide .prev
 {
@@ -77,6 +100,10 @@
     width: 42px;
     height:42px; 
     left:60px;  
+     }
+      @media (max-width: 320px){
+   
+    left:76px;  
      }
 }
 .photo__slider .prev:before,

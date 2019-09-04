@@ -22,12 +22,12 @@
         background-image: url(../img/tooth.png);
 
         content: '';
-        @media (max-width:768px)
+        @media (max-width:1025px)
         {
             content: none;
         }
     }
-    @media (max-width:768px)
+    @media (max-width:1025px)
     {
         flex-direction: column;
         padding: 43px 0;
@@ -40,7 +40,7 @@
     margin-right: 65px;
     margin-left: 54px;
 
-    @media (max-width:768px)
+    @media (max-width:1025px)
     {
         margin: 0px 0 30px 0px;
     }
@@ -54,7 +54,7 @@
     margin-left: 54px;
 
     flex-shrink: 0;
-    @media (max-width:768px)
+    @media (max-width:1025px)
     {
         margin:  0px 0 30px 0px;
     }
@@ -71,16 +71,17 @@
     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
 
     align-items: flex-end;
-    @media (max-width:1024px)
+    @media (max-width:1025px)
     {
-        margin-right: 40px;
+        margin-right:0;
         padding: 19px 30px 27px 30px;
 
         align-items: center;
     }
     @media (max-width:768px)
     {
-        margin-right: 0;
+        margin-right: 20px;
+        margin-left:20px;
     }
     @media (max-width:600px)
     {
@@ -183,7 +184,7 @@
     {
         margin-bottom: 0px;
     }
-     @media(max-width:376px )
+     @media(max-width:426px )
     {
         margin-bottom: 20px;
     }
@@ -273,10 +274,37 @@
 }
 .blue__text-contacts.blue__right-block{
     margin-right:140px; 
-    @media (max-width: 768px){
+    @media (max-width: 1025px){
         margin-right: 0;
     }
      @media (max-width: 426px){
         margin: 0 7px;
     }
+     @media (max-width: 320px){
+        width:280px;
+    }
+}
+// .blue__text-contacts.blue__right-block form{
+//     @media (max-width: 320px){
+//         width:90%;
+//         margin:0 auto;
+//     }
+// }
+.blue__text-contacts.blue__right-block form{
+  @media (max-width: 320px){
+        width:280px;
+    }  
+}
+#appointment .form__wrap-contacts .form__checkbox label
+{
+     @media (max-width: 426px){
+text-align:center;
+
+      margin-bottom: 20px;
+    }
+  @media (max-width: 320px){
+
+      width:280px;
+
+    }    
 }

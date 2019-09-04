@@ -245,12 +245,12 @@ autoplay:false,
 
  responsive: [
     {
-      breakpoint: 1025,
+      breakpoint: 1200,
       settings: {
         slidesToShow:3,
         slidesToScroll: 1,
         arrows:true,
-        centerPadding: '60px'
+        //centerPadding: '60px'
 
       }
     },

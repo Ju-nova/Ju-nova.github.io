@@ -1,13 +1,44 @@
+// .body
+// {
+//     box-sizing: border-box;
+//     min-width: 320px;
+
+//     font-family: 'Rubik', 'Arial', serif;
+
+//     color: #000;
+
+//     cursor: default;
+
+// }
 .body
 {
     box-sizing: border-box;
-    min-width: 320px;
+    //min-width: 320px;
 
     font-family: 'Rubik', 'Arial', serif;
 
     color: #000;
 
     cursor: default;
+     @media (max-width:1024px)
+    {
+        min-width: 1024px;
+        
+    }
+
+    @media (max-width:768px)
+    {
+        min-width: 768px;
+        // overflow-x: hidden;
+    }
+    @media (max-width:426px)
+    {
+       min-width: 425px;
+    }
+    @media (max-width:320px)
+    {
+        min-width: 320px;
+    }
 }
 img
 {
