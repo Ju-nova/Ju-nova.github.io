@@ -7,7 +7,7 @@
     }
     @media (max-width: 768px)
     {
-        padding: 0 18px 30px;
+        padding: 0 12px 30px;
     }
     @media (max-width: 426px)
     {
@@ -43,35 +43,43 @@
     @media (max-width: 426px)
     {
         padding: 0;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        align-items:center;
     }
 }
 .tab-block__tab-img img
 {
     @media (max-width: 768px)
     {
-        width: 204px;
-        height: 140px;
+        width: 230px;
+        height: 170px;
     }
     @media (max-width: 426px)
     {
-        width: 184px;
-        height: 120px;
+        // width: 184px;
+        //height: 120px;
+        height:190px;
+        width:254px;
         margin-bottom: 10px;
     }
 }
 .tab-block__list li
 {
     padding: 5px 10px 6px 10px;
+    border: 1px solid transparent;
     @media (max-width: 426px)
     {
-        padding: 5px;
+         padding: 20px 20px 20px 20px;
 
         text-align: center;
+        width:35%;
+        margin-bottom:20px
     }
 }
 .tab-block--active
 {
-    border: 1px solid #45c7d2;
+    border: 1px solid #45c7d2 !important;
     border-radius: 17px;
     background-color: #fff;
     box-shadow: 0 0 24px rgba(53, 175, 192, .5);
@@ -94,12 +102,18 @@
     }
     @media (max-width: 426px)
     {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 .tab-block__content
 {
     padding: 40px 0 0 ;
+    @media (max-width: 768px){
+        padding: 40px 20px 0 ;
+    }
+     @media (max-width: 426px){
+        padding: 0px 20px 0 ;
+    }
 }
 .tab-block__tab
 {
@@ -194,7 +208,7 @@
     }
     @media(max-width: 426px)
     {
-        padding: 0 29px;
+        padding: 0 7px;
     }
 }
 .tab-block__form-container

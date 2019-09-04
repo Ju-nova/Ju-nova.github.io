@@ -33,3 +33,26 @@ input[type='radio'].visually-hidden
 
     clip-path: inset(100%);
 }
+.block_desktop{
+    @media (max-width: 768px){
+        display:none;
+    }
+}
+.block_tablet{
+    display:none;
+    @media (max-width: 768px){
+        display:block;
+    }
+}
+.block_mobile{
+    display:none;
+    @media (max-width: 426px){
+        display:block;
+    }
+}
+
+.block_mobile .block_desktop{
+ @media (max-width: 426px){
+        display:none;
+    }   
+}

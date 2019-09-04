@@ -23,12 +23,12 @@
 }
 .header__scrolled .submenu
 {
-    top: 67px;
+    top: 92px;
 }
 .submenu__wrapper
 {
     display: flex;
-    padding: 40px 0 41px 31px;
+    padding: 20px 0 21px 0px;
 }
 .services__submenu
 {
@@ -80,15 +80,24 @@
     position: relative;
 
     padding-bottom: 10px;
-
+    padding-left:31px;
+    padding-top:10px;
     color: #000;
 
     cursor: pointer;
-}
+    &:hover{
+           background-color: #42c7d2;
+    }
+ }   
+.submenu__list-item:hover a{
+    color: #fff;
+    background-color: #42c7d2;
+    }
+
 .submenu__list-item:after
 {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: -45px;
 
     display: block;
@@ -105,13 +114,14 @@
 .submenu__list-item--current:after
 {
     color: #42c7d2;
-    ;
+    
 }
 .submenu__list li a
 {
     text-decoration: none;
 
     color: #000;
+    display:block;
 }
 .submenu-2
 {

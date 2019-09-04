@@ -1,0 +1,146 @@
+.photo__slide-img
+{
+ 
+    width: 658px;
+    height: auto;
+    // margin: 0 auto;
+    margin: 0 75px;
+    background-color: #fff;
+
+    @media (max-width: 426px)
+    {
+        width: 380px;
+        height: auto;
+        padding: 10px;
+
+    }
+}
+
+.photo__slide-img img{
+        border-radius: 10px;
+}
+.photo-slider__wrapper{
+    padding:20px 0 50px;
+}
+.photo__slide{
+    position:relative;
+}
+
+.photo__slider .slick-slide
+{
+    opacity: .5;
+}
+.photo__slider .slick-center
+{
+    opacity: 1;
+}
+
+.photo__slider .slick-slide .next
+{
+    opacity: 0;
+    z-index: 1;
+   top:50%;
+    position: absolute;
+    margin-top:-38px;
+    width: 52px;
+    height: 52px;
+    box-sizing:border-box;
+    border:13px solid #ffff;
+    border-radius: 50px;
+    background-color: #ffffff;
+    right:52px;
+     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+     @media (max-width: 426px){
+     margin-top:-24px;
+    width: 42px;
+    height:42px; 
+    right:60px;  
+     }
+}
+.photo__slider .slick-slide .prev
+{
+    opacity: 0;
+    z-index: 1;
+   top:50%;
+    position: absolute;
+    margin-top:-38px;
+    width: 52px;
+    height: 52px;
+    box-sizing:border-box;
+    border:13px solid #fff;
+    border-radius: 50px;
+    background-color: #ffffff;
+    left:52px;
+     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+   @media (max-width: 426px){
+     margin-top:-24px;
+    width: 42px;
+    height:42px; 
+    left:60px;  
+     }
+}
+.photo__slider .prev:before,
+.photo__slider .next:before,
+.photo__slider .prev:after,
+.photo__slider .next:after
+{
+    content: '';
+}
+
+
+
+.photo__slider .prev:before
+{
+    position: relative;
+    left: 50%;
+    margin-left:-4px;
+    margin-top:-4px;
+    top:50%;
+    display: block;
+    width: 8px;
+    height: 8px;
+
+    color: black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+
+    content: '';
+    transform: rotate(45deg);
+}
+.photo__slider .next:before
+{
+    position: relative;
+     left: 50%;
+    margin-left:-4px;
+    margin-top:-4px;
+    top:50%;
+
+    display: block;
+    width: 8px;
+    height: 8px;
+
+    color: black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+
+    content: '';
+    transform: rotate(45deg);
+}
+
+
+.photo__slider .slick-slide.slick-current .prev,
+.photo__slider .slick-slide.slick-current .next{
+opacity:1;
+cursor: pointer;
+}
+.photo-slider .sl-count{
+    text-align:center;
+
+color: #010101;
+
+font-size: 18px;
+font-weight: 400;
+}
+.photo-slider{
+    padding-bottom:50px
+}

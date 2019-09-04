@@ -64,36 +64,36 @@
     @media (max-width:426px)
     {
         min-height: 200px;
-        padding: 29px 100px 10px 17px;
-        padding: 2px 50px 0 2px;
-
+        
+        padding: 10px 50px 0 10px;
+       background-image:none;
         background-position: right 0;
     }
 }
-.uslugi__razdel:after
-{
-    position: absolute;
-    top: 0;
-    left: 0;
+// .uslugi__razdel:after
+// {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
 
-    width: 100%;
-    height: 100%;
+//     width: 100%;
+//     height: 100%;
 
-    opacity: 0;
-    background-color: rgba(68, 199, 210, .7);
+//     opacity: 0;
+//     background-color: rgba(68, 199, 210, .7);
 
-    content: '';
-}
+//     content: '';
+// }
 
-.uslugi__razdel:hover:after
-{
-    opacity: 1;
-}
-.uslugi__razdel:hover .uslugi__razdel-list li a,
-.uslugi__razdel:hover .uslugi__razdel-title
-{
-    color: #fff;
-}
+// .uslugi__razdel:hover:after
+// {
+//     opacity: 1;
+// }
+// .uslugi__razdel:hover .uslugi__razdel-list li a,
+// .uslugi__razdel:hover .uslugi__razdel-title
+// {
+//     color: #fff;
+// }
 .uslugi__razdel:hover .uslugi__razdel-list li a:hover
 {
     z-index: 4;
@@ -102,43 +102,93 @@
 
     color: #9ef1f8;
 }
-.uslugi__razdel:first-child
+.uslugi__razdel-list li a:active{
+
+    text-decoration: underline;
+
+    color: #9ef1f8;   
+}
+.uslugi__razdel1
 {
     background-image: url(../img/img1.png);
+       @media (max-width:426px)
+    {  
+       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/img1.png);
+    }
 }
-.uslugi__razdel:nth-child(2)
+.uslugi__razdel2
 {
     background-image: url(../img/img2.png);
+         @media (max-width:426px)
+    {  
+          background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/img2.png);
+
+    }
 }
-.uslugi__razdel:nth-child(3)
+.uslugi__razdel3
 {
     background-image: url(../img/img3.png);
     background-position: right 0;
+         @media (max-width:426px)
+    {  
+              background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/img3.png);
+
+    }
 }
-.uslugi__razdel:nth-child(4)
+.uslugi__razdel4
 {
     background-image: url(../img/img4.png);
+         @media (max-width:426px)
+    {  
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/img4.png);
+
+    }
 }
-.uslugi__razdel:nth-child(5)
+.uslugi__razdel5
 {
     background-image: url(../img/img5.png);
+         @media (max-width:426px)
+    {  
+              background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/img5.png);
+
+    }
 }
-.uslugi__razdel:nth-child(6)
+.uslugi__razdel6
 {
     background-color: rgba(247, 249, 250, .2);
     background-image: url(../img/img6.png);
+         @media (max-width:426px)
+    {  
+     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/img6.png);
+
+    }
 }
-.uslugi__razdel:nth-child(7)
+.uslugi__razdel7
 {
     background-image: url(../img/img7.png);
+         @media (max-width:426px)
+    {  
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/img7.png);
+
+    }
 }
-.uslugi__razdel:nth-child(8)
+.uslugi__razdel8
 {
     background-image: url(../img/img8.png);
+         @media (max-width:426px)
+    {  
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/img8.png);
+
+    }
 }
-.uslugi__razdel:nth-child(9)
+.uslugi__razdel9
 {
     background-image: url(../img/img-9.png);
+         @media (max-width:426px)
+    {  
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/img-9.png);
+
+    }
 }
 .uslugi__razdel--wide
 {
@@ -160,7 +210,7 @@
 
         background-position: right 0 bottom 0;
 
-        order: -1;
+        order: 0;
     }
 }
 .uslugi__razdel--wide .uslugi__razdel-list
@@ -215,10 +265,10 @@
         content: '';
     }
 }
-.uslugi__razdel:hover .uslugi__razdel-list li:before
-{
-    background-image: url('../img/v-white.png');
-}
+// .uslugi__razdel:hover .uslugi__razdel-list li:before
+// {
+//     background-image: url('../img/v-white.png');
+// }
 .uslugi__razdel-list li a
 {
     position: relative;
@@ -239,11 +289,17 @@
     position: relative;
     z-index: 2;
 
-    display: block;
+   // display: block;
     margin-bottom: 10px;
 
     font-size: 24px;
     font-weight: 400;
 
     color: #101010;
+}
+.uslugi__razdel-title.block_mobile
+{
+  @media(max-width: 426px){
+    text-align:center
+  }
 }

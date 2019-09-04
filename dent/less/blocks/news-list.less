@@ -1,0 +1,153 @@
+.news-list__title{
+	padding:55px 0
+}
+
+.news-list__item-img{
+flex-shrink:0;
+width:382px;
+overflow:hidden;
+@media(max-width: 768px){
+	flex-shrink:0;
+	width:40%;
+	
+}
+@media(max-width: 426px){
+	flex-shrink:0;
+	width:100%;
+	
+}
+}
+.news-list__item-img img{
+	@media(max-width: 426px){
+		border-radius:10px
+	}
+}
+.news-list__wrapper{
+	padding:0 79px;
+	@media(max-width: 1025px){
+		padding:15px;
+	}
+}
+.news-list__item{
+	display:flex;
+	box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
+background-color: #ffffff;
+border-radius: 10px;
+margin-bottom: 40px;
+box-sizing:border-box;
+height:260px;
+overflow: hidden;
+@media (max-width: 1025px){
+//height:215px;	
+}
+@media (max-width: 768px){
+height:189px;	
+}
+@media (max-width: 426px){
+flex-direction:column;
+height:auto;
+width:260px;
+margin:0 auto;	
+margin-bottom: 40px;
+}
+}
+
+
+.news-list__item-text{
+padding:45px 75px 32px 70px;
+display:flex;
+flex-direction:column;
+@media (max-width: 1025px){
+padding:20px 30px 0px 30px;
+display:flex;	
+
+}
+@media (max-width: 768px){
+flex-shrink:1;
+padding:10px 10px 0px 10px;
+}
+}
+.news-list__item-title{
+	margin:0;
+	margin-bottom: 10px;
+	font-size: 26px;
+	color: #000000;
+	line-height: 28px;
+	font-weight: 400;
+	@media (max-width: 1025px){
+		font-size: 22px;
+		margin-bottom: 0px;
+	}
+		@media (max-width: 768px){
+		font-size: 18px;
+		
+	}
+		@media (max-width: 426px){
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+.news-list__item-button{
+	margin-top: auto;
+	margin-left: auto;
+	@media (max-width: 1025px){
+		margin-bottom:20px;
+	}
+}
+
+.news-list__item p{
+	@media (max-width: 1025px){
+		font-size: 16px;
+		line-height:20px
+		
+	}
+		@media (max-width: 768px){
+		font-size: 14px;
+		line-height:16px
+		
+	}
+}
+// .news-list__item .news-list__item-button a{
+// padding: 14px 45px 15px 27px;
+// }
+.news__pages {
+	text-align: center
+
+}
+.news__pages ul{
+list-style: none;
+display:flex;
+justify-content:center;
+align-items:center;
+padding: 10px 0 55px;
+
+}
+.news__pages ul li > a{
+	
+	text-decoration:none;
+	font-size: 20px;
+	color: #000000;
+	line-height:40px	
+
+}
+.news__pages ul li{
+	cursor:pointer;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	margin:0 20px;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+background-color: #ffffff;
+box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
+border: 2px solid transparent;
+&:hover{
+border: 2px solid #44c7d2;		
+}
+}
+
+.news__pages ul  .page-current{
+border: 2px solid #44c7d2;	
+}

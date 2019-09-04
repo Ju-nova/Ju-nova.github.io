@@ -70,6 +70,7 @@
 
     font-size: 16px;
 }
+
 .personal__spec
 {
     font-size: 14px;
@@ -301,4 +302,111 @@
        @media(max-width: 426px){
       padding-bottom:20px;
     }
+}
+#doctors .personal__wrapper{
+  padding: 54px 0 25px;
+   max-width:1271px;
+    display: flex;
+   
+ flex-wrap:wrap;
+    justify-content: flex-start;
+     @media (max-width: 1024px){
+      justify-content: space-between; 
+    }
+    @media (max-width: 768px){
+      justify-content: space-around; 
+    }
+
+}
+
+#doctors .personal__item
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 20px 10px;
+      
+    padding: 25px 30px 38px 30px;
+    box-sizing:border-box;
+    border-radius: 10px;
+    z-index: 0;
+    align-items: center;
+    cursor: pointer;
+      @media (max-width: 426px){
+        padding: 10px 5px 10px 5px;
+         margin: 0 5px 10px 5px;
+    }
+}
+
+#doctors .personal__av{
+    margin:0;
+    border-radius:100%;
+    width:210px;
+    height:210px;
+    //box-sizing:border-box;
+    transition:none;
+    border:9px solid #fff;
+     @media (max-width: 426px){
+       width:150px;
+    height:150px; 
+    }
+      @media (max-width: 376px){
+       width:100px;
+    height:100px; 
+    }
+}
+#doctors .personal__item:hover{
+    box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
+}
+#doctors .personal__item:hover .personal__av{
+   border:9px solid #d8f3f5;
+}
+#doctors .personal__name
+{
+    margin:0;
+    margin-bottom: 24px;
+padding:0;
+    font-size: 16px;
+    text-align:center;
+     @media (max-width: 426px){
+    font-size: 14px;
+    margin-bottom: 14px;
+    padding:0;
+
+    }
+}
+#doctors .personal__spec
+{
+    font-size: 14px;
+
+    color: #878787;
+}
+
+#doctors .personal__link a
+{
+    font-size: 14px;
+
+    color: #878787;
+}
+
+#doctors .personal__link a span
+{
+    color: #4bbcc5;
+}
+#doctors .personal__button a
+{
+    margin-bottom:0;
+    @media (max-width: 426px){
+    font-size: 14px;
+    padding:10px 30px 12px 20px;
+
+    }
+}
+#doctors .personal__button{
+    text-align:center;
+}
+#doctors .personal__button a span{
+   @media (max-width: 426px){
+    top:10px;
+    right:10px;
+    }  
 }

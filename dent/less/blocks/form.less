@@ -4,12 +4,15 @@
     background-color: #f2f8fa;
     background-image: url(../img/form-image.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: left 30% top 0 ;
     -webkit-background-size: 1015px 676px;
     -moz-background-size: 1015px 676px;
     -ms-background-size: 1015px 676px;
     -o-background-size: 1015px 676px;
     background-size: 1015px 676px;
+}
+.form.form__chair{
+   background-image: url(../img/form-image4.png); 
 }
 .form-wrapper
 {
@@ -194,6 +197,9 @@
         border-radius: 6px;
 
         content: '';
+        @media(max-width: 426px){
+          left: 20px;  
+        }
     }
       @media (max-width:768px){
 
@@ -206,7 +212,8 @@
 
      width:300px;
      margin-bottom: 20px;
-  
+     font-size: 10px;
+     padding-left:60px;
 }
 }
 #appointment .form__checkbox input
@@ -232,7 +239,7 @@
     top:5px;
     } 
     @media (max-width:426px){
-
+    left:30px;
     top:0px;
     } 
 }
@@ -247,9 +254,11 @@
     justify-content: center;
 }
 .form__list li input:hover,
-textarea:hover
+textarea:hover,
+.form__list li input:focus,
+textarea:focus
 {
-    box-shadow: 0 0 7px rgba(53, 175, 192, .5);
+    // box-shadow: 0 0 7px rgba(53, 175, 192, .5);
     border: 1px solid #45c7d2;
     cursor: pointer;
 }
@@ -281,3 +290,23 @@ textarea:hover
        box-shadow: 0 0 43px rgba(68,199,210,.35)
     }
 }
+
+
+.form__wrap.form__wrap-contacts{
+    display:flex;
+    justify-content: space-between
+}
+
+#appointment .form__wrap.form__wrap-contacts label{
+    padding:0;
+    margin:0;
+
+color: #000000;
+opacity:1;
+font-size: 12px;
+font-weight: 400;
+&:before{
+ content:none;
+}
+}
+

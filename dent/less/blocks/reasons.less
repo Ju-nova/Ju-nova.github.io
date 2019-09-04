@@ -29,9 +29,15 @@
 .reasons__block-wrapper
 {
     display: flex;
-
+    flex-wrap:wrap;
     justify-content: space-between;
     @media (max-width: 768px)
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        //align-items: center;
+    }
+    @media (max-width: 426px)
     {
         flex-direction: column;
 
@@ -53,6 +59,10 @@
     {
         padding: 29px 28px 11px 80px;
     }
+    @media (max-width: 768px)
+    {
+        width: 350px;
+    }
     @media (max-width: 426px)
     {
         width: 100%;
@@ -60,7 +70,7 @@
 }
 .reasons__left
 {
-    @media (max-width: 768px)
+    @media (max-width: 426px)
     {
         margin-bottom: 20px;
     }
@@ -76,14 +86,14 @@
 .reasons__left ul li,
 .reasons__right ul li
 {
-    position: relative;;
+    position: relative;
 
     margin-bottom: 17px;
 
     font-size: 16px;
     font-weight: 400;
 
-    color: #242424;
+    color: #242424;;
 }
 .reasons__left ul li:before,
 .reasons__right ul li:before
@@ -98,4 +108,164 @@
     background-image: url(../img/rounded-delete-button-with-minus.png);
 
     content: '';
+}
+#reasons .reasons__right{
+@media(max-width: 768px){
+    display:none;
+}
+}
+#reasons .reasons__left{
+    @media (max-width: 768px){
+        width:90%;
+    }
+     @media (max-width: 426px){
+        width:95%;
+    }
+}
+#reasons .reasons__left-tablet{
+    display:none;
+    @media(max-width:768px){
+        display:block;
+    }
+}
+#doctors .reasons__left,
+#doctors .reasons__right
+
+{
+    box-sizing: border-box;
+    padding: 44px 70px 54px 80px;
+margin-bottom: 30px;
+    @media (max-width: 1024px)
+    {
+        padding: 29px 80px 24px 60px;
+    }
+
+    @media (max-width: 426px)
+    {
+        width: 95%;
+        padding: 29px 60px 24px 50px;
+    }
+     @media (max-width: 376px)
+    {
+        width: 95%;
+        padding: 29px 20px 60px 50px;
+    }
+}
+
+#doctors .reasons__left
+{
+    background-image: url(../img/teeth.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+    @media (max-width: 426px){
+        background-size:60px auto
+    }
+}
+#doctors .reasons__right
+{
+    background-image: url(../img/like.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+     @media (max-width: 426px){
+        background-size:60px auto
+    }
+}
+.reasons__block-text1
+{
+    position: relative;
+
+    margin: 0 0 20px 0;
+
+    font-size: 24px;
+    line-height: 26px;
+
+    color: #242424;
+    &:before
+    {
+        position: absolute;
+        top: -5px;
+        left: -30px;
+
+        display: block;
+        width: 11px;
+        height: 22px;
+
+        border-right: 3px solid #45c8d3;
+        border-bottom: 3px solid #45c8d3;
+        border-radius: 2px;
+
+        content: '';
+        transform: rotate(45deg);
+    }
+}
+.reasons__block-text2
+{
+    margin: 0 ;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #242424;
+    @media (max-width: 426px)
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @media (max-width: 426px)
+    {
+        //padding-right: 20px;
+    }
+}
+#doctors .reasons__left,
+#doctors .reasons__right
+{
+    box-sizing: border-box;
+    padding: 44px 70px 54px 80px;
+
+    @media (max-width: 1024px)
+    {
+        padding: 29px 80px 24px 60px;
+    }
+
+    @media (max-width: 426px)
+    {
+        width: 95%;
+        padding: 29px 60px 24px 50px;
+    }
+     @media (max-width: 376px)
+    {
+        width: 95%;
+        padding: 29px 20px 60px 50px;
+    }
+}
+
+#doctors .reasons__left
+{
+    background-image: url(../img/teeth.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+    @media (max-width: 426px){
+        background-size:60px auto
+    }
+}
+#doctors .reasons__right
+{
+    background-image: url(../img/like.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+     @media (max-width: 426px){
+        background-size:60px auto
+    }
+}
+#doctors.reasons__company .reasons__left{
+   background-image: url(../img/tooth5.png);  
+}
+#doctors.reasons__company .reasons__right{
+   background-image: url(../img/icon-people.png);  
+}
+#doctors.reasons__company .reasons__bottom-left{
+   background-image: url(../img/tooth6.png);  
+}
+#doctors.reasons__company .reasons__bottom-right{
+   background-image: url(../img/tooth7.png);  
 }

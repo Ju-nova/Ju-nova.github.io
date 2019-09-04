@@ -17,16 +17,23 @@
 .price-block__title
 {
     padding: 28px 0 50px;
+      @media (max-width: 768px){
+         padding: 28px 0;
+    }
 }
 .price-block__table
 {
     border-radius: 10px;
 
     border-spacing: 0 20px ;
+
 }
 .price-block__row-title
 {
     border-spacing: 0 ;
+    @media (max-width: 426px){
+        display:none;
+    }
 }
 .price-block__row
 {
@@ -36,6 +43,14 @@
     background-color: #fff;
     /* Style for "Rounded Re" */
     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+      @media (max-width: 426px){
+        display:flex;
+        flex-direction:column;
+        border-left: 7px solid #2caeb9;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:0 0 20px 20px;
+    }
 }
 
 
@@ -55,22 +70,23 @@
     border-bottom-left-radius: 10px;
     @media (max-width: 768px)
     {
-        padding: 23px 30px 23px 15px;
+        font-size: 20px;
+        padding: 23px 20px 23px 15px;
     }
     @media (max-width: 426px)
     {
-        padding: 13px 5px 13px 5px;
+        padding: 13px 5px 13px 0px;
 
-        font-size: 14px;
+        font-size: 18px;
         line-height: 16px;
         white-space: normal;
+        border:none;
     }
     @media (max-width: 376px)
     {
-        padding: 13px 5px 13px 5px;
+        padding: 13px 5px 13px 0px;
 
-        font-size: 12px;
-        line-height: 14px;
+    
     }
 }
 .price-block__column2
@@ -84,18 +100,19 @@
     {
         padding-right: 5px;
 
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 16px;
         white-space: normal;
+        margin-bottom: 20px;
     }
-    @media (max-width: 376px)
-    {
-        padding-right: 5px;
+    // @media (max-width: 376px)
+    // {
+    //     padding-right: 5px;
 
-        font-size: 10px;
-        line-height: 14px;
-        white-space: normal;
-    }
+    //     font-size: 10px;
+    //     line-height: 14px;
+    //     white-space: normal;
+    // }
 }
 .price-block__column3
 {
@@ -110,11 +127,18 @@
     color: #000;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+       @media (max-width: 768px)
+    {
+        padding: 0 20px 0 0;
+
+        font-size: 23px;
+      
+    }
     @media (max-width: 426px)
     {
         padding: 0 5px 0 0;
 
-        font-size: 14px;
+        font-size: 23px;
         line-height: 16px;
         white-space: normal;
     }
@@ -122,9 +146,8 @@
     {
         padding: 0 5px 0 0;
 
-        font-size: 12px;
-        line-height: 14px;
-        text-align: right;
+       
+        text-align: left;
         white-space: normal;
     }
 }
@@ -154,6 +177,11 @@
 .price-block__title1
 {
     padding: 0 0 0 35px;
+    font-size: 20px;
+      @media (max-width: 768px)
+    {
+        padding: 0 0 0 25px;
+    }
     @media (max-width: 426px)
     {
         padding: 0 0 0 5px;
@@ -168,7 +196,13 @@
     background-color: transparent;
     background-image: none;
     box-shadow: none;
+    padding: 14px 45px 15px 27px;
+     &:hover{
+       text-decoration:underline;  
+    }
 }
+
+
 .price-block__button a span
 {
     color: #45c8d3;
@@ -180,4 +214,8 @@
     padding-bottom: 35px;;
 
     text-align: right;
+      @media(max-width: 768px){
+        text-align:center;
+    }
+
 }

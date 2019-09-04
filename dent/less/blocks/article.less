@@ -1,0 +1,147 @@
+.article__part1{
+	
+
+}
+.article__title{
+	padding:48px 0;
+}
+.article__part1 p{
+	margin:0 ;
+	font-size: 17px;
+	line-height: 24px;
+	@media (max-width: 768px){
+	
+	
+	margin:0 10px;
+}
+
+}
+.article__left-img{
+	float:left;
+
+	margin-right:74px;
+	@media (max-width: 1025px){
+	margin-right:24px;	
+	}
+	@media (max-width: 768px){
+	width:334px;
+	height:277px;
+	}
+	@media (max-width: 426px){
+	width:400px;
+	height:277px;
+	margin-right:0px;
+	}
+}
+
+
+.article__part2-wrap{
+	padding-top: 19px;
+	font-size: 17px;
+	line-height: 24px;
+	@media (max-width: 768px){
+	padding-top: 0;
+
+	margin:0 10px;
+}
+	
+	@media (max-width: 426px){
+	padding-top: 300px;
+	}
+}
+
+.article__part2-list{
+	list-style: none;
+	margin:38px 0 15px 0;
+}
+.article__part2-list li{
+	padding:0 0 25px 605px;
+	position:relative;
+	@media (max-width: 768px){
+	padding:0 0 25px 350px;
+	}
+    	@media (max-width: 426px){
+	padding:0 0 25px 10px;
+	}
+	&:before{
+		content:'';
+		position:absolute;
+		display: block;
+		width:8px;
+		height:16px;
+		border-right:2px solid #4cca00;
+		border-bottom:2px solid #4cca00;
+		margin-left:-30px;
+		transform: rotate(45deg);
+	}
+}
+.article__part3{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+padding:20px 0 ;
+		@media (max-width: 768px){
+	//flex-wrap:no-wrap;
+	}
+}
+.article__block{
+	width:48%;
+	box-sizing:border-box;
+	padding:40px 48px 35px;
+		border-radius: 10px;
+	background-color: #ffffff;
+	box-shadow: 0 0 43px rgba(0, 0, 0, 0.13);
+	margin:37px 0 37px;
+	@media (max-width: 1025px){
+	width:48%;	
+	}
+		@media (max-width: 768px){
+	width:100%;	
+	margin:20px 0 20px;
+	}
+		@media (max-width: 426px){
+	padding:20px 18px 26px;
+	}
+}
+.article__block-title{
+	font-size: 20px;
+	font-weight: 500;
+}
+.article__block p{
+	line-height: 24px;
+	font-size: 17px;
+
+}
+.article__down-left{
+	display:flex;
+	align-items:center;
+
+color: #1e76a9;
+
+font-size: 20px;
+font-weight: 400;
+@media(max-width: 320px){
+margin-bottom: 20px
+	}
+}
+
+
+.article__down{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	@media(max-width: 320px){
+justify-content: center
+	}
+}
+.pluso-more {display: none !important;}
+.article__down{
+	padding-bottom:53px;
+}
+.article__down-right a{
+display: inline-block;
+&:hover{
+	opacity:.7;
+
+}
+}
