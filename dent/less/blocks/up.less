@@ -1,29 +1,28 @@
 .up{
 	background-image:url(../img/background1.png);
 	background-size:cover;
+	position:relative;
+	z-index:0;
+
 }
 .up__wrapper{
-	background-image:url(../img/background-2.png);
-	background-repeat:no-repeat;
+
 	padding:70px 670px 270px 0;
-	@media (max-width: 1024px){
+	@media (max-width: 1025px){
 	padding:70px 470px 270px 0;	
 	}
 		@media (max-width: 768px){
 	padding:30px 270px 160px 0;	
-	background-size:900px auto;
-	//background-position: left 0 top 0;
+	
 	}
 		@media (max-width: 426px){
 	padding:20px 90px 50px 0;	
-	background-size:contain;
-	background-position: right -100px bottom 0;
 
 	}
 		@media (max-width: 376px){
 	padding:20px 90px 20px 0;	
-	background-size:cover;
-//background-position: left 0 center;
+
+
 	}
 }
 .up__breadcrubms{
@@ -55,7 +54,10 @@ font-size: 18px;
 }
 }
 .up__wrapper{
+	position:relative;
+    z-index:2;
 		@media (max-width: 426px){
+	
 	padding:20px 0px 30px 0;	
 	background-size:contain;
 	background-position: right 0 bottom 0;
@@ -63,95 +65,129 @@ font-size: 18px;
 	box-sizing:border-box;
 }
 }
-#doctors .up__wrapper{
-	background-image:none;
-	padding:0px 670px 270px 0;
-	// margin-left: 120px;
-	//margin-left: 175px;
-	@media (max-width: 1440px){
-	//margin-left: 60px;
-	//background-position: left 120px bottom 0;
-		
-	}
+.up__back {
+	position:relative;
+	z-index:1;
+}
+.up__back .up__img{
+ position:absolute;
+    bottom:0;
+    width:100%;
+   // height:100%;
+    overflow:hidden;
+display:flex;
+justify-content:flex-end;
+	@media (max-width: 426px){
+	justify-content:center;
+	
+}
+}
+.up__back .up__img img{
+
+	
+	@media (max-width: 1025px){
+	//width:100%;
+	max-width: none;
+}
+	@media (max-width: 768px){
+	width:100%;
+
+}
+	@media (max-width: 426px){
+	width:90%;
+}
+}
+.doctors .up__back .up__img img,
+.card-doctor .up__back .up__img img
+{
+
+	width:75%;
+	@media (max-width: 1025px){
+	width:70%;
+}
+	@media (max-width: 768px){
+	width:80%;
+}
+	@media (max-width: 426px){
+	width:100%;
+}
+}
+.doctors .up__wrapper{
+	
+	padding:0px 670px 270px 0;	
+
 	@media (max-width: 1024px){
 	padding:70px 470px 70px 0;
 	margin-left: 0px;	
-	background-size:800px;
-	background-position: right 0px top 0;
+	
 	}
 		@media (max-width: 768px){
 	padding:30px 270px 60px 0;	
 	background-size:600px auto;
-	//background-position: left 0 top 0;
+	
 	}
 		@media (max-width: 426px){
 	padding:20px 0px 30px 0;	
-	background-size:contain;
-	background-position: right 0 bottom 0;
 	height:360px;
 	box-sizing:border-box;
 
 	}
-// 		@media (max-width: 376px){
-// 	padding:20px 90px 20px 0;	
-// 	background-size:85% auto;
-// background-position: right -50px  center;
+
+}
+
+// #doctors .up__back,
+// .card-doctor .up__back{
+// 	background-image:url(../img/team.png);
+// 	background-repeat:no-repeat;
+// 	background-position: right 20%;
+// 	background-size:contain;
+// 	@media (max-width: 1440px){
+// 	//margin-left: 60px;
+// 	//background-position: left 120px bottom 0;
+// 	background-size:contain;
+// 	background-position: right -70px bottom 0;
+
 // 	}
-}
+// 	@media (max-width: 1025px){
+// 	//margin-left: 60px;
+// 	//background-position: left 120px bottom 0;
+// 	background-size:contain;
+// 	background-position: right 0px bottom 0;
 
-#doctors .up__back,
-.card-doctor .up__back{
-	background-image:url(../img/team.png);
-	background-repeat:no-repeat;
-	background-position: right 20%;
-	background-size:contain;
-	@media (max-width: 1440px){
-	//margin-left: 60px;
-	//background-position: left 120px bottom 0;
-	background-size:contain;
-	background-position: right -70px bottom 0;
+// 	}
+// }
+// .card-doctor .up__back{
+// 	background-image:url(../img/team.png);
+// 	background-repeat:no-repeat;
+// 	background-position: right 20%;
+// 	background-size:contain;
+// 	@media (max-width: 1440px){
+// 	//margin-left: 60px;
+// 	//background-position: left 120px bottom 0;
+// 	background-size:contain;
+// 	background-position: right -70px bottom 0;
 
-	}
-	@media (max-width: 1025px){
-	//margin-left: 60px;
-	//background-position: left 120px bottom 0;
-	background-size:contain;
-	background-position: right 0px bottom 0;
-
-	}
-}
-.card-doctor .up__back{
-	background-image:url(../img/team.png);
-	background-repeat:no-repeat;
-	background-position: right 20%;
-	background-size:contain;
-	@media (max-width: 1440px){
-	//margin-left: 60px;
-	//background-position: left 120px bottom 0;
-	background-size:contain;
-	background-position: right -70px bottom 0;
-
-	}
-	@media (max-width: 1025px){
+// 	}
+// 	@media (max-width: 1025px){
 	
-	background-size:contain;
-	background-position: right 0px bottom 0;
+// 	background-size:contain;
+// 	background-position: right 0px bottom 0;
 
-	}
-	@media (max-width: 768px){
+// 	}
+// 	@media (max-width: 768px){
 	
-	background-size:contain;
-	background-position: right -80px bottom 0;
+// 	background-size:contain;
+// 	background-position: right -80px bottom 0;
 
-	}
-		@media (max-width: 426px){
+// 	}
+// 		@media (max-width: 426px){
 	
-	background-size:contain;
-	background-position: right 0 bottom 0;
+// 	background-size:contain;
+// 	background-position: right 0 bottom 0;
 
-	}
-}
-#doctors .up__breadcrubms{
+// 	}
+// }
+.doctors .up__breadcrubms{
 	padding-top:60px;
 	margin-bottom:98px;
 	@media (max-width: 1024px){

@@ -10,6 +10,7 @@
   
     @media (max-width: 768px)
     {
+        background-repeat:no-repeat;
         height: 540px;
       //  overflow:hidden;
         margin-top: -101px;
@@ -25,7 +26,7 @@
 }
 .main-block__wrapper{
     position:relative;
-    //height:100%;
+    height:100%;
   overflow:visible;
     &:after
     {
@@ -57,6 +58,7 @@ z-index:4;
 }
 .main-block__slider{
     height: 100%;
+    position:relative;
 }
 .main-block__wrapper .sl-count__main
 {
@@ -207,6 +209,12 @@ margin-left:50px;
     box-sizing: border-box;
     height: 711px;
     padding: 286px 0 0 0;
+    position: absolute; 
+    top:0;
+    left:0;
+    // width: 100%;
+    // height:100%;
+    
     @media (max-width: 768px)
     {
         height: 540px;
@@ -216,104 +224,48 @@ margin-left:50px;
     {
       height: 479px;
         padding: 123px 0 0 0;
+         top:0;
+ width:100%;
     }
 }
-.main-block__slide1
-{
-    width: 100%;
 
-    background-image: url(../img/slide1.png);
-    background-repeat: no-repeat;
-    background-position: right 50px bottom 0 ;
-    // @media (max-width: 1024px){
-    // background-size:600px auto;
-    //  background-position: right 0 bottom 0 ;
-    // }
-    @media (max-width: 768px)
+.main-block__slider img {
+    max-width:100%;
+    height: auto;
+
+@media (max-width: 768px)
     {
-        background-position: right -50px bottom 0 ;
-        -webkit-background-size: 600px auto;
-        -moz-background-size: 600px auto;
-        -ms-background-size: 600px auto;
-        -o-background-size: 600px auto;
-
-        background-size: 600px auto;
+        
+      width:70%;
+    
     }
     @media (max-width: 426px)
     {
-        background-position: right -50px bottom 0 ;
-         -webkit-background-size: 300px auto;
-        -moz-background-size: 300px auto;
-        -ms-background-size: 300px auto;
-        -o-background-size: 300px auto;
-        background-size: 300px auto;
-    }
-    @media (max-width: 376px)
-    {
-      //  background-position: right -100px bottom 0 ;
         
+      width:75%;
+    
     }
 }
-.main-block__slide2
-{
-    background-image: url(../img/form-image.png);
-    background-repeat: no-repeat;
-    background-position: right 50px bottom 0 ;
-    @media (max-width: 768px)
-    {
-        background-position: right -50px bottom 0 ;
-        -webkit-background-size: 600px auto;
-        -moz-background-size: 600px auto;
-        -ms-background-size: 600px auto;
-        -o-background-size: 600px auto;
+.main-block__slider .main-block__slide-img {
+    max-width:100%;
+    height:711px;
+  display:flex;
+  justify-content: flex-end;
+  align-items:flex-end;
 
-        background-size: 600px auto;
-    }
-    @media (max-width: 426px)
+@media (max-width: 768px)
     {
-        background-position: right -50px bottom 0 ;
-         -webkit-background-size: 300px auto;
-        -moz-background-size: 300px auto;
-        -ms-background-size: 300px auto;
-        -o-background-size: 300px auto;
-        background-size: 300px auto;
-    }
-    @media (max-width: 376px)
-    {
-      //  background-position: right -100px bottom 0 ;
         
+        height: 540px;
+    
+    }
+     @media (max-width: 426px)
+    {
+        height: 479px;
+        justify-content: center;
     }
 }
-.main-block__slide3
-{
-    background-image: url(../img/form-image.png);
-    background-repeat: no-repeat;
-    background-position: right 50px bottom 0;
-    @media (max-width: 768px)
-    {
-        background-position: right -50px bottom 0 ;
-        -webkit-background-size: 600px auto;
-        -moz-background-size: 600px auto;
-        -ms-background-size: 600px auto;
-        -o-background-size: 600px auto;
 
-        background-size: 600px auto;
-    }
-    @media (max-width: 426px)
-    {
-        background-position: right -50px bottom 0 ;
-         -webkit-background-size: 300px auto;
-        -moz-background-size: 300px auto;
-        -ms-background-size: 300px auto;
-        -o-background-size: 300px auto;
-        background-size: 300px auto;
-    }
-    @media (max-width: 376px)
-    {
-      //  background-position: right -100px bottom 0 ;
-        
-    }
-}
 .main-block__slide p
 {
     font-size: 42px;
