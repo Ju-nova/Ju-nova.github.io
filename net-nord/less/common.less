@@ -1,0 +1,124 @@
+body
+{
+    
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+background-color: #fff;
+color: #000000;
+height:100vh;
+
+}
+body.hidden{
+    overflow:hidden;
+}
+body.modal-body{
+    overflow:hidden;
+}
+.site{
+min-height:100%;
+display:flex;
+flex-direction: column;
+min-width: 320px;
+
+}
+img{
+	max-width:100%;
+	height:auto;
+	display:block;
+}
+h3{
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 30px;
+
+margin:0;
+margin-bottom:45px;
+  @media(max-width: 426px){
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom:35px;
+  }
+}
+h4{
+  font-weight: 500;
+font-size: 22px;
+line-height: 24px;
+
+margin:0;
+margin-bottom:35px;
+  @media(max-width: 426px){
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+p{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+
+margin:0;
+margin-bottom:25px;
+  @media(max-width: 426px){
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+a{
+    text-decoration: none
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+    -webkit-text-fill-color: #000 !important; /* цвет текста */
+    color: #000 !important; /* цвет текста */
+}
+input[type="submit"]{
+background: #46A6E4;
+box-shadow: 0px 20px 32px rgba(99, 140, 166, 0.3);
+border-radius: 100px;
+font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+text-align: center;
+text-transform: uppercase;
+outline:none;
+border:none;
+color: #FFFFFF;
+padding:19px 28px 20px;
+cursor:pointer;
+}
+a:active, a:focus { outline: none; }
+
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+.error{
+  color: #BE0000 !important;
+  // margin-top:5px
+}
+
+.slider{
+   overflow: hidden;
+  opacity: 0;
+}
+
+.tab__info.hide {
+    display: none;
+}
+
+.tab__info {
+    display: block;
+}

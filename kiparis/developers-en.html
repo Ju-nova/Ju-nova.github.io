@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Document</title>
+</head>
+<body>
+<div class="site">
+	<div class="content">
+			<header class="header">
+			
+			<div class="menu">
+				<div class="logo-wrapper">
+					<a href="/">
+						<img class="logo-desktop" src="img/logo.svg" alt="">
+					</a>				
+				</div>
+				<div class="menu-toggle">
+	            	<img class="menu-toggle__burger" src="img/hamburger.svg" alt="">
+	            	<img class="menu-toggle__close" src="img/close.svg" alt="">
+	            </div>
+				<div class="menu-part">
+                    <nav class="menu__nav">
+                        <ul>
+                            <li><a href="#">Main Page</a></li>
+                            <li><a href="#">Business solutions</a></li>
+                            <li><a href="#">Individual</a></li>
+                            <li><a href="#">Contacts</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="menu-lang">
+                        <a href="#">RU</a>
+                        <span>|</span>
+                        <a href="#">EN</a>
+                    </div>
+                    <a class="simplebox btn-login btn btn--violet" href="#"> Sign In</a>
+                </div>  	
+			</div>
+		</header>
+		<main>
+			<div class="m-screen m-screen--inner">
+				<div class=" m-screen__wrapper">
+					<div class=" m-screen__text-wrapper">
+						<div class="m-screen__text">
+							<h1 class="m-screen__title">Developers</h1>
+							<ul class="m-list ">
+								<li>General Technical Details</li>
+								<li>Payment Process</li>
+								<li>Request for payment transaction creating /deposit/create</li>
+								<li>Payout Process</li>
+								<li>Request for payout transaction creating /deduce/create</li>
+								<li>Рефанды</li>
+								<li>Transaction Status Notification</li>								
+								<li>Transaction Status Request</li>								
+								<li>Balance request</li>								
+								<li>Errors arising in operating with the system</li>
+								<li>Testing</li>
+								
+							</ul>
+						</div>
+						<div class="m-screen__img"><img src="img/img-9.png" srcset="img/img-9@2x.png 2x, img/img-9@3x.png 3x" alt=""></div>
+					</div>
+
+				</div>
+			</div>
+<h2 class="gradient-title title-center">General Technical Details</h2>
+			<!-- ТЕКСТ -->
+			<div class="background-1">
+			<div class="text-container">
+				<div class="container-720 ">
+					All the requests regarding Kiparis API should be sent to:
+                      <ul class="m-list-2">
+                      	<li>https://???.com/api</li>
+                      	<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam explicabo magni quasi rem. Saepe in velit provident, nulla enim, porro praesentium placeat vitae perspiciatis illum. Alias iusto autem necessitatibus.</li>
+                      </ul>
+                      <p>All the requests should contain the Auth header with an authorization key that will be sent to Merchant, e.g.</p>
+
+                     <div class="color-gradient-block-2">
+                     	POST /deposit/create HTTP/1.1<br>
+						Host: kiparis.com<br>
+						Accept: application/json<br>
+						Content-Type: application/json<br>
+						Auth: fcd8766d4fa5b4a5c7198b87a5d0921d
+                     </div>
+                    <p>Kiparis API deals with JSON requests.</p>
+
+					<p>All the requests, excluding GET, should be signed by a secret key that will be also sent to Merchant. For signing you need to deliver the md5 hash from a request body with a secret a key concatenating. Then the delivered hash is used in the Sign header and sent together with the request.</p>
+
+					<p>The example of the hash calculation in PHP</p>
+
+					<div class="color-gradient-block-2">
+						$secret_key = '1dfcd12ba13fff487a84cf50d8099297';<br>
+						$request = '{"test":"test"}';<br>
+						$sign = md5($request . $secret_key);<br>
+						//49e8dde596382693c52ccc3d722e5229
+					</div>	
+					<p>POST request will be written as</p>
+					<div class="color-gradient-block-2">
+						POST /deposit/create HTTP/1.1<br>
+						Host: kiparis.com<br>
+						Accept: application/json<br>
+						Content-Type: application/json<br>
+						Auth: fcd8766d4fa5b4a5c7198b87a5d0921d<br>
+						Sign: 49e8dde596382693c52ccc3d722e5229
+						…
+						{"test":"test"}
+					</div>	
+					<p>Whereas Kiparis sends the requests to the Merchant system using the same rules and keys.</p>
+                    	
+				</div>
+
+				<h2 class="gradient-title title-center">Payment Process</h2>
+				<div class="container-720">Please see below the scheme of the payment through Payment System by means of Kiparis API:</div>
+                <div class="schema">
+                	<div class="schema__block schema__block-heading">
+                		Client
+                	</div>
+                	<div class="schema__block schema__block-heading">
+                		Мерчант
+                	</div>
+                	<div class="schema__block schema__block-heading">
+                		Kiparis
+                	</div>
+                	<div class="schema__block schema__block-heading">
+                		Система платежей
+                	</div>
+                    <div class="schema__block ">1. Order creating and data entering</div>
+                    <div class="schema__block ">2. Creating and sending a deposit/create request</div>
+                    <div class="schema__block ">3. Request sending to the Payment system</div>
+                    <div class="schema__block ">4. Sending redirect parameters</div>
+                    <div class="schema__block schema__block--transparent"></div>
+                    <div class="schema__block">6. User redirecting to payment page, data entering for payment</div>
+                    <div class="schema__block">5. Response to the request with Kiparis transaction data and redirect parameters</div>
+                    <div class="schema__block schema__block--transparent"></div>
+                    <div class="schema__block">8. User notification</div>
+                    <div class="schema__block">7. User redirecting to Merchant site</div>
+                    <div class="schema__block-width">
+                    	<div class="schema__block-heading">Awaiting Kiparis notification</div>
+                    </div>
+                    <div class="schema__block ">11. User notification, account crediting</div>
+                    <div class="schema__block ">10. Sending a payment status Notification with transaction data</div>
+                    <div class="schema__block ">9. Sending a payment status notification</div>
+
+
+                </div>
+                <p>
+                	A maximally general case is analyzed in this scheme. In different systems the schemes can differentiate. The information is thoroughly described in the section below.</p>
+
+					<p>In certain cases Merchant can charge fee from its Clients, in which case Kiparis system can reckon on it on its side and provide total amounts in the responses to the deposit/create, deduce/create requests, as well as return them by the notifications. For the purpose Merchant needs to provide the policies of fee accounting.</p>
+
+					<p>Merchant can also pay fee for its Client.</p>
+
+					<p>All the cases will be reviewed after the Section of Requests and Responses.</p>    
+
+			</div>
+		</div>	
+
+			<br>
+			<br>
+			<br>
+			<br>
+     <div class="container">
+     	<h2 class="gradient-title title-center">Request for payment transaction creating /deposit/create</h2>
+     </div>
+     <div class="text-container">
+     	The request is sent by POST to the address:
+     <ul class="m-list-2">
+                      	<li>https://???.com/api</li>
+                      </ul>	
+      The request format is as follows:
+     </div>
+     <div class="dev-table__wrapper">
+     <div class="dev-table">
+     	<table>
+     		<tr>
+     			<th>Поле</th>
+     			<th>Тип</th>
+     			<th>Mandatory</th>
+     			<th>Описание</th>
+     			<th>Пример</th>    			
+     		</tr>
+     		<tr>
+     			<td>amount</td>
+     			<td>float(10,2)</td>
+     			<td>Да</td>
+     			<td>Transaction amount</td>
+     			<td>10.00</td>
+     		</tr>
+     		<tr>
+     			<td>currency</td>
+     			<td>string(3)</td>
+     			<td>Да</td>
+     			<td>Transaction amount</td>
+     			<td>RUB</td>
+     		</tr>
+     		<tr>
+     			<td>payment_system</td>
+     			<td>string</td>
+     			<td>Да</td>
+     			<td>Payment system name.</td>
+     			<td>CardGate</td>
+     		</tr>
+     		<tr>
+     			<td>transaction_id</td>
+     			<td>string</td>
+     			<td>Нет</td>
+     			<td>Transaction number in the Merchant system.</td>
+     			<td>123</td>
+     		</tr>
+     		<tr>
+     			<td>note</td>
+     			<td>string</td>
+     			<td>Нет</td>
+     			<td>Transaction description for the Merchant</td>
+     			<td>Account deposit 321</td>
+     		</tr>
+     		<tr>
+     			<td>system_fields</td>
+     			<td>object</td>
+     			<td>Нет</td>
+     			<td>Container for additional fields of payment system.</td>
+     			<td></td>
+     		</tr>
+     		<tr>
+     			<td>url</td>
+     			<td>object</td>
+     			<td>Нет</td>
+     			<td>Container for URL addresses transmitting.</td>
+     			<td></td>
+     		</tr>
+     		<tr>
+     			<td>url > callback_url</td>
+     			<td>url</td>
+     			<td>Нет</td>
+     			<td>URL for transmitting notification of a payment to the Merchant system.</td>
+     			<td>http://site.com/callback</td>
+     		</tr>
+     		<tr>
+     			<td>url > fail_url</td>
+     			<td>url</td>
+     			<td>Нет</td>
+     			<td>URL for user redirecting to the Merchant page in case of failure.</td>
+     			<td>http://site.com/fail</td>
+     		</tr>
+     		<tr>
+     			<td>url > pending_url</td>
+     			<td>url</td>
+     			<td>Нет</td>
+     			<td>URL for user redirecting to the Merchant page in case of transaction 
+nonfinal status.</td>
+     			<td>http://site.com/pending</td>
+     		</tr>
+     		<tr>
+     			<td>url >  success_url</td>
+     			<td>url</td>
+     			<td>Нет</td>
+     			<td>URL for user redirecting to the Merchant page in case of success.</td>
+     			<td>http://site.com/success</td>
+     		</tr>
+
+     	</table>
+
+     </div>
+	</div> 
+			
+ 		<div class="text-container">
+ 			<p>The example of the request:</p>
+	    	<div class="color-gradient-block-2">
+										{<br>
+			    "transaction_id": "123",<br>
+			    "amount": "10.00",<br>
+			    "currency": "RUB",<br>
+			    "payment_system": "CardGate",<br>
+			    "url": {<br>
+			        "callback_url": "https://site.com/callback",<br>
+			        "fail_url": "https://site.com/fail",<br>
+			        "pending_url": "https://site.com/pending",<br>
+			        "success_url": "https://site.com/success"
+			    }
+			}
+			</div>
+      
+    	 </div>
+
+		</main>
+
+	</div>
+	<div class="footer">
+		<div class="container footer__wrapper">
+			<div class="footer__logo">
+				<a class="footer__logo-img" href=""><img src="img/logo-violet.svg" alt=""></a>
+				<div class="footer__copyright">Copyright © 2020 Kiparis Limited<br> All rights reserved</div>
+			</div>
+			<ul class="footer__menu">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Public offer</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Payment methods </a></li>
+                <li><a href="#">Coockies Policy</a></li>
+                <li><a href="#">Privacy Polisy </a></li>
+                <li><a href="#">Developers</a></li>
+            </ul>
+			<div class="footer__contacts">
+                <div class="footer__address">DMCC-PH2-J&GPlexS, Jewellery & Gemplex, Dubai, United Arab Emirates</div>
+                <div class="footer__mail"><a href="mailto:info@kiparisdmcc.ae">info@kiparisdmcc.ae</a></div>
+            </div>
+
+		</div>
+	</div>
+</div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

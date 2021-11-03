@@ -1,0 +1,219 @@
+// ВЕРХНЯЯ НАВИГАЦИЯ САЙТА	
+header{
+	 background-color:#fff;
+	position: sticky;
+	z-index: 2000;
+top:0;
+width:100%;	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.16);
+}
+.main-nav{
+
+	// padding:10px;
+	// box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.16);
+	// box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.16);
+    background-color:#fff;
+        @media(min-width: 1120px){
+	display:flex;
+	min-height:84px;
+	padding:0 10px;
+	justify-content:space-between
+}
+}
+.main-nav__container{
+min-width: 320px;
+	max-width:1375px;
+	margin:0 auto;
+
+
+		box-sizing:border-box
+}
+.main-nav--closed .main-nav__menu{
+display:none;
+    @media(min-width: 1120px){
+	display:flex;
+}
+}
+.main-nav__toggle {
+position:relative;
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    // margin-left: auto;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    @media(min-width: 1120px){
+	display:none;
+}
+}
+.main-nav--closed .main-nav__toggle:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background-color: @main-blue;
+    box-shadow: 0 6px 0 0 @main-blue, 0 12px 0 0 @main-blue;
+}
+.main-nav--closed .main-nav__toggle::after{
+	content:none
+}
+
+.main-nav__toggle::before, .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 3px;
+    background-color:@main-blue;
+}
+.main-nav__toggle::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.main-nav__toggle::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.main-nav__mob{
+	display: flex;
+	align-items: center;
+justify-content:space-between;
+	padding:10px;
+	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.16);
+// border-bottom:1px solid #f9f9f9;
+    @media(min-width: 1120px){
+	justify-content:flex-start;
+	box-shadow:none;
+	padding:0px;
+}
+}
+.main-nav__logo{
+	margin-right:15px ;
+	width:70px;
+	@media(min-width: 1120px){
+	margin-right:0px ;
+	width:140px;		
+	}
+}
+
+.main-nav__tel a{
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+color:#000;
+text-decoration: none;
+transition:.2s;
+&:hover{
+	text-decoration:underline
+}
+
+@media(min-width: 1200px){
+	font-size: 18px;
+line-height: 23px;
+
+}
+
+}
+.main-nav__address {
+	margin-top: 7px;
+	font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+padding-left:18px;
+position:relative;
+&:before{
+	content:'';
+	display: inline-block;
+	width: 10px;
+	height:14px;
+	background-image:url(../img/location.svg);
+	background-repeat:no-repeat;
+	position:absolute;
+	left:0;
+}
+}
+.main-nav__contacts{
+margin-left:-50px;
+@media(min-width: 1120px){
+	margin-left:10px;
+	flex-shrink: 0	
+}
+@media(min-width: 1200px){
+	margin-left:25px;
+
+}
+}
+.main-nav__menu{
+	// padding:10px 0;
+position: fixed;
+    overflow-y: scroll !important;
+    background-color: #fff;
+    top: 58px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+@media(min-width: 1120px){
+	position:static;
+	overflow: hidden !important;
+	display: flex;
+	justify-content:flex-end;
+}
+@media(min-width: 1200px){
+
+	overflow: visible !important;
+
+}
+
+}
+.main-nav__menu-btns{
+	display:flex;
+	justify-content: center;
+	@media(min-width: 1120px){
+		align-items:center
+	}
+		@media(min-width: 1200px){
+		margin-left: 10px
+	}
+}
+.main-nav__menu-lk  a,
+.main-nav__menu-connect a{
+	display: flex;
+	margin:0 10px;
+	font-size: 12px;
+line-height: 12px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background: #FFFFFF;
+border: 1px solid #46A6E4;
+box-sizing: border-box;
+border-radius: 100px;
+text-decoration: none;
+width:140px;
+height:35px;
+align-items: center;
+justify-content: center;
+transition:.5s;
+&:hover{
+	
+	box-shadow: 0px 32px 32px rgba(70, 166, 228, 0.3);	
+}
+	@media(min-width: 1120px){
+			margin:0 0 0 10px;
+
+	}
+		@media(min-width: 1200px){
+font-size: 14.5px;
+line-height: 14.5px;
+	width:160px;
+height:48px;
+margin:0 0 0 10px;
+}
+}
+.main-nav__menu-connect a{
+	color:#fff;
+	background-color:@main-blue;
+}
