@@ -6,6 +6,10 @@ Portfolio
 
 [Сайт благотворительного фонда](https://ju-nova.github.io/flag_dobra/ "Flag Dobra")  mobile/tablet/desktop
 
+[Сайт юридической компании](https://ju-nova.github.io/megapolis/ "Megapolis")  mobile/tablet/desktop
+
+[Сайт к юбилею университета ](https://ju-nova.github.io/mifi80/ "Mifi")  mobile/tablet/desktop
+
 [Сайт хостинга](https://ju-nova.github.io/iqhost/ "Iqhost")  mobile/tablet/desktop
 
 [Сайт научного фонда](https://ju-nova.github.io/safond/ "Safond")  mobile/tablet/desktop
