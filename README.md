@@ -2,6 +2,8 @@
 Portfolio
 
 
+[Сайт для поиска домашних животных](https://ju-nova.github.io/petsexpert/ "Petsexpert")  mobile/tablet/desktop
+
 [Сайт стоматологической клиники](https://ju-nova.github.io/dent/ "Dent")  mobile/tablet/desktop
 
 [ЦРПА](https://ju-nova.github.io/crpa/ "CRPA")  mobile/tablet/desktop
