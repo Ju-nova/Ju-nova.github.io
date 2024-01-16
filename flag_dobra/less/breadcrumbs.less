@@ -1,0 +1,46 @@
+.breadcrumbs{
+	margin:25px 0 0 0;
+	padding:0;
+display:flex;
+align-items:center;
+list-style: none;
+@media(max-width:1000px){
+	display: none
+}
+& li{
+	margin: 0 28px 0 0;
+	position:relative;
+	&:after{
+		content:'';
+		display: inline-block;
+		width:8px;
+		height:8px;
+		background-image:url(../img/tringle-2.svg);
+		background-repeat:no-repeat;
+		background-size: 8px 8px;
+		    top: 50%;
+    position: absolute;
+    right: -18px;
+    transform: translateY(-37%);
+
+	}
+	&.active{
+		background: #F0F4F8;
+border-radius: 100px;
+padding: 4px 10px;
+&:after{
+	content:none;
+}
+	}
+
+	& a{
+		font-weight: 300;
+font-size: 14px;
+line-height: 24px;
+text-decoration: none;
+color:#000;
+	}
+
+}
+
+}

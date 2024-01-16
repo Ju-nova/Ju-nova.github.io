@@ -1,0 +1,42 @@
+.missia{
+	background-image:
+	url(../img/tringle.svg),
+	url(../img/missia-background.png);
+	background-repeat:no-repeat no-repeat;
+	background-size:auto cover ;
+	background-position: top 53px left 36%, top 0 center;
+	position:relative;
+	@media(max-width: 1025px){
+		margin:50px 0 30px;
+	}
+	@media(max-width: 768px){
+		padding-top:37px;
+		background-position: top 53px left 41%, top 0 left 70%;
+		padding-bottom:20px
+	}
+}
+.missia-text{
+	width:52%;
+	margin-left:auto;
+	padding-top:135px;
+	right: -31px;
+    position: relative;
+	@media(max-width: 1025px){
+	width:100%;
+	padding-top:30px;
+    right:0;
+	}
+	& .btn{
+		margin-top:20px
+	} 
+}
+.missia__img{
+   position:absolute;
+   top:248px;
+   right:calc(50% + 130px);
+   @media(max-width:1025px){
+	position:static;
+	width:84%;
+	margin:0 auto;
+	}
+}

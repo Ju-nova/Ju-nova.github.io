@@ -1,0 +1,112 @@
+.statistics{
+padding:280px 0 140px; 
+background-image:
+url(../img/footer-flag.svg),
+url(../img/dots-2.svg),
+url(../img/statistic.svg);
+background-repeat: no-repeat, no-repeat, no-repeat;
+background-size: auto, auto, contain;
+background-position:   top 0 right 0, top 425px left 170px, bottom 0 left 50%;
+position:relative;
+& .main-title{
+	margin-bottom: 83px
+}
+@media(max-width: 1920px){
+	background-size: auto, auto, auto;
+}
+@media(max-width:1100px){
+	background-image:
+url(../img/statistic.svg);
+background-repeat:  no-repeat;
+background-size:cover;
+background-position:  bottom 0 left 50%;
+padding:89px 0 140px; 
+}
+@media(max-width:1024px){
+
+padding:89px 0 445px; 
+}
+}
+.statistics__block{
+	border-radius: 20px;
+  background-color: #fff;
+  width:704px;
+  margin-bottom:46px;
+  box-sizing:border-box;
+  padding:30px 46px 30px 58px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  @media(max-width:1204px){
+    width:50%;
+  }
+  @media(max-width: 1024px){
+  	width:100%;
+  	flex-direction: column;
+  	justify-content:center;
+  	padding:20px 26px;
+  }
+}
+.statistics__number{
+	text-align: center;
+	width: 37%;
+	  	  @media(max-width: 768px){
+  	width:100%;
+  	margin-bottom: 19px
+  }
+	& div:first-child{
+	color: #308af4;	
+	font-size: 86px;
+  	font-weight: 600;
+  	line-height: 110%;
+     @media(max-width:1204px){
+    font-size:70px
+  }
+	   @media(max-width: 768px){
+  	font-size: 84px;
+  }
+	}
+		& div:last-child{
+	 font-size: 40px;
+	 font-weight: 500;
+	 color:#000;
+
+	}
+}
+.statistics__text{
+width:57%;
+font-size: 22px;
+	   @media(max-width: 1024px){
+  	width:100%;
+  	font-size: 20px;
+  	text-align: center
+  }
+}
+.statistics__img{
+  position:absolute;
+  top: 488px;
+    right: calc(50% - 664px);
+    @media(max-width: 1344px){
+     right: 0; 
+    }
+        @media(max-width: 1100px){
+    top:40%; 
+    }
+            @media(max-width: 1024px){
+   top:auto; 
+   right:50%;
+   transform: translateX(50%);
+   bottom:110px;
+    }
+            @media(max-width: 500px){
+
+   bottom:161px;
+    }
+
+}
+.statistics__img{
+      @media(max-width: 500px){
+      width: 320px ;
+    height: 287px ;
+    }
+}

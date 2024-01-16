@@ -1,0 +1,110 @@
+.nasledie{
+padding: 80px 0;	
+background-image:url(../img/nasledie.svg);
+background-repeat:no-repeat;
+background-size:cover;
+background-position: bottom 0 center;
+}
+.nasledie__wrapper{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+margin-bottom: 22px;
+@media(max-width: 1180px){
+	flex-direction: column;
+	align-items:center
+}
+}
+.nasledie__block{
+	width:49%;
+	border-radius: 20px;
+  box-shadow: 0 4px 24px 0 rgba(69, 151, 246, 0.2);
+  background-color: #fff;
+  display:flex;
+  height: 208px;
+  margin-bottom: 24px;
+  @media(max-width: 1180px){
+	width:70%;
+}
+  @media(max-width: 768px){
+	width:100%;
+}
+  @media(max-width: 600px){
+	height:138px;
+}
+  & img{
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+  @media(max-width: 600px){
+	width: 108px;
+    height: 138px;
+    object-fit: cover;
+}
+  }
+}
+
+
+.nasledie__block-text{
+	padding:20px 20px 58px 26px;
+	position:relative;
+	@media(max-width: 600px){
+		padding:12px;
+	}
+}
+.nasledie__block-title{
+color: #114a82;	
+font-size: 24px;
+margin-bottom: 12px;
+  @media(max-width: 600px){
+	font-size: 20px;
+	margin-bottom: 4px;
+}
+}
+.nasledie__block-description{
+ font-size: 16px;
+  font-weight: 300;	
+  line-height:1.2;
+  max-height:92px;
+  overflow:hidden;
+  @media(max-width: 600px){
+  	height: 76px
+  }
+}
+.nasledie__block-link{
+position:absolute;
+bottom:20px;
+text-decoration: none;
+color:#2898ff;
+&:hover{
+	text-decoration: underline
+}
+@media(max-width: 600px){
+	display:none;
+}
+}
+.btn__nasledie{
+text-align: center
+}
+
+.nasledie__wrapper-desktop{
+ 	@media(max-width:600px){
+ 		display:none;
+ 	}
+ }
+ .nasledie__wrapper-mobile{
+ 	display: none;
+ 	@media(max-width: 600px){
+ 		display:flex;
+ 	}
+ }
+
+ .nasledie .container-1224{
+ 	background-image:
+ 	url(../img/nasledie-zigzag1.svg),
+ 	url(../img/nasledie-zigzag2.svg);
+ 	background-repeat:no-repeat;
+	background-position: right 150px top 10px,
+	 right 150px top 50px;
+@media(max-width: 700px){
+	background:none;
+ }}

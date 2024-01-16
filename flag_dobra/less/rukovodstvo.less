@@ -1,0 +1,81 @@
+.rukovodstvo-slide{
+	width: 288px;
+	margin:75px 12px 40px;
+	box-sizing:border-box;
+	padding: 96px 19px 33px 26px;
+  	border-radius: 20px;
+box-shadow: 0 4px 10px 5px rgba(69, 151, 246, 0.2);
+
+  	background-color: #fff;
+ 	 position:relative;
+ 	 height: auto;
+
+	@media(max-width: 1224px){
+			margin:75px 16px 40px;
+	}
+		@media(max-width: 426px){
+			margin:75px 16px 40px 0;
+			width:100% !important;
+	}
+}
+.rukovodstvo-slide__name{
+	font-size: 20px;
+	margin: 0 0 13px;
+	font-weight:500
+}
+.rukovodstvo-slide__regal{
+font-size:18px;
+font-weight:300;
+}
+
+.rukovodstvo {
+	background-image:url(../img/tringle__3.svg);
+	background-repeat:no-repeat;
+	background-position: right calc(50% - 305px) top 0;
+
+& .container-1224{
+	@media(max-width: 1224px){
+		padding:0;
+	}
+}
+
+& h2.main-title{
+	@media(max-width: 1224px){
+		padding:0 16px;
+	}
+}
+@media(max-width: 720px){
+background-image:none;	
+}
+@media(max-width: 680px){
+margin-bottom: -136px	
+}
+}
+
+.rukovodstvo-slide a{
+	display: block;
+	width: 140px;
+		height:140px;
+		top:-70px;
+		border-radius:100px;
+		
+		left:50%;
+		transform: translate(-50%);
+		position:absolute;
+		overflow:hidden;
+
+	&:hover{
+		& img{
+			opacity:.8;
+			transform:  scale(1.2);
+		}
+	}
+		& img{
+		width: 140px;
+		height:140px;
+		object-fit: cover;
+		transition:.2s;
+		
+	}
+}
+
