@@ -1,0 +1,138 @@
+.nav__list{
+	display: flex;
+	justify-content:space-between;	
+	align-items:center;
+	list-style:none;
+	margin:0;
+	padding:0;
+		@media(max-width:1025px){
+flex-direction:column;
+   
+    justify-content:flex-start;
+    align-items:flex-start;
+   width: 100%
+
+	}
+}
+.nav__list-item{
+	margin:0;
+	padding:0;
+	position:relative;
+			@media(max-width:1025px){
+ width:100%;
+box-sizing:border-box;
+	}
+       & > a{
+       		color: #A9A9A9;
+       		font-size: 18px;
+       		line-height:100%;
+
+       		padding:21px 18px;
+       		text-decoration:none;
+       		display: block;
+
+       		outline:none;
+       		box-sizing:border-box;
+          white-space:nowrap;
+                          @media(max-width:1100px){
+          padding:21px 10px;
+
+  }
+       					@media(max-width:1025px){
+					padding: 21px 40px 21px 18px;
+					border-radius:0px;
+          color:#fff;
+	}
+       		
+       }
+       &:hover > a{
+       			background:#101318;
+       			color:#fff;
+       		}
+	}
+.nav__list-item.active a{
+  background-image: linear-gradient(120deg, #308af4 4%, #2898ff 89%);
+  color:#fff;
+}
+
+ .nav .nav__search, .nav__en{
+	padding:21px 18px;
+	cursor:pointer;
+  border-radius:6px;
+	@media(max-width: 1025px){
+		display: none
+	}
+}
+
+.nav__submenu{
+position:absolute;
+z-index: 5;
+padding:0;
+border-top: 10px solid @blue;
+list-style:none;
+box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+ display: none;
+ top:49px;
+ width:300px;
+ background: #fff;
+        					@media(max-width:1025px){
+					width:100%;
+					border-radius:0px;
+					position:static;
+					margin:0;
+				background-color:@light-blue;
+					border-top:2px solid #fff;
+	}
+}
+
+.nav__submenu-item a{
+color:#333333;
+
+padding:15px 20px;
+display: block;
+ font-size: 16px;
+ line-height: 110%;
+ text-decoration: none;
+
+ &:hover{
+ 	background:#fff;
+color: @blue;
+ }
+ @media(max-width:1025px){
+ 	padding-left:41px;
+  color:#fff;
+ }
+}
+.with-submenu a{
+  padding:21px 25px 21px 20px;
+}
+.with-submenu a:hover ~ .nav__submenu,
+.nav__submenu:hover{
+	display: block
+}
+
+
+.with-submenu:after{
+
+	content: '';
+    display: inline-block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+border-left:2px solid #A9A9A9;
+border-top:2px solid #A9A9A9;
+transform: rotate(225deg);
+   right: 10px;
+    top: 25px;
+    @media(max-width: 1025px){
+      border-color:#fff
+    }
+}
+	
+
+
+.nav__submenu.open {
+	@media(max-width: 1025px){
+	display: block;	
+	} 
+}

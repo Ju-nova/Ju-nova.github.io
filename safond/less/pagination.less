@@ -1,0 +1,48 @@
+.pagination
+{
+    display: flex;
+    margin: 40px 0;
+    padding: 0;
+
+    list-style: none;
+
+    justify-content: center;
+    align-items: center;
+
+    & a
+    {
+        display: flex;
+        width: 45px;
+        height: 45px;
+
+        text-decoration: none;
+
+        color: #333;
+        border: 1px solid #e7e5e4;
+        background: #fff;
+
+        justify-content: center;
+        align-items: center;
+
+        transition:.3s;
+    }
+
+
+    & a:hover
+    {
+        width: 45px;
+        height: 45px;
+
+        color: #fff;
+        background: @blue;
+    }
+
+
+
+
+    & .active a
+    {
+        color: #fff;
+        background: @blue;
+    }
+}
