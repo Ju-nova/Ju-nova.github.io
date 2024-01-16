@@ -1,0 +1,33 @@
+.breadcrumbs{
+	display: flex;
+	margin:  0 0 20px 0;
+	padding:20px 0 0 0;
+	list-style:none;
+	& li{
+     margin-right:23px;
+     position:relative;
+     &:after{
+     	content:'/';
+     	position:absolute;
+     	display:inline-block;
+     	right: -15px;
+     }
+     & a{
+     	font-size: 16px;
+		line-height: 19px;
+		color: #8E9092;
+        text-decoration:none;
+     }
+     
+	}
+	& li.active{
+     	& a{
+     		color:#000;
+     	}
+     }
+     & li:last-child{
+     	&:after{
+     		content:''
+     	}
+     }
+}

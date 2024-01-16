@@ -1,0 +1,85 @@
+.btn__blue{
+height: 56px;
+display: inline-flex;
+align-items:center;
+font-weight: 500;
+font-size: 22px;
+line-height: 100%;
+text-align: center;
+text-transform: uppercase;
+padding:0 37px;
+background-image: linear-gradient(269.4deg, #006DC6 0.33%, #4BABDF 99.48%);
+border-radius: 7.22581px;
+color:#fff;
+transition: .3s;
+position:relative;
+outline: none;
+cursor:pointer;
+// &:hover,
+// &:focus{
+// 	background-color: @blue;
+// 	background-image:none
+// }
+// &:active{
+// 	background: linear-gradient(269.4deg, #014E8D 0.33%, #4BABDF 99.48%);
+// }
+// @media(max-height:650px){
+// height: 45px;
+// }
+@media(max-width: 1300px){
+height: 37px;
+font-size: 14px;
+padding:0 23px;
+}
+@media (max-width: 1200px)
+{
+    height: 45px;
+        font-weight: 500;
+    font-size: 22px;
+}
+}
+.btn__blue:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  color:#fff;  
+background-color: @blue;
+border-radius: 7.22581px;
+
+transition: .3s;
+opacity:0;
+}
+.btn__blue > span{
+    position: relative;
+    z-index: 1;
+}
+.btn__blue:hover:after,
+.btn__blue:focus:after  {
+    opacity: 1;
+}
+.btn__download{
+color:@blue;
+font-weight: 400;
+font-size: 20px;
+line-height: 154%;
+margin-left:60px;
+position:relative;
+&:before{
+	content:"";
+	position:absolute;
+	display: inline-block;
+	width:20px;
+	height:20px;
+	background-image:url(../img/icon-download.svg);
+	background-repeat:no-repeat;
+	background-position:center center;
+    left: -30px;
+    top: 2px;
+}
+@media(max-width:1300px){
+  font-size: 14px;  
+}
+}

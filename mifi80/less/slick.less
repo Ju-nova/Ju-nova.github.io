@@ -1,0 +1,88 @@
+.slick-list,
+.slick-track{
+	display: flex
+}
+
+.slick-arrow
+{
+    position: absolute;
+    z-index: 5;
+
+    font-size: 0;
+    line-height: 0;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+
+   	padding:0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.rec__wrapper.slider__orange-arrows .slick-arrow{
+	background-color: #ECEDFF;
+}
+.slider__orange-arrows .slick-arrow{
+    width:40px;
+    height:40px;
+    background-color: #fff;
+    border-radius:10px;  
+
+    &.slick-prev{
+           right:calc(50% - 624px);
+           top:-87px;
+            @media(max-width:1400px){
+            right:80px;
+           }
+        &:before{
+            content:'';
+            display:inline-block;
+            width:13px;
+            height:23px;
+            background-image:url(../img/icons/icon-arrow-gray.svg); 
+            background-repeat:no-repeat;     
+            background-size:contain;     
+             left: 50%;
+            top: 50%;
+            position: absolute;
+            transition:.5s;
+            transform:translate(-50%, -50%);
+        }
+            &:hover{
+      &:before{
+        background-image:url(../img/icons/icon-arrow-orange.svg); 
+      }  
+    }
+    } 
+        &.slick-next{
+            right:calc(50% - 678px);
+           top:-87px;
+           
+                      @media(max-width:1400px){
+            right:20px;
+
+           }
+        &:before{
+            content:'';
+            display:inline-block;
+            width:13px;
+            height:23px;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+             background-image:url(../img/icons/icon-arrow-gray.svg);
+              background-size:contain;  
+             background-repeat:no-repeat;    
+             transform: rotate(180deg) translate(50%, 50%);
+             transition:.5s;
+        }
+            &:hover{
+      &:before{
+        background-image:url(../img/icons/icon-arrow-orange.svg); 
+        transform: rotate(180deg) translate(50%, 50%);
+      }  
+    }
+    } 
+}

@@ -1,0 +1,29 @@
+.photo-item {
+    display: block;
+    padding: 10px;
+    border-radius:10px;     
+    box-sizing: border-box;
+    overflow: hidden;
+    @media(max-width:768px){
+        padding:5px;
+    }
+    & img{
+       border-radius:10px;  
+    }
+    &:hover  .photo-item__img{
+         width:110%;   
+        }
+    }
+
+.photo-size{
+    width: 25%;
+        @media(max-width:768px){
+        width: 50%;
+    }
+}
+.photo__wrapper{
+margin:0 -10px 70px -10px;
+}
+
+
+

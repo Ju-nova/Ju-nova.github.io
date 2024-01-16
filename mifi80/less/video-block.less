@@ -1,0 +1,88 @@
+.video-block{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	margin-bottom:80px;
+	flex-wrap:wrap
+}
+.video-block__text{
+	width:42.3%;
+	@media(max-width: 900px){
+		width:100%;
+		margin-bottom:60px
+	}
+}
+
+
+
+.video-block__title{
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+color:@dark-blue;
+margin-bottom: 10px
+}
+.video-block__subtitle{
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: @grafit;
+}
+.video-block__video{
+width: 49.3%;
+	position:relative;
+	&:before{
+		content:'';
+		display: inline-block;
+		position:absolute;
+		width:100%;
+		height: 100%;
+		top: 0;
+    	left: 0;
+		border: 2px solid transparent;
+		border-image: linear-gradient(269.8deg, #FFEB76 3.83%, #AE7F25 20.07%, #894E00 27.71%, #C3912F 52.56%, #CDA13C 55.42%, #EFDB6C 66.89%, #FDF17E 71.67%, #9F6812 88.87%, #E4C85C 99.38%);
+		-moz-border-image: -moz-linear-gradient(269.8deg, #FFEB76 3.83%, #AE7F25 20.07%, #894E00 27.71%, #C3912F 52.56%, #CDA13C 55.42%, #EFDB6C 66.89%, #FDF17E 71.67%, #9F6812 88.87%, #E4C85C 99.38%);
+		-webkit-border-image: -webkit-linear-gradient(269.8deg, #FFEB76 3.83%, #AE7F25 20.07%, #894E00 27.71%, #C3912F 52.56%, #CDA13C 55.42%, #EFDB6C 66.89%, #FDF17E 71.67%, #9F6812 88.87%, #E4C85C 99.38%);
+		border-image-slice: 1;
+		box-sizing:border-box;
+		transform: rotate(-7.96deg);
+		@media(max-width: 900px){
+			content:none
+		}
+}
+
+@media(max-width: 900px){
+		width:100%;
+	}
+}
+.thumb-wrap{
+	text-align: right;
+	position:relative;
+}
+.video-block .thumb-wrap iframe{
+		border: 2px solid transparent;
+		border-image: linear-gradient(269.8deg, #FFEB76 3.83%, #AE7F25 20.07%, #894E00 27.71%, #C3912F 52.56%, #CDA13C 55.42%, #EFDB6C 66.89%, #FDF17E 71.67%, #9F6812 88.87%, #E4C85C 99.38%);
+		-moz-border-image: -moz-linear-gradient(269.8deg, #FFEB76 3.83%, #AE7F25 20.07%, #894E00 27.71%, #C3912F 52.56%, #CDA13C 55.42%, #EFDB6C 66.89%, #FDF17E 71.67%, #9F6812 88.87%, #E4C85C 99.38%);
+		-webkit-border-image: -webkit-linear-gradient(269.8deg, #FFEB76 3.83%, #AE7F25 20.07%, #894E00 27.71%, #C3912F 52.56%, #CDA13C 55.42%, #EFDB6C 66.89%, #FDF17E 71.67%, #9F6812 88.87%, #E4C85C 99.38%);
+		border-image-slice: 1;
+}
+@media (max-width: 1392px){
+.video-block .thumb-wrap {
+    position: relative;
+    padding-bottom: 55%;
+    height: 0;
+    overflow: hidden;
+}
+}
+@media (max-width: 1392px){
+.video-block .thumb-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+}
+}
