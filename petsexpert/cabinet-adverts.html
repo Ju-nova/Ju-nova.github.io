@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="shadow"></div>
+	<div class="site">
+		<header>
+			<div class="menu container">
+				<a class="menu__logo" href="/">
+					<picture>
+						<source srcset="img/main-logo_mob.svg" media="(max-width: 1025px)">
+						<img src="img/main-logo.svg" alt="">
+					</picture>
+				</a>
+				<div class="menu__burger">
+				</div>
+				<form action="" class="menu__form-search" id="form-search">
+					<input type="search" placeholder="Поиск">
+					<input type="submit">
+				</form>
+				<a href="#" class="menu__ad-btn btn btn--orange">Объявление</a>
+
+				<div class="menu__user">
+					<div class="menu__user-img menu__user-img--logout">
+						<!-- если пользователь не залогинен - menu__user-img--logout
+					 если пользователь залогинен menu__user-img--login -->
+
+					</div>
+					<ul class="menu__user-list menu__user-list--logout">
+						<li><a href="#">Вход</a></li>
+						<li><a href="#">Регистрация</a></li>
+						<li class="noactive"><a href="#">Мои объявления</a></li>
+						<li class="noactive"><a href="#">Избранное</a></li>
+					</ul>
+					<ul class="menu__user-list menu__user-list--login">
+
+						<li><a href="#">Константин Константиновский</a></li>
+						<li><a href="#">Мои объявления</a></li>
+						<li><a href="#">Избранное</a></li>
+						<li><a href="#">Настройки</a></li>
+						<li><a href="#">Выход</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="main-menu">
+				<div class="container main-menu__wrapper">
+					<ul class="main-menu__left">
+						<li class="main-menu__with-sub" data-id="dogs">
+							<a href="#" data-toggle="with-sub" data-id="dogs" class="active"><img
+									src="img/icons/icon-dog-menu.svg" alt=""> <span>Собаки</span></a>
+						</li>
+						<li class="main-menu__with-sub" data-id="cats">
+							<a href="#" data-toggle="with-sub" data-id="cats"><img src="img/icons/icon-cat.svg" alt="">
+								<span>Кошки</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-bird.svg" alt=""> <span>Птицы</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-rabbit-menu.svg" alt=""> <span>Кролики</span></a>
+						</li>
+						<li class="main-menu__with-sub" data-id="rodents">
+							<a href="#" data-toggle="with-sub" data-id="rodents"><img
+									src="img/icons/icon-mouse-menu.svg" alt=""> <span>Грызуны</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-fish-menu.svg" alt=""> <span>Рыбы</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-snake-menu.svg" alt=""> <span>Рептилии</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-frog-menu.svg" alt=""> <span>Амфибии</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-butterfly-menu.svg" alt=""> <span>Насекомые</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-cow-menu.svg" alt=""> <span>Крупно рогатые</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-lenivec-menu.svg" alt=""> <span>Другие</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-korm-menu.svg" alt=""> <span>Товары</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-gruming.svg" alt=""> <span>Услуги</span></a>
+						</li>
+
+					</ul>
+					<a href="#" class="menu__ad-btn btn btn--orange">Объявление</a>
+					<div class="main-menu__right">
+						<div id="dogs" class="main-menu__sub active">
+
+							<div class="main-menu__sub__switch">
+								<div class="main-menu__sub-back"></div>
+								<label class="checkbox-ios">
+									<input type="checkbox">
+									<span class="checkbox-ios-switch"></span>
+								</label>
+								<div>В наличии</div>
+							</div>
+
+							<div class="main-menu__sub-letter">A</div>
+							<ul>
+								<li><a href="">Австралийская короткохвостая пастушья собака (австралийская пастушья
+										собака,австралийский куцехвостый хилер, хилер, стампи)1</a></li>
+								<li><a href="">Австралийская овчарка (аусси)2</a></li>
+								<li><a href="">Австралийский келпи3</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Азорская пастушья собака (санмигельская фила) </a></li>
+								<li><a href="">Австралийская короткохвостая пастушья собака (австралийская пастушья
+										собака,австралийский куцехвостый хилер, хилер, стампи)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая) </a></li>
+								<li><a href="">Австралийский келпи </a></li>
+								<li><a href="">Австралийская овчарка (аусси) </a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австралийский келпи3</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Азорская пастушья собака (санмигельская фила) </a></li>
+								<li><a href="">Австралийская короткохвостая пастушья собака (австралийская пастушья
+										собака,австралийский куцехвостый хилер, хилер, стампи)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая) </a></li>
+								<li><a href="">Австралийский келпи </a></li>
+								<li><a href="">Австралийская овчарка (аусси) </a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+
+							</ul>
+						</div>
+						<div id="cats" class="main-menu__sub">
+							<div class="main-menu__sub__switch">
+								<div class="main-menu__sub-back"></div>
+								<label class="checkbox-ios">
+									<input type="checkbox">
+									<span class="checkbox-ios-switch"></span>
+								</label>
+								<div>В наличии</div>
+							</div>
+							<div class="main-menu__sub-letter">A</div>
+							<ul>
+								<li><a href="">Абиссинская кошка</a></li>
+								<li><a href="">Австралийская дымчатая кошка</a></li>
+								<li><a href="">Азиатская табби</a></li>
+								<li><a href="">Анатолийская кошка</a></li>
+								<li><a href="">Американская жесткошёрстная кошка</a></li>
+								<li><a href="">Американская короткошёрстная кошка</a></li>
+								<li><a href="">Американский кёрл</a></li>
+								<li><a href="">Ангорская кошка</a></li>
+								<li><a href="">Американская короткошёрстная кошка</a></li>
+							</ul>
+							<div class="main-menu__sub-letter">Б</div>
+							<ul>
+								<li><a href="">Балинезийская кошка</a></li>
+								<li><a href="">Бамбино (порода)</a></li>
+								<li><a href="">Бенгальская кошка (домашняя)</a></li>
+								<li><a href="">Бенгальская кошка </a></li>
+							</ul>
+							<div class="main-menu__sub-letter">Г</div>
+							<ul>
+								<li><a href="">Гавана (порода кошек)</a></li>
+								<li><a href="">Гималайская кошка</a></li>
+							</ul>
+						</div>
+						<div id="rodents" class="main-menu__sub">
+							<div class="main-menu__sub__switch">
+								<div class="main-menu__sub-back"></div>
+								<label class="checkbox-ios">
+									<input type="checkbox">
+									<span class="checkbox-ios-switch"></span>
+								</label>
+								<div>В наличии</div>
+							</div>
+
+
+							<div class="main-menu__sub-accordion__item active">
+								<div class="main-menu__sub-accordion__header ">
+									<img class="main-menu__sub-accordion__header-animal"
+										src="img/icons/icon-sqiurels-menu.svg" alt="">
+									<a href="#">Белки</a>
+									<img class="main-menu__sub-accordion__header-icon"
+										src="img/icons/icon-accordeon.svg" alt="">
+								</div>
+								<div class="main-menu__sub-accordion__body">
+									<div class="main-menu__sub-letter">A</div>
+									<ul>
+										<li><a href="">Абиссинская кошка</a></li>
+										<li><a href="">Австралийская дымчатая кошка</a></li>
+										<li><a href="">Азиатская табби</a></li>
+										<li><a href="">Анатолийская кошка</a></li>
+										<li><a href="">Американская жесткошёрстная кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+										<li><a href="">Американский кёрл</a></li>
+										<li><a href="">Ангорская кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+									</ul>
+									<div class="main-menu__sub-letter">Б</div>
+									<ul>
+										<li><a href="">Балинезийская кошка</a></li>
+										<li><a href="">Бамбино (порода)</a></li>
+										<li><a href="">Бенгальская кошка (домашняя)</a></li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="main-menu__sub-accordion__item">
+								<div class="main-menu__sub-accordion__header">
+									<img class="main-menu__sub-accordion__header-animal"
+										src="img/icons/icon-beaver-menu.svg" alt="">
+									<a href="#">Бобры</a>
+									<img class="main-menu__sub-accordion__header-icon"
+										src="img/icons/icon-accordeon.svg" alt="">
+								</div>
+								<div class="main-menu__sub-accordion__body">
+									<div class="main-menu__sub-letter">A</div>
+									<ul>
+										<li><a href="">Абиссинская кошка</a></li>
+										<li><a href="">Австралийская дымчатая кошка</a></li>
+										<li><a href="">Азиатская табби</a></li>
+										<li><a href="">Анатолийская кошка</a></li>
+										<li><a href="">Американская жесткошёрстная кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+										<li><a href="">Американский кёрл</a></li>
+										<li><a href="">Ангорская кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+									</ul>
+									<div class="main-menu__sub-letter">Б</div>
+									<ul>
+										<li><a href="">Балинезийская кошка</a></li>
+										<li><a href="">Бамбино (порода)</a></li>
+										<li><a href="">Бенгальская кошка (домашняя)</a></li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="main-menu__sub-accordion__item">
+								<div class="main-menu__sub-accordion__header">
+									<img class="main-menu__sub-accordion__header-animal"
+										src="img/icons/icon-hamster-menu.svg" alt="">
+									<a href="#">Хомяки</a>
+									<img class="main-menu__sub-accordion__header-icon"
+										src="img/icons/icon-accordeon.svg" alt="">
+								</div>
+								<div class="main-menu__sub-accordion__body">
+									<div class="main-menu__sub-letter">A</div>
+									<ul>
+										<li><a href="">Абиссинская кошка</a></li>
+										<li><a href="">Австралийская дымчатая кошка</a></li>
+										<li><a href="">Азиатская табби</a></li>
+										<li><a href="">Анатолийская кошка</a></li>
+										<li><a href="">Американская жесткошёрстная кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+										<li><a href="">Американский кёрл</a></li>
+										<li><a href="">Ангорская кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+									</ul>
+									<div class="main-menu__sub-letter">Б</div>
+									<ul>
+										<li><a href="">Балинезийская кошка</a></li>
+										<li><a href="">Бамбино (порода)</a></li>
+										<li><a href="">Бенгальская кошка (домашняя)</a></li>
+									</ul>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<div class="gray-block cabinet">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="/">Главная</a></li>
+					<li><a href="#">Личный кабинет</a></li>
+				</ul>
+				<h2 class="main-title">Личный кабинет</h2>
+				<div class="cabinet__wrapper">
+					<div class="cabinet__sidebar">
+						<div class="cabinet__sidebar-info">
+							<div class="cabinet__sidebar-title">Константин Константиновский</div>
+							<div class="advert__info-comment-raiting">4.0</div>
+							<ul class="advert__info-comment-stars">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li></li>
+							</ul>
+						</div>
+						<ul class="cabinet__sidebar-menu">
+							<li><a href="#">Мои данные</a></li>
+							<li><a href="#">Мои объявления <span>4</span></a> </li>
+							<li><a href="#">Добавить объявление</a></li>
+							<li class="active"><a href="#">Избранное <span>12</span></a> </li>
+							<li><a href="#">Настройки профиля</a></li>
+							<li><a href="#">Отзывы <span>7</span></a> </li>
+							<li><a href="#">Выход</a></li>
+						</ul>
+					</div>
+					<div class="cabinet__info cabinet-adverts">
+
+						<div class="cabinet-adverts__wrapper">
+							<table>
+								<tbody>
+
+									<tr>
+										<th>Фото</th>
+										<th>Название объявления</th>
+										<th>Цена</th>
+										<th>Статус</th>
+										<th>Таймер</th>
+										<th>Действие</th>
+									</tr>
+
+									<tr>
+										<td><img class="cabinet-adverts__img" src="img/test2.jpg" alt=""></td>
+										<td><span>Золотистый ретривер очень ждет вас</span></td>
+										<td><span>1000 ₽</span></td>
+										<td><span class="orange">Включено</span></td>
+										<td><span>03:38:55</span></td>
+										<td>
+											<span>
+												<a class="cabinet-adverts__icon cabinet-adverts__icon--up" href="#"></a>
+												<a class="cabinet-adverts__icon cabinet-adverts__icon--edit"
+													href="#"></a>
+												<a class="cabinet-adverts__icon cabinet-adverts__icon--delete" href="#">
+												</a>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td><img class="cabinet-adverts__img" src="img/test2.jpg" alt=""></td>
+										<td><span>Золотистый ретривер очень ждет вас Золотистый ретривер очень ждет
+												вас</span></td>
+										<td><span>10 ₽</span></td>
+										<td><span class="gray">Выключено</span></td>
+										<td><span>03:38:55</span></td>
+										<td>
+											<span>
+												<a class="cabinet-adverts__icon cabinet-adverts__icon--up" href="#"></a>
+												<a class="cabinet-adverts__icon cabinet-adverts__icon--edit"
+													href="#"></a>
+												<a class="cabinet-adverts__icon cabinet-adverts__icon--delete" href="#">
+												</a>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td><img class="cabinet-adverts__img" src="img/test2.jpg" alt=""></td>
+										<td><span>Золотистый ретривер очень ждет вас</span></td>
+										<td><span>1000 ₽</span></td>
+										<td><span class="orange">Включено</span></td>
+										<td><span>03:38</span></td>
+										<td>
+											<span>
+												<a class="cabinet-adverts__icon cabinet-adverts__icon--up" href="#"></a>
+												<a class="cabinet-adverts__icon cabinet-adverts__icon--edit"
+													href="#"></a>
+												<a class="cabinet-adverts__icon cabinet-adverts__icon--delete" href="#">
+												</a>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--  <div class="cabinet-adverts__flex">
+                        
+                    </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<footer class="footer">
+		<div class="container footer__wrapper">
+			<div class="footer__logo"> <a href="/"><img src="img/main-logo.svg" alt=""></a></div>
+			<div class="footer__block">
+				<div class="footer__block-title">Компания</div>
+				<ul class="footer__block-menu">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Документация</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__block">
+				<div class="footer__block-title">Информация</div>
+				<ul class="footer__block-menu">
+					<li><a href="#">Каталог животных</a></li>
+					<li><a href="#">Условия продажи</a></li>
+					<li><a href="#">Условия доставки</a></li>
+				</ul>
+			</div>
+			<div class="footer__block">
+				<div class="footer__block-title">Помощь</div>
+				<ul class="footer__block-menu">
+					<li><a href="#">Популярные вопросы</a></li>
+					<li><a href="#">Техподдержка</a></li>
+					<li><a href="#">Обзоры</a></li>
+					<li><a href="#">Инструкция</a></li>
+				</ul>
+			</div>
+			<div class="footer__block footer__block-copyright">ООО PETSEXPERT<br>
+				Все права защищены<br>
+				Портал продажи животных © 2022</div>
+		</div>
+	</footer>
+	</div>
+</body>
+<script src="js/plugins/jquery-3.4.1.min.js"></script>
+<script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/plugins/select2.full.min.js"></script>
+<script src="js/plugins/slick.js"></script>
+<script src="js/plugins/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/formValidation.js"></script>
+
+</html>

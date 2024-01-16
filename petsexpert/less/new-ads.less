@@ -1,0 +1,39 @@
+.new-ads__wrapper{
+	display: flex;
+	flex-wrap:wrap;
+	margin:0 -10px;
+
+	& .animal-card{
+		width: calc(100%/5 - 10px*2);
+		margin:10px;
+		min-height: 342px;
+@media(max-width: 1160px){
+	width: calc(100%/3 - 10px*2);
+	}
+	@media(max-width: 768px){
+	width: calc(100%/2 - 10px*2);
+	min-height: 257px;
+	}
+}
+}
+.new-ads__btn{
+	text-align: center;
+	margin-top:30px;
+
+}
+
+.new-ads .animal-card__yandex-ad{
+width:38%;	
+margin:10px;
+height: 342px;
+		@media(max-width: 768px){
+	width: 100%;
+	}
+& img{
+	height:100%;
+	width:100%;
+	object-fit: cover;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+}

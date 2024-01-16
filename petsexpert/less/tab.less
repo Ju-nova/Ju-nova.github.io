@@ -1,0 +1,13 @@
+.tab-body{
+	display: none;
+}
+.tab-wrapper.active{
+	& .tab-body{
+		display: block
+	}
+	& .tab-icon{
+		-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+	}
+}

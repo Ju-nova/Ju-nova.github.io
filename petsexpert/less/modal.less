@@ -1,0 +1,187 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 2000;
+  display: none;
+  width: 100%;
+  // height: 100%;
+  bottom:0;
+  overflow-y: scroll;
+  padding-bottom: 50px;
+  -webkit-overflow-scrolling: touch;
+}
+.modal {
+
+  position: absolute;
+  z-index: 3000;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  left: 50%;
+  top:20px;
+  transform: translateX(-50%);
+  width: 900px;
+  background: #FFFFFF;
+border-radius: 10px;
+
+  @media (max-width: 930px) {
+    width: 90%;
+  
+}
+&.modal-small{
+  width: 456px;
+  & .btn{
+    width:100%;
+  }
+  & .btn-white{
+
+    margin-top:16px
+  }
+    @media (max-width:768px) {
+    width: 90%;
+  
+}
+}
+&.auth{
+  position: static;
+    z-index: 3000;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    left: auto;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(0);
+    width: 900px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 auto 40px auto;
+}
+}
+
+.modal-small__wrapper{
+  padding:112px 75px;
+   @media(max-width: 768px){
+ padding:50px 40px 30px 40px; 
+ border-radius: 0 0px 10px 10px;
+}
+}
+.modal-small__description{
+ font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: #4D4949;
+margin-bottom:39px;
+}
+
+.modal-small input[type="submit"]{
+margin:16px 0 0 0;
+width:100%;
+}
+.modal .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 0;
+  cursor: pointer;
+   display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/icon-close-orange.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+    @media (max-width: 375px) {
+
+    right:10px;
+    top: 10px;
+  }
+}
+
+
+
+.modal__wrapper{
+  display:flex;
+  & .modal__left,
+   & .modal__right{
+  width:50%;
+  box-sizing:border-box;
+    @media(max-width: 768px){
+    width:100%;
+  }
+  }
+  @media(max-width: 768px){
+    flex-direction:column
+  }
+}
+
+.modal__right{
+ background: #F8F8F8; 
+ padding:70px 73px;
+ border-radius: 0 10px 10px 0;
+ @media(max-width: 768px){
+ padding:30px 40px 30px 40px; 
+ border-radius: 0 0px 10px 10px;
+}
+}
+.form__enter{
+  text-align:center;
+   & .custom-input{
+    margin: 0 0 10px 0;
+   }
+   & label{
+    text-align: left
+   }
+   & .form__enter-submit{
+margin: 29px 0 16px 0;
+width:100%;
+   }
+   & .btn-white{
+    width:100%;
+    margin:0 0 28px 0;
+    box-sizing:border-box
+   }
+   
+}
+.modal__left{
+padding:98px 42px 10px 72px;
+@media(max-width: 768px){
+ padding:30px 40px 30px 40px; 
+}
+   }
+
+.modal__left-center{
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: #4D4949;
+margin-top:29px;
+margin-bottom: 27px
+}
+.modal__left-img{
+  margin:0 auto;
+}
+.form__forget-password{
+color:@orange;
+text-decoration: underline;
+text-align: center;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+}
+.modal__left-description{
+  display: flex;
+  align-items:center;
+  font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+margin: 0 0 19px 0;
+color: @gray;
+  & img{
+    margin: 0  10px 0 0;
+  }
+}

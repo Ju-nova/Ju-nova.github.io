@@ -1,0 +1,221 @@
+.advert{
+	padding-bottom: 60px;
+}
+.advert__wrapper{
+display:flex;
+
+@media(max-width: 1025px){
+flex-direction:column;
+}
+
+}
+.advert__slider{
+width:49.3%;
+flex-shrink: 0;
+position:relative;
+@media(max-width: 1025px){
+	width:670px;
+	margin:0 auto;
+}
+@media(max-width: 700px){
+	width: 100%;
+
+}
+& .animal-card__fav{
+	top:30px;
+	right:30px;
+}
+}
+
+.advert-slider-for{
+	margin-bottom: 10px;
+	width:100% ;
+& img{
+	width:670px !important;
+	height: 620px;
+    object-fit: cover;
+    border-radius: 10px;
+@media(max-width: 700px){
+	width: 100%;
+	height:350px;
+}
+}
+
+}
+
+.advert-slider-nav{
+
+width:100% ;
+
+& img{
+	width:100px !important;
+	height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+& .slick-slide{
+ margin: 0 10px 0 0;
+ width:100px !important;
+ @media(max-width: 1025px){
+ 	
+ 	margin:0 10px;
+ }
+ & div{
+ 	width:100px !important;
+	height: 100px;
+
+ }
+}
+& .slick-track{
+	// padding-left:10px;
+	// @media(max-width: 1025px){
+	// 	padding:0
+	// }
+}
+& .slick-slide.slick-current{
+	width:100px !important;
+	height: 100px;
+
+	 & div{
+ 	width:100px !important;
+	height: 100px;
+
+ }
+	& img{
+	width:96px !important;
+	height: 96px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid @orange;
+}
+
+}
+}
+.advert__info{
+padding-left:50px;
+padding-top:17px;
+@media(max-width: 1025px){
+	padding-left:0
+}
+}
+.advert__info-title{
+font-weight: 600;
+font-size: 32px;
+line-height: 38px;
+color: @dark;
+margin:0 0 16px;
+}
+
+.advert__info-price{
+font-weight: 600;
+font-size: 32px;
+line-height: 38px;	
+margin-bottom: 30px;
+color:@orange;
+}
+
+.advert__info-description{
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color:@dark;
+margin-bottom: 30px;
+}
+
+.advert__info-characteristic-title{
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #535353;
+margin-bottom: 10px;
+}
+.advert__info-characteristic{
+	margin-bottom:30px
+}
+.advert__info-characteristic-type{
+	margin-bottom:8px;
+	font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+& span {
+	color: @gray;
+}
+}
+
+.advert__info-title-shop{
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #535353;	
+margin-bottom:10px;
+}
+
+.advert__info-comment{
+margin-bottom:20px;
+display:flex;
+align-items: center;
+
+}
+.advert__info-comment-raiting{
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #535353;
+margin-right: 4px
+
+}
+.advert__info-comment-stars{
+	margin:0;
+	padding:0;
+	list-style: none;
+	display: flex;
+	margin-right:10px;
+	& li{
+    margin:0;
+	padding:0;
+	width:30px;
+	height: 30px;
+	background-image:url(../img/icons/icon-star-gray.svg);
+	background-repeat:no-repeat;
+	background-size: center;
+	&.active{
+    background-image:url(../img/icons/icon-star-orange.svg); 
+	}
+	}
+}
+.advert__info-comment-review{
+color: @gray;
+&:hover{
+	text-decoration: none;
+}
+
+}
+.advert__info-reg,
+.advert__info-tel{
+margin-bottom:8px;	
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color:@orange;
+& span{
+	color: @gray;
+	font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}
+& a{
+	color:@orange;
+	text-decoration: none
+}
+}
+
+.advert__info__soc{
+	padding-top:12px;
+	display: flex;
+	& a{
+		display: block;
+		margin-left: 10px
+	}
+}

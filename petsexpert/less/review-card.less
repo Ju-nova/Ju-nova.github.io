@@ -1,0 +1,48 @@
+.review-card {
+	&__commenter {
+		font-weight: 500;
+		margin: 0;
+		margin-bottom: 16px;
+	}
+
+	&__product-name {
+		font-size: 16px;
+		color: @gray;
+	}
+
+	&__rating {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		align-items: center;
+
+		&-star {
+			list-style: none;
+			width: 20px;
+			height: 20px;
+			background: url("/img/icons/icon-star-orange.svg") center / contain
+				no-repeat;
+			+ .review-card__rating-star {
+				margin-left: 4px;
+			}
+		}
+	}
+
+	&__comment {
+		color: @dark;
+		font-size: 16px;
+	}
+
+	&__date {
+		font-size: 12px;
+		color: @gray;
+		margin: 0;
+	}
+
+	&__product-name,
+	&__rating,
+	&__comment {
+		margin: 0;
+		margin-bottom: 10px;
+	}
+}

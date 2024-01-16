@@ -1,0 +1,169 @@
+.select2{
+	width:100% !important;
+}
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border:0;
+    border-bottom: 1px solid #A1A1A1;
+    border-radius: 0;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+	padding-left:0
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+	height: 26px;
+    position: absolute;
+    top: 14px;
+    right: 23px;
+    width: 20px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+border:none;
+    width:16px;
+    height: 9px;
+    background-image:url(../img/icons/icon-accordeon.svg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+    top: 7px;
+
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+border: none;
+    width:16px;
+    height: 9px;
+    background-image:url(../img/icons/icon-accordeon.svg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+    top: 7px;
+    transform:rotate(180deg);
+
+}
+.select2-container--open .select2-dropdown--below{
+	background: #FFFFFF;
+box-shadow: 0px 36px 36px rgba(0, 0, 0, 0.1);
+border-radius: 0px 0px 10px 10px;
+border:none;
+
+
+}
+.select2-dropdown{
+    z-index:9 !important
+}
+.select2-search--dropdown{
+	display:none;
+}
+
+.select2-selection__rendered{
+font-size: 18px;
+line-height: 21px
+}
+.select2-results__option{
+	padding:0;
+	margin-bottom: 26px;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: #535353;
+}
+.select2-results__option:last-child{
+	margin-bottom: 0
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+	background-color:#fff;
+	color: @orange;
+}
+// .select2-container--default .select2-results > .select2-results__options{
+// 	padding:17px 18px;
+// }
+.select2-container--default .select2-results__option[aria-selected=true]{
+	background-color:#fff
+}
+.select2-container .select2-selection--single{
+	height:auto;
+	border-radius: 10px;
+    border: none;
+    box-shadow: 2px 4px 21px rgba(0, 0, 0, 0.08);
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+	// padding-bottom:10px;
+	// line-height: 21px !important;
+	padding: 12px 20px 10px 20px;
+    
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+    resize: none;
+    color: #535353;
+    width: 100%;
+    background: #FFFFFF;
+}
+.select2-results{
+	// max-height: 250px;
+	overflow-y: auto !important;
+	padding: 12px 20px 10px;
+max-height:none !important;
+
+}
+
+.select2-container--default .select2-results>.select2-results__options{
+    max-height:none !important
+}
+.select2-dropdown.select2-dropdown--above {
+       margin-top: 280px;
+        position: static;
+        	background: #FFFFFF;
+box-shadow: 0px 36px 36px rgba(0, 0, 0, 0.1);
+border-radius: 0px 0px 10px 10px;
+border:none;
+
+
+}
+
+.js-example-basic-single{
+	opacity:0;
+}
+
+.select2-container--default .select2-results__option--selected{
+background-color:#fff;
+}
+// Селект для страницы с добавлением объявления
+.cabinet-add .select2-container .select2-selection--single .select2-selection__rendered{
+background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 19px 35px 20px 16px;
+    font-size: 16px;
+    line-height: 19px;
+    color: @gray;
+}
+.cabinet-add .select2-container .select2-selection--single{
+    box-shadow:none
+}
+
+.cabinet-add .select2-selection--single .select2-selection__arrow b{
+   background-image: url(../img/icons/icon-accordeon-filtr.svg); 
+   top: 15px;
+}
+.cabinet-add .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+   background-image: url(../img/icons/icon-accordeon-filtr.svg); 
+   top: 15px;  
+}
+#select2-cabinet-add-select-naznachenie-results .select2-results__option,
+#select2-cabinet-add-select-fur-results .select2-results__option{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+}

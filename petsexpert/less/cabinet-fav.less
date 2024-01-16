@@ -1,0 +1,13 @@
+.cabinet-fav{
+	display: flex;
+	flex-wrap: wrap;
+	align-content:flex-start;
+	margin:0 -10px;
+	& .animal-card{
+		margin:0 10px 20px ;
+		width: calc(100%/3 - 10px*2);
+		@media(max-width: 760px){
+		width: calc(100%/2 - 10px*2);	
+		}
+	}
+}

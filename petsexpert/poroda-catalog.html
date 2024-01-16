@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="shadow"></div>
+	<div class="site">
+		<header>
+			<div class="menu container">
+				<a class="menu__logo" href="/">
+					<picture>
+						<source srcset="img/main-logo_mob.svg" media="(max-width: 1025px)">
+						<img src="img/main-logo.svg" alt="">
+					</picture>
+				</a>
+				<div class="menu__burger">
+				</div>
+				<form action="" class="menu__form-search" id="form-search">
+					<input type="search" placeholder="Поиск">
+					<input type="submit">
+				</form>
+				<a href="#" class="menu__ad-btn btn btn--orange">Объявление</a>
+
+				<div class="menu__user">
+					<div class="menu__user-img menu__user-img--logout">
+						<!-- если пользователь не залогинен - menu__user-img--logout
+					 если пользователь залогинен menu__user-img--login -->
+
+					</div>
+					<ul class="menu__user-list menu__user-list--logout">
+						<li><a href="#">Вход</a></li>
+						<li><a href="#">Регистрация</a></li>
+						<li class="noactive"><a href="#">Мои объявления</a></li>
+						<li class="noactive"><a href="#">Избранное</a></li>
+					</ul>
+					<ul class="menu__user-list menu__user-list--login">
+
+						<li><a href="#">Константин Константиновский</a></li>
+						<li><a href="#">Мои объявления</a></li>
+						<li><a href="#">Избранное</a></li>
+						<li><a href="#">Настройки</a></li>
+						<li><a href="#">Выход</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="main-menu">
+				<div class="container main-menu__wrapper">
+					<ul class="main-menu__left">
+						<li class="main-menu__with-sub" data-id="dogs">
+							<a href="#" data-toggle="with-sub" data-id="dogs" class="active"><img
+									src="img/icons/icon-dog-menu.svg" alt=""> <span>Собаки</span></a>
+						</li>
+						<li class="main-menu__with-sub" data-id="cats">
+							<a href="#" data-toggle="with-sub" data-id="cats"><img src="img/icons/icon-cat.svg" alt="">
+								<span>Кошки</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-bird.svg" alt=""> <span>Птицы</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-rabbit-menu.svg" alt=""> <span>Кролики</span></a>
+						</li>
+						<li class="main-menu__with-sub" data-id="rodents">
+							<a href="#" data-toggle="with-sub" data-id="rodents"><img
+									src="img/icons/icon-mouse-menu.svg" alt=""> <span>Грызуны</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-fish-menu.svg" alt=""> <span>Рыбы</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-snake-menu.svg" alt=""> <span>Рептилии</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-frog-menu.svg" alt=""> <span>Амфибии</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-butterfly-menu.svg" alt=""> <span>Насекомые</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-cow-menu.svg" alt=""> <span>Крупно рогатые</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-lenivec-menu.svg" alt=""> <span>Другие</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-korm-menu.svg" alt=""> <span>Товары</span></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/icons/icon-gruming.svg" alt=""> <span>Услуги</span></a>
+						</li>
+
+					</ul>
+					<a href="#" class="menu__ad-btn btn btn--orange">Объявление</a>
+					<div class="main-menu__right">
+						<div id="dogs" class="main-menu__sub active">
+
+							<div class="main-menu__sub__switch">
+								<div class="main-menu__sub-back"></div>
+								<label class="checkbox-ios">
+									<input type="checkbox">
+									<span class="checkbox-ios-switch"></span>
+								</label>
+								<div>В наличии</div>
+							</div>
+
+							<div class="main-menu__sub-letter">A</div>
+							<ul>
+								<li><a href="">Австралийская короткохвостая пастушья собака (австралийская пастушья
+										собака,австралийский куцехвостый хилер, хилер, стампи)1</a></li>
+								<li><a href="">Австралийская овчарка (аусси)2</a></li>
+								<li><a href="">Австралийский келпи3</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Азорская пастушья собака (санмигельская фила) </a></li>
+								<li><a href="">Австралийская короткохвостая пастушья собака (австралийская пастушья
+										собака,австралийский куцехвостый хилер, хилер, стампи)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая) </a></li>
+								<li><a href="">Австралийский келпи </a></li>
+								<li><a href="">Австралийская овчарка (аусси) </a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австралийский келпи3</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Азорская пастушья собака (санмигельская фила) </a></li>
+								<li><a href="">Австралийская короткохвостая пастушья собака (австралийская пастушья
+										собака,австралийский куцехвостый хилер, хилер, стампи)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая) </a></li>
+								<li><a href="">Австралийский келпи </a></li>
+								<li><a href="">Австралийская овчарка (аусси) </a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+								<li><a href="">Австрийская гончая (австралийский гладкошерстный бракк, брандл-бракк,
+										австралийская чёрная с рыжими подпалинами гончая)</a></li>
+
+							</ul>
+						</div>
+						<div id="cats" class="main-menu__sub">
+							<div class="main-menu__sub__switch">
+								<div class="main-menu__sub-back"></div>
+								<label class="checkbox-ios">
+									<input type="checkbox">
+									<span class="checkbox-ios-switch"></span>
+								</label>
+								<div>В наличии</div>
+							</div>
+							<div class="main-menu__sub-letter">A</div>
+							<ul>
+								<li><a href="">Абиссинская кошка</a></li>
+								<li><a href="">Австралийская дымчатая кошка</a></li>
+								<li><a href="">Азиатская табби</a></li>
+								<li><a href="">Анатолийская кошка</a></li>
+								<li><a href="">Американская жесткошёрстная кошка</a></li>
+								<li><a href="">Американская короткошёрстная кошка</a></li>
+								<li><a href="">Американский кёрл</a></li>
+								<li><a href="">Ангорская кошка</a></li>
+								<li><a href="">Американская короткошёрстная кошка</a></li>
+							</ul>
+							<div class="main-menu__sub-letter">Б</div>
+							<ul>
+								<li><a href="">Балинезийская кошка</a></li>
+								<li><a href="">Бамбино (порода)</a></li>
+								<li><a href="">Бенгальская кошка (домашняя)</a></li>
+								<li><a href="">Бенгальская кошка </a></li>
+							</ul>
+							<div class="main-menu__sub-letter">Г</div>
+							<ul>
+								<li><a href="">Гавана (порода кошек)</a></li>
+								<li><a href="">Гималайская кошка</a></li>
+							</ul>
+						</div>
+						<div id="rodents" class="main-menu__sub">
+							<div class="main-menu__sub__switch">
+								<div class="main-menu__sub-back"></div>
+								<label class="checkbox-ios">
+									<input type="checkbox">
+									<span class="checkbox-ios-switch"></span>
+								</label>
+								<div>В наличии</div>
+							</div>
+
+
+							<div class="main-menu__sub-accordion__item active">
+								<div class="main-menu__sub-accordion__header ">
+									<img class="main-menu__sub-accordion__header-animal"
+										src="img/icons/icon-sqiurels-menu.svg" alt="">
+									<a href="#">Белки</a>
+									<img class="main-menu__sub-accordion__header-icon"
+										src="img/icons/icon-accordeon.svg" alt="">
+								</div>
+								<div class="main-menu__sub-accordion__body">
+									<div class="main-menu__sub-letter">A</div>
+									<ul>
+										<li><a href="">Абиссинская кошка</a></li>
+										<li><a href="">Австралийская дымчатая кошка</a></li>
+										<li><a href="">Азиатская табби</a></li>
+										<li><a href="">Анатолийская кошка</a></li>
+										<li><a href="">Американская жесткошёрстная кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+										<li><a href="">Американский кёрл</a></li>
+										<li><a href="">Ангорская кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+									</ul>
+									<div class="main-menu__sub-letter">Б</div>
+									<ul>
+										<li><a href="">Балинезийская кошка</a></li>
+										<li><a href="">Бамбино (порода)</a></li>
+										<li><a href="">Бенгальская кошка (домашняя)</a></li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="main-menu__sub-accordion__item">
+								<div class="main-menu__sub-accordion__header">
+									<img class="main-menu__sub-accordion__header-animal"
+										src="img/icons/icon-beaver-menu.svg" alt="">
+									<a href="#">Бобры</a>
+									<img class="main-menu__sub-accordion__header-icon"
+										src="img/icons/icon-accordeon.svg" alt="">
+								</div>
+								<div class="main-menu__sub-accordion__body">
+									<div class="main-menu__sub-letter">A</div>
+									<ul>
+										<li><a href="">Абиссинская кошка</a></li>
+										<li><a href="">Австралийская дымчатая кошка</a></li>
+										<li><a href="">Азиатская табби</a></li>
+										<li><a href="">Анатолийская кошка</a></li>
+										<li><a href="">Американская жесткошёрстная кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+										<li><a href="">Американский кёрл</a></li>
+										<li><a href="">Ангорская кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+									</ul>
+									<div class="main-menu__sub-letter">Б</div>
+									<ul>
+										<li><a href="">Балинезийская кошка</a></li>
+										<li><a href="">Бамбино (порода)</a></li>
+										<li><a href="">Бенгальская кошка (домашняя)</a></li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="main-menu__sub-accordion__item">
+								<div class="main-menu__sub-accordion__header">
+									<img class="main-menu__sub-accordion__header-animal"
+										src="img/icons/icon-hamster-menu.svg" alt="">
+									<a href="#">Хомяки</a>
+									<img class="main-menu__sub-accordion__header-icon"
+										src="img/icons/icon-accordeon.svg" alt="">
+								</div>
+								<div class="main-menu__sub-accordion__body">
+									<div class="main-menu__sub-letter">A</div>
+									<ul>
+										<li><a href="">Абиссинская кошка</a></li>
+										<li><a href="">Австралийская дымчатая кошка</a></li>
+										<li><a href="">Азиатская табби</a></li>
+										<li><a href="">Анатолийская кошка</a></li>
+										<li><a href="">Американская жесткошёрстная кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+										<li><a href="">Американский кёрл</a></li>
+										<li><a href="">Ангорская кошка</a></li>
+										<li><a href="">Американская короткошёрстная кошка</a></li>
+									</ul>
+									<div class="main-menu__sub-letter">Б</div>
+									<ul>
+										<li><a href="">Балинезийская кошка</a></li>
+										<li><a href="">Бамбино (порода)</a></li>
+										<li><a href="">Бенгальская кошка (домашняя)</a></li>
+									</ul>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<div class="poroda">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="/">Главная</a></li>
+					<li><a href="#">Каталог животных</a></li>
+					<li><a href="#">Собаки</a></li>
+					<li><a href="#">Доберман</a></li>
+				</ul>
+				<div class="poroda__wrapper">
+
+					<div class="poroda__img">
+						<img src="img/test2.jpg" alt="">
+					</div>
+					<div class="poroda__info">
+						<div class="poroda__info-title">
+							<h2> Доберман</h2>
+							<div class="poroda__info-links">
+								<a href="#"><img src="img/icons/icon-wiki.svg" alt=""></a>
+								<a href="#"><img src="img/icons/icon-img.svg" alt=""></a>
+								<a href="#"><img src="img/icons/icon-info.svg" alt=""></a>
+							</div>
+						</div>
+						<div class="poroda__info-text">
+							<p>Доберман — порода, уверенно входящая в топ-20 по популярности. На вопрос: «А чем
+								знамениты эти животные?» — знатоки расскажут о легендарном Трефе, полицейском добермане,
+								служившем в полиции Петербурга в начале XX века.</p>
+							<p>С его помощью было раскрыто более 1500 преступлений. Эксперты также предложат почитать
+								Есенина, у которого найдете строки: «Дай, Джим, на счастье лапу мне. Такую лапу не видал
+								я сроду…», и расскажут, что любимец великого русского артиста Василия Качалова был
+								доберманом.</p>
+							<p><b>Рост</b></p>
+							<p>Высота в холке кобеля – от 68 до 72 см; суки – 63-68 см. Отклонения в росте в любую
+								сторону более, чем на 2 см, считается дисквалифицирующим признаком.</p>
+							<p><b>Вес</b></p>
+							<p>Масса взрослого кобеля колеблется в пределах 40-45 кг, сука весит от 32 до 35 кг.</p>
+							<p><b>Шерсть</b></p>
+							<p>Короткая, достаточно жесткая, гладкая и густая. Равномерно распределена по всему телу.
+								Прилегает плотно, подшерстка нет.</p>
+							<p><b>Рост</b></p>
+							<p>Высота в холке кобеля – от 68 до 72 см; суки – 63-68 см. Отклонения в росте в любую
+								сторону более, чем на 2 см, считается дисквалифицирующим признаком.</p>
+							<p><b>Вес</b></p>
+							<p>Масса взрослого кобеля колеблется в пределах 40-45 кг, сука весит от 32 до 35 кг.</p>
+							<p><b>Шерсть</b></p>
+							<p>Короткая, достаточно жесткая, гладкая и густая. Равномерно распределена по всему телу.
+								Прилегает плотно, подшерстка нет.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="category">
+			<div class="container">
+				
+				<div class="category__wrapper">
+
+					<form class="category__filtr">
+						<div class="category__filtr-accordion-item active">
+							<div class="category__filtr-accordion__header ">
+								<div>Цена, ₽ </div>
+								<img class="category__filtr-accordion__header-icon"
+									src="img/icons/icon-accordeon-filtr.svg" alt="">
+							</div>
+							<div class="category__filtr-accordion__body">
+								<div class="price-range">
+									<input class='amount' id='amount_min' type='text'>
+									<input class='amount' id='amount_max' type='text'>
+
+									<div id='slider-range'></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="category__filtr-accordion-item ">
+							<div class="category__filtr-accordion__header ">
+								<div>Назначение</div>
+								<img class="category__filtr-accordion__header-icon"
+									src="img/icons/icon-accordeon-filtr.svg" alt="">
+							</div>
+							<div class="category__filtr-accordion__body ">
+								<div clas="category__filtr-checkbox">
+									<input type="checkbox" class="custom-checkbox" id="happy1" name="happy1"
+										value="yes">
+									<label for="happy1">Happy</label>
+								</div>
+								<div clas="category__filtr-checkbox">
+									<input type="checkbox" class="custom-checkbox" id="happy2" name="happy2"
+										value="yes">
+									<label for="happy2">Happy</label>
+								</div>
+							</div>
+						</div>
+						<div class="category__filtr-accordion-item ">
+							<div class="category__filtr-accordion__header ">
+								<div>Тип шерсти</div>
+								<img class="category__filtr-accordion__header-icon"
+									src="img/icons/icon-accordeon-filtr.svg" alt="">
+							</div>
+							<div class="category__filtr-accordion__body ">
+								<div clas="category__filtr-checkbox">
+									<input type="checkbox" class="custom-checkbox" id="happy3" name="happy3"
+										value="yes">
+									<label for="happy3">Happy</label>
+								</div>
+								<div clas="category__filtr-checkbox">
+									<input type="checkbox" class="custom-checkbox" id="happy4" name="happy4"
+										value="yes">
+									<label for="happy4">Happy</label>
+								</div>
+							</div>
+						</div>
+						<div class="category__filtr-accordion-item active">
+							<div class="category__filtr-accordion__header ">
+								<div>Порода</div>
+								<img class="category__filtr-accordion__header-icon"
+									src="img/icons/icon-accordeon-filtr.svg" alt="">
+							</div>
+							<div class="category__filtr-accordion__body ">
+								<input class="category__filtr-search" type="search" placeholder="Я ищу...">
+								<div class="category__filtr-porody">
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy5" name="happy5"
+											value="yes">
+										<label for="happy5">Австралийская короткохвостая пастушья собака (австралийская
+											пастушья собака,австралийский куцехвостый хилер, хилер, стампи)</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy6" name="happy6"
+											value="yes">
+										<label for="happy6">Австралийская овчарка (аусси)</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy7" name="happy7"
+											value="yes">
+										<label for="happy7">Австралийский келпи</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy8" name="happy8"
+											value="yes">
+										<label for="happy8">Австралийская овчарка (аусси)</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy9" name="happy9"
+											value="yes">
+										<label for="happy9">Австралийский келпи</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy10" name="happy10"
+											value="yes">
+										<label for="happy10">Австралийская овчарка (аусси)</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy11" name="happy11"
+											value="yes">
+										<label for="happy11">Австралийский келпи</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy12" name="happy12"
+											value="yes">
+										<label for="happy12">Австралийская овчарка (аусси)</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy13" name="happy13"
+											value="yes">
+										<label for="happy13">Австралийский келпи</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox" class="custom-checkbox" id="happy14" name="happy14"
+											value="yes">
+										<label for="happy14">Австралийская овчарка (аусси)</label>
+									</div>
+									<div clas="category__filtr-checkbox">
+										<input type="checkbox15" class="custom-checkbox" id="happy15" name="happy15"
+											value="yes">
+										<label for="happy15">Австралийский келпи</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<button class=" category__filtr-clean btn-white">Очистить</button>
+						<input class="btn btn--orange category__filtr-submit" type="submit" value="Применить">
+					</form>
+					<div class="category__info">
+						<div class="active tab-map__wrapper tab-wrapper">
+							<div class="tab-map__header tab-header">
+								<div>Показать на карте</div>
+								<img class="tab-map__header-icon tab-icon" src="img/icons/icon-accordeon-filtr.svg"
+									alt="">
+							</div>
+							<div class="tab-map__body tab-body">
+								<img src="img/map1.jpg" alt="" style="margin-bottom: 20px">
+
+								<div class="puncontt">Радиус поиска, км</div>
+								<div class="puncon">
+									<div class="punc active" id="c1">1</div>
+									<div class="punc" id="c5">5</div>
+									<div class="punc" id="c10">10</div>
+									<div class="punc" id="c25">25</div>
+									<div class="punc" id="c50">50</div>
+									<div class="punc" id="c100">100</div>
+									<div class="punc" id="c101">100+</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__sort">
+							<div class="category__sort-adds"><span>Всего объявлений:</span> 8</div>
+							<div class="category__sort-select">
+								<select id="category__sort-select" name="sort-select" class="js-example-basic-single"
+									required>
+									<option selected="true" disabled="disabled" value="0">Сортировка</option>
+									<option value="1">Сначала новые</option>
+									<option value="2">По возрастанию цены</option>
+									<option value="2">По убыванию цены</option>
+
+								</select>
+							</div>
+						</div>
+						<div class="category__wrapper">
+							<div class=" animal-card">
+								<button class="animal-card__fav"></button>
+								<a href="https://yandex.ru/" class="animal-card__img">
+									<img src="img/dog.png" alt="">
+								</a>
+								<div class="animal-card__bottom">
+									<div class="animal-card__price">1000 ₽</div>
+									<!-- <div class="animal-card__town">
+                        Москва
+                    </div> -->
+									<a href="#" class="animal-card__title">Золотистый ретривер очень ждет вас</a>
+								</div>
+							</div>
+							<div class=" animal-card">
+								<button class="animal-card__fav"></button>
+								<a href="https://yandex.ru/" class="animal-card__img">
+									<img src="img/dog.png" alt="">
+								</a>
+								<div class="animal-card__bottom">
+									<div class="animal-card__price">1000 ₽</div>
+									<!-- <div class="animal-card__town">
+                        Москва
+                    </div> -->
+									<a href="#" class="animal-card__title">Золотистый ретривер очень ждет вас</a>
+								</div>
+							</div>
+							<div class=" animal-card">
+								<button class="animal-card__fav"></button>
+								<a href="https://yandex.ru/" class="animal-card__img">
+									<img src="img/dog.png" alt="">
+								</a>
+								<div class="animal-card__bottom">
+									<div class="animal-card__price">1000 ₽</div>
+									<!-- <div class="animal-card__town">
+                        Москва
+                    </div> -->
+									<a href="#" class="animal-card__title">Золотистый ретривер очень ждет вас</a>
+								</div>
+							</div>
+							<div class=" animal-card">
+								<button class="animal-card__fav"></button>
+								<a href="https://yandex.ru/" class="animal-card__img">
+									<img src="img/dog.png" alt="">
+								</a>
+								<div class="animal-card__bottom">
+									<div class="animal-card__price">1000 ₽</div>
+									<!-- <div class="animal-card__town">
+                        Москва
+                    </div> -->
+									<a href="#" class="animal-card__title">Золотистый ретривер очень ждет вас</a>
+								</div>
+							</div>
+							<div class=" animal-card">
+								<button class="animal-card__fav"></button>
+								<a href="https://yandex.ru/" class="animal-card__img">
+									<img src="img/dog.png" alt="">
+								</a>
+								<div class="animal-card__bottom">
+									<div class="animal-card__price">1000 ₽</div>
+									<!-- <div class="animal-card__town">
+                        Москва
+                    </div> -->
+									<a href="#" class="animal-card__title">Золотистый ретривер очень ждет вас</a>
+								</div>
+							</div>
+							<div class=" animal-card">
+								<button class="animal-card__fav"></button>
+								<a href="https://yandex.ru/" class="animal-card__img">
+									<img src="img/dog.png" alt="">
+								</a>
+								<div class="animal-card__bottom">
+									<div class="animal-card__price">1000 ₽</div>
+									<!-- <div class="animal-card__town">
+                        Москва
+                    </div> -->
+									<a href="#" class="animal-card__title">Золотистый ретривер очень ждет вас</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<footer class="footer">
+		<div class="container footer__wrapper">
+			<div class="footer__logo"> <a href="/"><img src="img/main-logo.svg" alt=""></a></div>
+			<div class="footer__block">
+				<div class="footer__block-title">Компания</div>
+				<ul class="footer__block-menu">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Документация</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__block">
+				<div class="footer__block-title">Информация</div>
+				<ul class="footer__block-menu">
+					<li><a href="#">Каталог животных</a></li>
+					<li><a href="#">Условия продажи</a></li>
+					<li><a href="#">Условия доставки</a></li>
+				</ul>
+			</div>
+			<div class="footer__block">
+				<div class="footer__block-title">Помощь</div>
+				<ul class="footer__block-menu">
+					<li><a href="#">Популярные вопросы</a></li>
+					<li><a href="#">Техподдержка</a></li>
+					<li><a href="#">Обзоры</a></li>
+					<li><a href="#">Инструкция</a></li>
+				</ul>
+			</div>
+			<div class="footer__block footer__block-copyright">ООО PETSEXPERT<br>
+				Все права защищены<br>
+				Портал продажи животных © 2022</div>
+		</div>
+	</footer>
+	</div>
+</body>
+<script src="js/plugins/jquery-3.4.1.min.js"></script>
+<script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/plugins/select2.full.min.js"></script>
+<script src="js/plugins/slick.js"></script>
+<script src="js/plugins/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/formValidation.js"></script>
+
+</html>

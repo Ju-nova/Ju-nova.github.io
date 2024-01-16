@@ -1,0 +1,39 @@
+.custom-input{
+	width:100%;
+	& label{
+		font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: block;
+color: @gray;
+margin-bottom: 10px;
+& span{
+	color:@orange;
+	}
+}
+& input,
+textarea{
+	background: #FFFFFF;
+border: 1px solid #DCDCDC;
+border-radius: 10px;
+padding:19px 35px 20px 16px;
+font-size: 16px;
+line-height: 19px;
+outline:none;
+box-sizing:border-box;
+width:100%;
+&::placeholder{
+	color: @gray;
+}
+&:focus{
+	border-color:@orange;
+}
+}
+&.custom-input--50{
+	width: 49.4%;
+	@media(max-width: 650px){
+		width:100%;
+	}
+}
+}
+

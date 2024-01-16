@@ -1,0 +1,78 @@
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid @gray;
+  border-radius:5px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-checkbox:checked+label::before {
+
+  background-image: url(../img/icons/icon-checkbox-orange.svg);
+}
+
+
+.registration__form-privacy{
+  position:relative;
+}
+
+
+.registration__form-privacy label{
+position: relative; 
+vertical-align: middle;
+  font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: block;
+ padding-left:36px;
+    & a{
+      color:@orange;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    &:before{
+       content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid @gray;
+  border-radius:5px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+position: absolute;
+left:0;
+    }
+}
+.registration__form-privacy input{
+position: absolute;
+    opacity: 0;
+    &:checked ~ label:before {
+    background-image: url(../img/icons/icon-checkbox-orange.svg);
+}
+
+}

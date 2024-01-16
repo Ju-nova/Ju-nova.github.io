@@ -1,0 +1,125 @@
+.animal-card {
+	position: relative;
+	background: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 2px 4px 21px rgba(0, 0, 0, 0.08);
+
+	&__img {
+		display: block;
+		overflow: hidden;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-top-right-radius: 10px;
+		position: relative;
+		height: 240px;
+
+		@media (max-width: 500px) {
+			height: 140px;
+		}
+		& img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			-webkit-border-top-left-radius: 10px;
+		-webkit-border-top-right-radius: 10px;
+			transition: 0.5s;
+		}
+		&:hover img {
+			// transform: scale(1.2);
+			width: 110%;
+height: 110%;
+
+		}
+	}
+
+	&__title {
+		color: @dark;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		text-decoration: none;
+		transition: 0.2s;
+		&:hover {
+			color: @orange;
+		}
+		@media (max-width: 500px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+
+	&__bottom {
+		padding: 30px 20px 24px 20px;
+		position: relative;
+		@media (max-width: 500px) {
+			padding: 16px;
+		}
+	}
+
+	&__price {
+		background: #ecedff;
+		border-radius: 10px;
+		position: absolute;
+		color: #535353;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		padding: 4px 20px;
+		top: -22px;
+		right: 20px;
+		@media (max-width: 500px) {
+			font-size: 16px;
+			line-height: 19px;
+			top: -13px;
+			right: 16px;
+		}
+	}
+
+	&__fav {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background: url(../img/icons/icon-white-heart.svg) center / contain no-repeat;
+		top: 20px;
+		right: 20px;
+		z-index: 5;
+		cursor: pointer;
+		border: none;
+		@media (max-width: 500px) {
+			left: 16px;
+		}
+		&.active {
+			background: url(../img/icons/icon-orange-heart.svg) center / contain
+				no-repeat;
+		}
+	}
+
+	&__town {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		color: #535353;
+		margin-bottom: 16px;
+	}
+
+	&__src {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: #fff;
+		padding: 2px 6px;
+		background: @orange;
+		border-radius: 6px;
+		position: absolute;
+		z-index: 2;
+		top: 20px;
+		left: 20px;
+		@media (max-width: 500px) {
+			display: none;
+		}
+	}
+}

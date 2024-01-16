@@ -1,0 +1,55 @@
+.reviews {
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__more {
+		margin: 0 auto;
+		margin-bottom: 25px;
+		border: none;
+	}
+
+	&__create {
+		display: flex;
+		flex-direction: column;
+		&-title {
+			font-weight: 500;
+			margin: 0 0 24px 0;
+		}
+
+		&-rating {
+			padding: 0;
+			margin-bottom: 24px;
+			display: flex;
+			align-items: center;
+			&-item {
+				cursor: pointer;
+				list-style: none;
+				+ .reviews__create-rating-item {
+					margin-left: 5px;
+				}
+				&-icon {
+					transition: all 0.2s ease;
+					&.checked {
+						fill: @orange;
+					}
+				}
+			}
+		}
+
+		&-textarea {
+			height: 200px;
+		}
+
+		.custom-input {
+			margin-bottom: 24px;
+		}
+
+		&-btn {
+			margin-left: auto;
+			cursor: pointer;
+			border: none;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.breadcrumbs{
+	margin:40px 0;
+	padding:0;
+	list-style: none;
+	display:flex;
+	flex-wrap: wrap;
+	& li{
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		position:relative;
+		margin:0;
+		padding:0 22px 0 0;
+		&:after{
+			content:'';
+			display: inline-block;
+			position:absolute;
+			width: 6px;
+			height: 6px;
+			background: #D2D2D2;
+			border-radius:100%;
+			top: 5.5px;
+    		right: 7px;
+		}
+		& a{
+		text-decoration: none;		
+		color: #898989;
+		&:hover{
+			color:@orange;
+		}
+		}
+		&:last-child a:hover{
+			color: #898989;
+		}
+		&:last-child:after{
+			content:none
+		}
+	}
+	@media(max-width: 600px){
+		margin:20px 0;
+	}
+}

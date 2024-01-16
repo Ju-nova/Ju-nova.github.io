@@ -1,0 +1,107 @@
+.poroda {
+	&__wrapper {
+		display: flex;
+		padding-bottom: 60px;
+		@media (max-width: 1000px) {
+			flex-direction: column;
+		}
+	}
+
+	&__img {
+		width: 40.9%;
+		& img {
+			width: 100%;
+			height: 541px;
+			border-radius: 10px;
+			object-fit: contain;
+			@media (max-width: 1440px) {
+				height: 470px;
+			}
+			@media (max-width: 1025px) {
+				height: 400px;
+			}
+			@media (max-width: 1000px) {
+				width: 400px;
+				margin: 0 auto;
+			}
+			@media (max-width: 700px) {
+				width: 100%;
+				height: 350px;
+			}
+		}
+		@media (max-width: 1000px) {
+			width: 100%;
+		}
+	}
+
+	&__info {
+		padding: 0 0 0 20px;
+		width: 60.1%;
+		box-sizing: border-box;
+		@media (max-width: 1000px) {
+			width: 100%;
+			padding: 20px 0 0;
+		}
+
+		&-title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 23px;
+			& h2 {
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 38px;
+				margin: 0;
+				padding: 0;
+				max-width: 80%;
+				word-break: break-all;
+				@media (max-width: 500px) {
+					margin-bottom: 10px;
+				}
+			}
+			@media (max-width: 500px) {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
+
+		&-links {
+			display: flex;
+			& a {
+				margin-left: 6px;
+			}
+		}
+
+		&-text {
+			padding: 0 0 0 0;
+			height: 480px;
+			overflow: auto;
+			@media (max-width: 1000px) {
+				overflow: visible;
+				height: auto;
+			}
+			p {
+				font-size: 16px;
+				line-height: 19px;
+				color: #535353;
+				margin: 0 0 20px;
+			}
+			b {
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 24px;
+			}
+			& .mCSB_container {
+				@media (max-width: 1000px) {
+					overflow: visible !important;
+				}
+				& .mCustomScrollBox {
+					@media (max-width: 1000px) {
+						overflow: visible !important;
+					}
+				}
+			}
+		}
+	}
+}

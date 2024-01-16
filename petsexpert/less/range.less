@@ -1,0 +1,74 @@
+.price-range{
+	display:flex;
+	justify-content: space-between;
+flex-wrap:wrap;
+}
+
+.price-range input{
+	background: transparent;
+border-radius: 10px;
+width: 48%;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+padding:10px 10px 11px 32px; 
+color: #535353;
+border:1px solid #999999;
+box-sizing:border-box;
+
+
+}
+.price-range{
+	position:relative;
+	&:before{
+	content:'От';
+	color: @gray;
+	display:inline-block;
+	position:absolute;
+	top:12px;
+	left:10px;
+	font-size: 14px;
+line-height: 17px;
+}
+	&:after{
+	content:'До';
+	color: @gray;
+	display:inline-block;
+	position:absolute;
+	top:12px;
+	right:calc(50% - 31px);
+	font-size: 14px;
+line-height: 17px;
+@media(max-width: 1190px){
+	right:calc(50% - 39px);
+}
+}
+}
+#slider-range{
+	width:100%;
+	margin-top:16px
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default{
+	background: @orange;
+	width:18px;
+    height:18px;
+    border-radius:100%;
+    border:0;
+}
+
+.ui-widget.ui-widget-content{
+	border:0;
+	background:#EBEBEB;
+border-radius: 10px;
+height:6px;
+}
+.ui-state-focus{
+	border:none;
+	outline:none;
+}
+.ui-slider-range.ui-corner-all.ui-widget-header{
+background:@orange;
+border-radius: 10px;
+height:6px;
+}
