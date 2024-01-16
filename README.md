@@ -2,7 +2,7 @@
 Portfolio
 
 
-[Сайт для поиска домашних животных](https://ju-nova.github.io/petsexpert/ "Petsexpert")  mobile/tablet/desktop
+[Портал для покупки и продажи животных и зoотоваров](https://ju-nova.github.io/petsexpert/ "Petsexpert")  mobile/tablet/desktop
 
 [Сайт стоматологической клиники](https://ju-nova.github.io/dent/ "Dent")  mobile/tablet/desktop
 
