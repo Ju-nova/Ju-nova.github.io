@@ -4,6 +4,8 @@ Portfolio
 
 [Портал для покупки и продажи животных и зoотоваров](https://ju-nova.github.io/petsexpert/ "Petsexpert")  mobile/tablet/desktop
 
+[Сайт благотворительного фонда](https://ju-nova.github.io/flag_dobra/ "Flag Dobra")  mobile/tablet/desktop
+
 [Сайт хостинга](https://ju-nova.github.io/iqhost/ "Iqhost")  mobile/tablet/desktop
 
 [Сайт научного фонда](https://ju-nova.github.io/safond/ "Safond")  mobile/tablet/desktop
