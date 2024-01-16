@@ -1,0 +1,176 @@
+.slick-arrow
+{
+    position: absolute;
+    z-index: 5;
+
+    font-size: 0;
+    line-height: 0;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+
+
+    cursor: pointer;
+    transition: .2s;
+}
+.hosting-slider .slick-arrow{
+    top:23px;
+    
+width: 50px;
+    height: 43px;
+    background: url(../img/wrap.svg);
+    background-size: cover;
+
+}
+
+.hosting-slider  .slick-arrow.slick-next{
+  right:85px;
+  &:after{
+        content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #0865C9;
+    border-bottom: 2px solid #0865C9;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+    top: 50%;
+    right: 20px;
+
+}  
+}
+.hosting-slider  .slick-arrow.slick-prev{
+  right:150px;
+  &:after{
+        content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #0865C9;
+    border-bottom: 2px solid #0865C9;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: translateY(-50%) rotate(135deg);
+    top: 50%;
+    right: 15px;
+}  
+}
+
+
+.slick-dots
+{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 37px;
+ margin: 0 auto;
+
+    box-sizing:border-box;
+    min-width: 320px;
+    max-width:1265px;
+    display: block;
+
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+
+    list-style: none;
+
+    text-align:center;
+    @media(max-width: 1000px){
+       display: none !important;
+    }
+        @media(max-width: 426px){
+        text-align: center
+    }
+}
+.slick-dots li
+{
+    position: relative;
+background-color:#C4C4C4;;
+    display: inline-block;
+border-radius:100%;
+    width: 10px;
+    height: 10px;
+    margin: 0 17px 0 0;
+    padding: 0;
+
+    cursor: pointer;
+     @media(max-width: 426px){
+            margin: 0 8px ;
+    }
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+    
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li.slick-active {
+    background-color:#3FA9F5;
+}
+
+.services .slick-arrow{
+    top:50%;
+    transform:translateY(-50%);
+    
+width: 40px;
+    height: 40px;
+    // background: url(../img/wrap.svg);
+    // background-size: cover;
+
+}
+
+.services  .slick-arrow.slick-next{
+  right:17.5%;
+  border-right: 4px solid #0865C9;
+    border-bottom: 4px solid #0865C9;
+      transform: translateY(-50%) rotate(-45deg);
+      border-radius:2px;
+        @media(max-width: 1700px){
+       right:20.5%;
+    } 
+     @media(max-width: 1450px){
+       right:20px;
+    }     
+}
+.services  .slick-arrow.slick-prev{
+ left:17.5%;
+      transform: translateY(-50%) rotate(135deg);
+      border-right: 4px solid #0865C9;
+    border-bottom: 4px solid #0865C9;
+    border-radius:2px;
+        @media(max-width: 1700px){
+        left:20.5%;
+    }  
+            @media(max-width: 1450px){
+        left:20px;
+    } 
+}

@@ -1,0 +1,127 @@
+.article{
+background:#fff;
+box-sizing:border-box;
+padding:16px 20px;	
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+margin-bottom:20px;
+& p{
+	font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+}
+h4{
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+color: #000000;
+margin:30px 0 12px 
+}
+h5{
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+color: #000000;
+margin:30px 0 12px ;
+color: #2B7AD1;	
+}
+& ul{
+	margin:0;
+
+	padding:0;
+	list-style:none;
+	& li{
+padding-left:25px;
+position: relative;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+& a{
+	text-decoration: none;
+	color:#000;
+}
+&:before{
+	content:'';
+	display: inline-block;
+	position:absolute;
+	width:6px;
+	height: 6px;
+	border-radius:50px;
+    background: #2B7AD1;
+    left:0;
+    top:5px;
+	}
+}
+}
+}
+
+
+
+.article-img{
+	text-align:center;
+	padding:16px;
+	border: 1px solid #EEEEEE;
+}
+.article-bottom{
+	margin-top: 40px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	@media(max-width: 400px){
+		flex-direction: column;
+		align-items:flex-start;
+	}
+}
+.article-share{
+	display:flex;
+align-items:center;
+	@media(max-width: 400px){
+		margin-top: 20px;
+	}
+& span{
+	margin-right:10px
+
+}
+}
+.article-share a{
+	margin-left:10px;
+	cursor: pointer
+}
+.warning{
+	padding:25px 0;
+	border-top:1px solid #E70000;
+	border-bottom:1px solid #E70000;
+	margin:40px 0;
+	&-title{
+		font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+color: #E70000;
+padding-left:50px;
+position:relative;
+margin-bottom: 20px;
+          &:before{
+          	content:'';
+          	position:absolute;
+          	display: inline-block;
+          	width:30px;
+          	height: 30px;
+          	background-image:url(../img/warning.svg);
+          	background-size:contain;
+          	background-repeat:no-repeat;
+          	left:0;
+          	top:50%;
+          	transform:translateY(-50%);
+
+          }
+	}
+	& p{
+		margin:0;
+	}
+}

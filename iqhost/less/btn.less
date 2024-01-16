@@ -1,0 +1,92 @@
+.btn-oblique{
+  display: inline-block;
+  padding: 8px 34px;
+  color: #fff;
+  text-decoration: none;
+  transform: skewX(15deg);
+  transition: color 150ms;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-transform: uppercase
+
+}
+.btn-oblique__wrapper{
+  display: inline-block;
+  margin-right: 2px;
+  transform: skewX(-15deg);
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  	&:before {
+  content: '';
+  position: absolute;
+  left: 0%;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #0865C9;
+  border-radius:10px;
+  transition:.5s;
+
+}
+&:hover{
+   &:before {
+
+  background: #ECECEC;
+}
+}
+}
+.btn-oblique__wrapper:hover .btn-oblique{
+  color:#0865C9;
+}
+.btn-oblique__wrapper.btn-oblique__wrapper--white{
+      &:before {
+
+  background: #fff;
+border: 2px solid #ECECEC;
+top:-1px;
+transition: .5s;
+}
+&:hover{
+   &:before {
+
+  background: #ECECEC;
+}
+& .btn-oblique.btn-oblique--menu{
+
+color: #0865C9;
+
+}
+}
+}
+.btn-oblique__wrapper.btn-oblique__wrapper--transparent{
+  color:#0865C9;
+      &:before {
+
+  background: transparent;
+border: 2px solid #0865C9;
+top:-1px;
+transition: .5s;
+}
+&:hover{
+   &:before {
+
+  background: #ECECEC;
+}
+
+}
+}
+.btn-oblique__wrapper.btn-oblique__wrapper--transparent .btn-oblique{
+   color:#0865C9;
+}
+.btn-oblique.btn-oblique--menu{
+ padding: 8px 17px 8px 42px; 
+ font-size: 14px;
+line-height: 14px;
+color: #000000;
+text-transform: none;
+transition:.5s;
+
+}
